@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Which places get Parliament's attention? | A century of the Commons and the map of the UK</title>
+<meta name="description" content="A century of House of Commons mentions of {{data.n_clean|int}} UK towns and cities, 1910 to 2025: how concentrated attention is, what drives it, and which shocks leave a trace. Search any place.">
+<meta property="og:title" content="Which places get Parliament's attention?">
+<meta property="og:description" content="London took {{H.london_1910s|f0}}% of the Commons' town mentions in the 1910s and {{H.london_2010s|f0}}% in the 2010s. Search any of {{data.n_clean|int}} places and see its century in Hansard.">
+<meta property="og:image" content="https://maps.tristanhotham.com/places-in-parliament/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/places-in-parliament/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+{{CSS}}
+</style></head>
+<body>
+<div class="topbar">
+  <a class="tb-name" href="#mapWrap">Which places get Parliament's attention?</a>
+  <span class="tb-k">Data study · 2026</span>
+  <nav class="tb-links"><a href="#explore">Explore a place</a><a href="#essay">About</a><button class="theme" id="theme" aria-label="Toggle dark mode">◐</button><a href="https://doi.org/10.5281/zenodo.24103127">Paper</a><a class="x" href="{{REPO}}">Data and code</a></nav>
+</div>
+<div class="mapband">
+  <div class="pane" id="mapWrap" data-fullscreen-map role="application" aria-label="Map of UK towns and cities sized by Commons mentions and coloured by the change in their share of mentions">
+    <div id="map"></div>
+    <div class="nojs" id="nojs">Loading the map. It needs JavaScript and WebGL.</div>
+    <div class="cartouche" id="cartouche">
+      <button class="ct-toggle" id="ctToggle" aria-expanded="true">Which places get Parliament's attention? ▾</button>
+      <button class="ct-fold" id="ctFold" title="Fold the title" aria-label="Fold the title">▴</button>
+      <div class="ct-body">
+        <div class="kicker"><b>Data study</b><span>2026</span></div>
+        <h1>Which places get <span class="a">Parliament's attention?</span></h1>
+        <p class="dek">{{data.n_clean|int}} UK towns and cities, sized by how often the House of Commons said "in" their name in the decade on the slider. Colour shows whether a place's share of these mentions grew or shrank between 1910 to 1944 and 1980 to 2025. Rings mark by-election towns, gold triangles disasters. Tap a dot for its century.</p>
+        <div class="byline">{{BYLINE}}</div>
+      </div>
+    </div>
+    <div class="ov-top">
+      <div class="srch"><input type="search" id="q" placeholder="Find a town or city" aria-label="Find a town or city" autocomplete="off"><ul class="sug" id="sug" role="listbox"></ul></div>
+      <div class="chips"><button class="chip" data-m="lr" aria-pressed="true">Share change</button><button class="chip" data-m="seat" aria-pressed="false">Named in a seat</button><button class="chip" data-m="nat" aria-pressed="false">Nation</button><button class="chip lyr" id="lyrBtn" aria-expanded="false" aria-controls="lp">Layers</button></div>
+    </div>
+    <div class="lp" id="lp" role="dialog" aria-label="Map layers">
+      <h4>Layers</h4>
+      <label><input type="checkbox" id="lyP" checked> Places (sized by mentions)</label>
+      <label><input type="checkbox" id="lyZ"> Places never mentioned in the decade</label>
+      <label><input type="checkbox" id="lyB" checked> By-election towns (rings)</label>
+      <label><input type="checkbox" id="lyD" checked> Disasters (gold triangles)</label>
+      <label><input type="checkbox" id="lyL" checked> Place names (close in)</label>
+      <label><input type="checkbox" id="lyM" checked> Base map labels</label>
+    </div>
+    <div class="keys" id="keys"><b id="keyTitle">Share of mentions, 1980 to 2025 vs 1910 to 1944</b><div class="bar" id="keyBar"></div><div class="ends" id="keyEnds"><span>1/8</span><span>same</span><span>8x</span></div>
+      <div class="row kx"><span class="ring"></span>by-election town (main sample)</div><div class="row kx"><span class="tri"></span>disaster (nearest Hansard town)</div>
+      <div class="row kx" style="color:#6E604E">Dot size: mentions in the decade. UK towns and cities only (Ireland before 1922 not counted).</div></div>
+    <div class="dec" id="dec"><button id="play" aria-label="Play through the decades">Play</button><label for="dy" class="sr" style="position:absolute;left:-9999px">Decade</label><input type="range" id="dy" min="0" max="12" value="12" step="1"><b id="dyLab">1910 to 2025</b></div>
+  </div>
+</div>
+<div class="wrap" id="essay">
+<p style="margin-top:6px">Which parts of the country does Parliament talk about? I counted, month by month since 1909, every House of Commons speech that says "in" followed by the name of one of {{data.n_clean|int}} UK towns and cities, and put together four earlier studies of the same counts: which places are mentioned, how that compares with what the public reads about, what a by-election does and what a disaster does. This page and the paper add the long view: how concentrated the Commons' attention to places is, how it has changed over a century, and what decides where a place stands.</p>
+<div class="byline">{{BYLINE}} · Data: Hansard via the UK Parliament API (Open Parliament Licence v3.0), Wikipedia (CC BY-SA 4.0), Wikidata (CC0) · Base map: OpenFreeMap Positron</div>
+<div class="stats">
+<div class="stat"><b>{{H.london_1910s|f0}}%</b><span>London's share of all town mentions in the 1910s</span></div>
+<div class="stat"><b>{{H.london_2010s|f0}}%</b><span>London's share in the 2010s</span></div>
+<div class="stat"><b>{{H.dec_place|f0}}%</b><span>of the variation in yearly mentions is the place itself</span></div>
+<div class="stat"><b>{{H.F_x_peak_B|f1}}x</b><span>mentions of a by-election town around polling day, against similar towns</span></div>
+</div>
+
+<h2 id="explore"><span class="n">00 · Explore</span>Any place, month by month</h2>
+<p>Search for a town or city to see how often MPs said "in" its name every month since 1909. Blue ticks are by-elections in a seat named after it, gold ticks disasters near it.</p>
+<div class="ex" id="ex">
+  <div class="ex-top">
+    <div class="srch"><input type="search" id="eq" placeholder="Type a place, e.g. Jarrow" aria-label="Find a place to chart" autocomplete="off"><ul class="sug" id="esug" role="listbox"></ul></div>
+    <div class="ex-tog"><label><input type="radio" name="eres" value="y" checked> Years</label><label><input type="radio" name="eres" value="m"> Months</label><label><input type="checkbox" id="eShare"> As a share of all town mentions</label></div>
+  </div>
+  <h3 id="eName">London</h3>
+  <p class="sub" id="eSub"></p>
+  <div class="ex-wrap"><svg id="exChart" viewBox="0 0 700 260" role="img" aria-label="Chart of Commons mentions of the chosen place over time"></svg><div class="ex-tip" id="eTip"></div></div>
+  <div class="ex-legend"><span><i style="background:#B4442E"></i>mentions</span><span><i style="background:#2F6A9E"></i>by-election</span><span><i style="background:#C98A2B"></i>disaster</span></div>
+  <div class="ex-ev" id="eEv"></div>
+</div>
+
+<h2><span class="n">01 · Concentration</span>From London to everywhere</h2>
+<p>In the 1910s London alone took {{H.london_1910s|f1}}% of all the Commons' mentions of UK places, and the ten most mentioned places {{H.top10_1910s|f0}}%. Belfast, in the years of the Home Rule crisis, came second. By the 2010s London's share was {{H.london_2010s|f1}}% and the top ten's {{H.top10_2010s|f0}}%. The number of places mentioned at least once in a decade rose from {{H.places_1910s|int}} to {{H.places_2010s|int}}. If attention were shared out equally, the 1910s pattern would be like talking about {{H.enp_1910s|f0}} places; the 2010s pattern, about {{H.enp_2010s|f0}}.</p>
+<div class="figure"><img src="img/conc.jpg" alt="Four charts from 1910 to 2025: London's share of town mentions falling from about half to about a fifth, the Gini coefficient over places falling, the effective number of places rising from about 4 to about 26, and the number of places mentioned each year rising" loading="lazy"><p class="src">Dots: decades with 95% intervals. The partial 2020s are shown but not used for the comparisons.</p></div>
+<p>The spread sped up after 1945. The Gini coefficient over places, a standard measure of concentration, fell about {{H.gini_slope_ratio|f1}} times faster per decade after 1945 than before. London's own share fell at a similar pace in both periods, so the change after the war is mostly many more towns coming into debate, not London dropping faster.</p>
+<div class="figure"><img src="img/map.jpg" alt="Map of the UK with {{map.n_map|int}} places: most English towns red (a bigger share of mentions after 1980 than before 1945), London, Glasgow, Belfast, Edinburgh and Liverpool blue (a smaller share)" loading="lazy"><p class="src">{{map.n_gain|int}} of {{map.n_map|int}} places with 20 or more mentions took a bigger share of the Commons' town talk in 1980 to 2025 than in 1910 to 1944.</p></div>
+
+<h2><span class="n">02 · Drivers</span>Size, interest and the electoral map</h2>
+<p>For 2005 to 2025 I can compare places with what the public reads about them on Wikipedia. Five things together account for most of the differences between {{drivers.n|int}} places: size and public interest explain about the same share ({{H.shap_size|f0}}% and {{H.shap_views|f0}}% of what is explained), the electoral map {{H.shap_seat|f0}}%, geography {{H.shap_geo|f0}}% and recent shocks {{H.shap_shocks|f0}}%. A place whose name is part of a seat name is mentioned about {{drivers.seat_pc.b|f0}}% more than a similar place that is not.</p>
+<div class="figure"><img src="img/drivers.jpg" alt="Bar chart: size about 39%, public interest about 38%, electoral map 15%, geography 5% and shocks 3% of the explained variation in mentions, 2005 to 2025" loading="lazy"></div>
+<p>Over the whole century, size matters less than it did. Before 1950 a town 1% bigger got {{E1.lpop_0.b|f2}}% more mentions; since 1980, {{E1.lpop_2.b|f2}}%. A seat name has mattered in every era: places named in a seat were mentioned {{E1.seat_0.b|f0}}% more before 1950 and {{E1.seat_2.b|f0}}% more since 1980 than places of the same size. That premium did not grow after 1945.</p>
+<div class="figure"><img src="img/seat.jpg" alt="Two charts by era: the size elasticity falling from about 1.5 to about 1.2, and the premium for a place named in a seat positive in every era" loading="lazy"></div>
+
+<h2><span class="n">03 · Stability</span>Where a place stands is mostly about the place</h2>
+<p>Split the variation in a place's yearly mentions into parts, and {{H.dec_place|f0}}% is simply the place: its long-run level, the same in every decade. Another {{H.dec_place_decade|f0}}% is slow change, a place rising or falling over decades. The decade itself, common to every place, is {{H.dec_decade|f0}}%, and year-to-year bursts within a decade {{H.dec_within|f0}}%. By-elections and disasters, for all their drama, are {{H.dec_shock|f2}}%: they are rare, and they move a place for a while, not for good.</p>
+<div class="figure"><img src="img/decomp.jpg" alt="A bar split into parts: the place itself 53%, the place's decade 18%, the decade 7%, the year under 1%, year-to-year noise 21%, by-elections and disasters 0.05%" loading="lazy"></div>
+<p>The order of places is fairly stable from decade to decade, and more so since 1950: the rank correlation between one decade and the next rose from {{H.sp_1910_1920|f2}} to {{H.sp_2010_2020|f2}}. I had set 0.7 as the bar for calling it persistent, and no pair of decades quite reached it.</p>
+
+<h2><span class="n">04 · Shocks</span>By-elections and disasters, side by side</h2>
+<p>I ran the by-elections and disasters of the two earlier studies through exactly the same design: each town against five similar towns, month by month. Both make the town's name jump. In the polling month and the two after, by-election towns were mentioned {{H.F_x_peak_B|f1}} times as often as their matched towns; in the month of a disaster and the two after, {{H.F_x_peak_D|f1}} times. Two to three years later, by-election towns were still {{F.F1.lasting__B.b|f0}}% higher (95% interval {{F.F1.lasting__B.lo|f0}}% to {{F.F1.lasting__B.hi|f0}}%) and disaster towns {{F.F1.lasting__D.b|f0}}% ({{F.F1.lasting__D.lo|f0}}% to {{F.F1.lasting__D.hi|f0}}%), but the gap between the two is within the noise.</p>
+<div class="figure"><img src="img/shocks.jpg" alt="Line chart from two years before to three years after: by-election and disaster towns both spike at month zero, by-elections with a run-up and a longer tail" loading="lazy"></div>
+<p>What seems to last is change. By-elections where the seat changed hands kept {{F.subtypes.B changed.lasting.b|f0}}% more mentions two to three years on, and disasters with 50 or more deaths {{F.subtypes.D 50+.lasting.b|f0}}%; smaller disasters left nothing I can detect after a year. These sub-groups are small, so treat them as pointers.</p>
+
+<h2><span class="n">05 · How I did this</span>Counting "in" a place</h2>
+<p><b>The counts.</b> Hansard's search gives, for each month, the number of Commons speeches containing a phrase. I used "in" plus the place name, for the town list of the first study, with ambiguous names left out (Newport, Durham, Boston) and one more found here: "in Erskine" almost always means "in Erskine May", Parliament's rule book. Longer names are subtracted from shorter ones that begin the same way.</p>
+<p><b>The analyses.</b> I wrote the analysis plan down before running any model. Concentration is measured by decade with intervals from resampling months. The drivers model is a Poisson regression for 2005 to 2025 whose explanatory power is split between groups of variables. The variance split uses every place and every year from 1910 to 2025. Seat names come from every general election since 1910. The shock comparison follows the design of the by-election study for both kinds of event.</p>
+<p><b>What this cannot say.</b> "In" plus a name is a sample of mentions, and the counts say nothing about who spoke or why. The place list is today's: Irish towns before 1922 are missing, populations are modern. The 2020s are only six years and show an unusually sharp rise in the number of places mentioned in 2024 and 2025 that I would want to check. Disasters are tied to the nearest town on the list, which dilutes some of them.</p>
+<details><summary>Sources and licences</summary>
+<ul class="plain">
+<li>Hansard, House of Commons, monthly counts of spoken contributions from the UK Parliament Hansard API. Contains Parliamentary information licensed under the Open Parliament Licence v3.0.</li>
+<li>The four earlier studies (Hotham 2026): <i>Mentioned in the House</i> (doi:10.5281/zenodo.23761431), <i>Who gets talked about?</i> (doi:10.5281/zenodo.24092583), <i>Do by-elections make Parliament listen?</i> (doi:10.5281/zenodo.24094210), disasters (doi:10.5281/zenodo.24094466); constituency names from <i>Who Won Here?</i> (doi:10.5281/zenodo.23761425).</li>
+<li>English Wikipedia lists of UK by-elections and disasters (CC BY-SA 4.0); Wikipedia pageviews and Wikidata (CC0).</li>
+<li>Base map: OpenFreeMap Positron style (OpenStreetMap, ODbL). MapLibre GL JS 4.7.1 (BSD 3-Clause).</li>
+<li>Text and figures CC BY 4.0; code MIT; derived data CC BY 4.0 (fields from Wikipedia lists CC BY-SA 4.0).</li>
+</ul></details>
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.24103127">Read the paper</a><a href="{{REPO}}">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/places-in-parliament/">Blog post</a></div>
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Which places get Parliament's attention? A century of the House of Commons and the map of the United Kingdom, 1910 to 2025. Zenodo. <a href="https://doi.org/10.5281/zenodo.24103127">10.5281/zenodo.24103127</a></p>
+<p>Code: <a href="{{REPO}}">github.com/Tristan-Hotham/places-in-parliament</a> (MIT). Text, figures and data CC BY 4.0.</p>
+<p>{{AI}}</p>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/page.js?v={{VERSION}}"></script>
+{{FULLSCREEN}}
+<script src="https://maps.tristanhotham.com/assets/site-nav.js" defer></script>
+</body>
+</html>

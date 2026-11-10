@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Which places get Parliament's attention? | A century of the Commons and the map of the UK</title>
+<meta name="description" content="A century of House of Commons mentions of 1,596 UK towns and cities, 1910 to 2025: how concentrated attention is, what drives it, and which shocks leave a trace. Search any place.">
+<meta property="og:title" content="Which places get Parliament's attention?">
+<meta property="og:description" content="London took 49% of the Commons' town mentions in the 1910s and 18% in the 2010s. Search any of 1,596 places and see its century in Hansard.">
+<meta property="og:image" content="https://maps.tristanhotham.com/places-in-parliament/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/places-in-parliament/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<style>
+:root{--bg:#F6EED8;--panel:#EFE3C4;--fg:#2B2119;--muted:#6E604E;--rule:#E2D3AE;--card:#FBF5E4;--border:#D3C29A;--hot:#B4442E;--cool:#2F6A9E;
+  --display:"Fraunces",Georgia,serif;--body:"Source Serif 4",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A1612;--panel:#241E18;--fg:#EFE6D4;--muted:#ADA08B;--rule:#3A3128;--card:#211B15;--border:#4D4234;--hot:#E07A6C;--cool:#8FB4DA;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1A1612;--panel:#241E18;--fg:#EFE6D4;--muted:#ADA08B;--rule:#3A3128;--card:#211B15;--border:#4D4234;--hot:#E07A6C;--cool:#8FB4DA;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--hot);color:#fff;padding:5px 8px;font-weight:500}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+p{margin:0 0 16px}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+ul.plain{padding-left:20px} ul.plain li{margin:4px 0}
+details{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 0;margin:18px 0;font-size:16px}
+summary{font:500 13px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:4px 8px;cursor:pointer;min-height:28px}
+.figure{margin:22px 0}.figure img{width:100%;display:block;border:1px solid var(--border);background:#F6EED8}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:22px 0}
+.stat b{display:block;font:900 40px/1 var(--display);color:var(--hot)}
+.stat span{font:400 13px/1.35 var(--mono);color:var(--muted)}
+table.t{width:100%;border-collapse:collapse;font:400 13.5px/1.4 var(--mono);margin:12px 0 4px}
+table.t th{text-align:left;font-weight:500;border-bottom:2px solid var(--fg);padding:5px 6px 5px 0}
+table.t td{border-bottom:1px solid var(--rule);padding:5px 6px 5px 0;vertical-align:top}
+table.t td.r,table.t th.r{text-align:right}
+.tscroll{overflow-x:auto}
+.topbar{height:40px;display:flex;align-items:center;gap:14px;margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:0 max(14px,env(safe-area-inset-left,0px));border-bottom:3px double var(--fg);background:var(--bg);overflow:hidden;white-space:nowrap}
+.tb-name{font:800 18px/1 var(--display);color:var(--hot);text-decoration:none}
+.tb-k{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tb-links{margin-left:auto;display:flex;gap:16px;align-items:center;font:500 12px/1 var(--mono)}
+.tb-links a{text-decoration:none}
+.mapband{width:100vw;margin-left:calc(50% - 50vw)}
+.pane{position:relative;height:calc(100vh - 43px);height:calc(100svh - 43px);min-height:480px;border-bottom:1px solid #BCA676;background:#EEF1F2;overflow:hidden}
+#map{position:absolute;inset:0}
+.cartouche{position:absolute;left:14px;top:14px;z-index:5;max-width:min(340px,calc(100% - 28px));background:rgba(251,243,220,.96);color:#2B2119;border:2px solid #2B2119;padding:10px 14px;box-shadow:0 3px 14px rgba(60,40,10,.22)}
+.cartouche h1{font:900 clamp(22px,2.3vw,30px)/1 var(--display);letter-spacing:-.015em;margin:6px 0 0;color:#2B2119}
+.cartouche h1 .a{color:#B4442E}
+.cartouche .dek{font-size:13.5px;line-height:1.36;margin:6px 0 0}
+.cartouche .byline{font-size:11px;color:#6E604E;margin-top:6px}.cartouche .kicker{color:#6E604E}
+.ct-fold{position:absolute;right:6px;top:5px;width:26px;height:26px;border:0;background:none;color:#B4442E;font:700 16px/1 var(--mono);cursor:pointer;padding:0}
+.ct-toggle{display:none;font:800 16px/1 var(--display);color:#B4442E;background:none;border:0;padding:2px 0;cursor:pointer;min-height:30px}
+.cartouche.folded .ct-body,.cartouche.folded .ct-fold{display:none}.cartouche.folded .ct-toggle{display:block}.cartouche.folded{padding:4px 11px}
+.ov-top{position:absolute;z-index:6;right:54px;top:10px;max-width:calc(100% - 480px);display:flex;flex-direction:column;gap:6px;align-items:flex-end;pointer-events:none;font:400 13px/1.3 var(--mono);color:#2B2119}
+.ov-top>*{pointer-events:auto}
+.srch{position:relative;width:min(340px,100%)}
+.srch input{width:100%;font:400 15px/1 var(--mono);background:rgba(251,245,228,.97);color:#2B2119;border:1px solid #9C8656;border-radius:3px;padding:9px 10px;min-height:40px}
+.sug{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:#FBF5E4;border:1px solid #9C8656;max-height:300px;overflow:auto;display:none;z-index:12}
+.sug li{padding:8px 10px;cursor:pointer;border-bottom:1px solid #E7D9B6}.sug li span{color:#7A6A52;font-size:12px}
+.sug li[aria-selected="true"],.sug li:hover{background:#EFE1BC}
+.chips{display:flex;gap:6px;overflow-x:auto;max-width:100%;scrollbar-width:none;padding-bottom:2px}.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;font:500 12px/1 var(--mono);background:rgba(251,245,228,.95);color:#2B2119;border:1px solid #9C8656;border-radius:999px;padding:8px 11px;cursor:pointer;min-height:34px;white-space:nowrap}
+.chip[aria-pressed="true"]{background:#B4442E;color:#fff;border-color:#2B2119}
+.chip.lyr{background:#2B2119;color:#F6EED8;border-color:#2B2119}
+.lp{position:absolute;right:54px;top:140px;z-index:9;background:rgba(251,245,228,.98);border:1px solid #9C8656;border-radius:4px;padding:10px 12px 8px;font:400 13px/1.3 var(--mono);color:#2B2119;box-shadow:0 3px 12px rgba(60,40,10,.25);display:none;min-width:250px}
+.lp.open{display:block}.lp h4{margin:0 0 6px;font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#7A6A52}
+.lp label{display:flex;gap:8px;align-items:center;padding:5px 0;cursor:pointer;min-height:30px}.lp input{accent-color:#B4442E;width:16px;height:16px;flex:none}
+.keys{position:absolute;left:12px;bottom:12px;z-index:4;background:rgba(251,243,220,.96);border:1px solid #9C8656;border-radius:3px;padding:8px 10px;font:400 11.5px/1.25 var(--mono);color:#2B2119;max-width:270px}
+.keys b{display:block;font:800 14px/1.1 var(--display);margin-bottom:5px}
+.keys .bar{height:10px;border:1px solid rgba(43,33,25,.4)}
+.keys .ends{display:flex;justify-content:space-between;font-size:10.5px;color:#6E604E;margin-top:2px}
+.keys .row{display:flex;align-items:center;gap:6px;margin-top:5px}.keys .dot{width:10px;height:10px;border-radius:50%;background:#B9B4AA;border:1px solid #fff;box-shadow:0 0 0 1px #888}
+.maplibregl-popup-content{background:#FBF5E4;color:#2B2119;font:400 13px/1.45 var(--mono);border:1px solid #9C8656;border-radius:4px;padding:10px 12px;max-width:320px;max-height:44vh;overflow:auto}
+.maplibregl-popup-content b.t{display:block;font:800 19px/1.15 var(--display);color:#B4442E;margin-bottom:3px;padding-right:14px}
+.maplibregl-popup-content table{border-collapse:collapse;margin:5px 0}.maplibregl-popup-content td{padding:1px 8px 1px 0;vertical-align:top}
+.maplibregl-popup-content td:first-child{color:#7A6A52}.maplibregl-popup-content .nt{color:#7A6A52;font-size:11.5px;margin:5px 0 0}
+.maplibregl-popup-content a{color:#B4442E}
+.maplibregl-ctrl-attrib{font:400 11px/1.3 var(--mono)!important}
+.nojs{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:400 14px var(--mono);color:#6E604E;padding:20px;text-align:center}
+@media (max-width:1000px){.ov-top{left:10px;right:54px;max-width:none;align-items:flex-start}.lp{left:10px;right:auto;top:100px}.cartouche{top:100px}}
+@media (max-width:600px){.tb-k,.tb-links a.x{display:none}.topbar{gap:10px}.tb-name{font-size:15px}.tb-links{gap:10px}
+  .lp{left:8px;right:8px;min-width:0}.ov-top{left:8px;top:8px}.cartouche{left:8px;top:100px;max-width:calc(100% - 16px)}.cartouche h1{font-size:23px}
+  .ct-toggle{display:block}.ct-fold{display:none}.keys{max-width:200px;font-size:10.5px;padding:6px 8px}.chip{padding:8px 8px;font-size:11.5px}.keys .kx{display:none}.chips{flex-wrap:wrap}.cartouche{top:150px}}
+.maplibregl-popup{z-index:7}
+.tl{position:absolute;left:12px;right:60px;bottom:12px;z-index:5;display:flex;align-items:center;gap:10px;background:rgba(251,243,220,.96);border:1px solid #9C8656;border-radius:3px;padding:6px 10px;font:400 12px/1.2 var(--mono);color:#2B2119;max-width:560px}
+.tl input[type=range]{flex:1;accent-color:#B4442E;min-width:80px}
+.tl b{font:800 15px/1 var(--display);min-width:92px;text-align:center}
+.tl button{font:500 12px/1 var(--mono);background:#2B2119;color:#F6EED8;border:0;border-radius:3px;padding:7px 9px;cursor:pointer;min-height:30px}
+.keys{bottom:64px}
+.spark{display:block;margin:6px 0 2px}
+.maplibregl-popup-content .pl{border-top:1px solid #E2D3AE;margin-top:6px;padding-top:6px}
+@media (max-width:600px){.tl{left:8px;right:52px;bottom:8px;gap:6px;padding:5px 7px}.tl b{min-width:70px;font-size:13px}.keys{bottom:56px}}
+/* place explorer */
+.ex{border:1px solid var(--border);background:var(--card);padding:14px 14px 10px;margin:22px 0;border-radius:3px}
+.ex-top{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ex .srch{width:min(320px,100%)}
+.ex .srch input{background:var(--bg);color:var(--fg);border-color:var(--border)}
+.ex .sug{background:var(--card);border-color:var(--border)}.ex .sug li{border-color:var(--rule)}.ex .sug li span{color:var(--muted)}
+.ex .sug li[aria-selected="true"],.ex .sug li:hover{background:var(--panel)}
+.ex-tog{display:flex;flex-wrap:wrap;gap:12px;font:400 13px/1.3 var(--mono);color:var(--muted)}
+.ex-tog label{display:flex;gap:6px;align-items:center;cursor:pointer;min-height:30px}.ex-tog input{accent-color:var(--hot)}
+.ex h3{font:800 24px/1.1 var(--display);margin:12px 0 2px;color:var(--hot)}
+.ex .sub{font:400 13px/1.4 var(--mono);color:var(--muted);margin:0 0 6px}
+#exChart{width:100%;display:block;touch-action:pan-y}
+.ex-legend{display:flex;flex-wrap:wrap;gap:14px;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:4px}
+.ex-legend i{display:inline-block;width:12px;height:12px;margin-right:5px;vertical-align:-2px;border-radius:2px}
+.ex-ev{font:400 13px/1.45 var(--mono);color:var(--muted);margin:8px 0 0;max-height:150px;overflow:auto}
+.ex-tip{position:absolute;pointer-events:none;background:var(--card);border:1px solid var(--border);font:400 12px/1.3 var(--mono);padding:4px 7px;border-radius:3px;display:none;white-space:nowrap;z-index:3;color:var(--fg)}
+.ex-wrap{position:relative}
+.dec{position:absolute;left:12px;right:60px;bottom:12px;z-index:5;display:flex;align-items:center;gap:10px;background:rgba(251,243,220,.96);border:1px solid #9C8656;border-radius:3px;padding:6px 10px;font:400 12px/1.2 var(--mono);color:#2B2119;max-width:560px}
+.dec input[type=range]{flex:1;accent-color:#B4442E;min-width:80px}
+.dec b{font:800 15px/1 var(--display);min-width:110px;text-align:center}
+.dec button{font:500 12px/1 var(--mono);background:#2B2119;color:#F6EED8;border:0;border-radius:3px;padding:7px 9px;cursor:pointer;min-height:30px}
+@media (max-width:600px){.dec{left:8px;right:52px;bottom:8px;gap:6px;padding:5px 7px}.dec b{min-width:84px;font-size:13px}}
+.keys .tri{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid #C98A2B}
+.keys .ring{width:10px;height:10px;border-radius:50%;border:2px solid #2F6A9E;background:transparent}
+
+</style></head>
+<body>
+<div class="topbar">
+  <a class="tb-name" href="#mapWrap">Which places get Parliament's attention?</a>
+  <span class="tb-k">Data study · 2026</span>
+  <nav class="tb-links"><a href="#explore">Explore a place</a><a href="#essay">About</a><button class="theme" id="theme" aria-label="Toggle dark mode">◐</button><a href="https://doi.org/10.5281/zenodo.24103127">Paper</a><a class="x" href="https://github.com/Tristan-Hotham/places-in-parliament">Data and code</a></nav>
+</div>
+<div class="mapband">
+  <div class="pane" id="mapWrap" data-fullscreen-map role="application" aria-label="Map of UK towns and cities sized by Commons mentions and coloured by the change in their share of mentions">
+    <div id="map"></div>
+    <div class="nojs" id="nojs">Loading the map. It needs JavaScript and WebGL.</div>
+    <div class="cartouche" id="cartouche">
+      <button class="ct-toggle" id="ctToggle" aria-expanded="true">Which places get Parliament's attention? ▾</button>
+      <button class="ct-fold" id="ctFold" title="Fold the title" aria-label="Fold the title">▴</button>
+      <div class="ct-body">
+        <div class="kicker"><b>Data study</b><span>2026</span></div>
+        <h1>Which places get <span class="a">Parliament's attention?</span></h1>
+        <p class="dek">1,596 UK towns and cities, sized by how often the House of Commons said "in" their name in the decade on the slider. Colour shows whether a place's share of these mentions grew or shrank between 1910 to 1944 and 1980 to 2025. Rings mark by-election towns, gold triangles disasters. Tap a dot for its century.</p>
+        <div class="byline">Dr Tristan Hotham · Independent researcher · 2026</div>
+      </div>
+    </div>
+    <div class="ov-top">
+      <div class="srch"><input type="search" id="q" placeholder="Find a town or city" aria-label="Find a town or city" autocomplete="off"><ul class="sug" id="sug" role="listbox"></ul></div>
+      <div class="chips"><button class="chip" data-m="lr" aria-pressed="true">Share change</button><button class="chip" data-m="seat" aria-pressed="false">Named in a seat</button><button class="chip" data-m="nat" aria-pressed="false">Nation</button><button class="chip lyr" id="lyrBtn" aria-expanded="false" aria-controls="lp">Layers</button></div>
+    </div>
+    <div class="lp" id="lp" role="dialog" aria-label="Map layers">
+      <h4>Layers</h4>
+      <label><input type="checkbox" id="lyP" checked> Places (sized by mentions)</label>
+      <label><input type="checkbox" id="lyZ"> Places never mentioned in the decade</label>
+      <label><input type="checkbox" id="lyB" checked> By-election towns (rings)</label>
+      <label><input type="checkbox" id="lyD" checked> Disasters (gold triangles)</label>
+      <label><input type="checkbox" id="lyL" checked> Place names (close in)</label>
+      <label><input type="checkbox" id="lyM" checked> Base map labels</label>
+    </div>
+    <div class="keys" id="keys"><b id="keyTitle">Share of mentions, 1980 to 2025 vs 1910 to 1944</b><div class="bar" id="keyBar"></div><div class="ends" id="keyEnds"><span>1/8</span><span>same</span><span>8x</span></div>
+      <div class="row kx"><span class="ring"></span>by-election town (main sample)</div><div class="row kx"><span class="tri"></span>disaster (nearest Hansard town)</div>
+      <div class="row kx" style="color:#6E604E">Dot size: mentions in the decade. UK towns and cities only (Ireland before 1922 not counted).</div></div>
+    <div class="dec" id="dec"><button id="play" aria-label="Play through the decades">Play</button><label for="dy" class="sr" style="position:absolute;left:-9999px">Decade</label><input type="range" id="dy" min="0" max="12" value="12" step="1"><b id="dyLab">1910 to 2025</b></div>
+  </div>
+</div>
+<div class="wrap" id="essay">
+<p style="margin-top:6px">Which parts of the country does Parliament talk about? I counted, month by month since 1909, every House of Commons speech that says "in" followed by the name of one of 1,596 UK towns and cities, and put together four earlier studies of the same counts: which places are mentioned, how that compares with what the public reads about, what a by-election does and what a disaster does. This page and the paper add the long view: how concentrated the Commons' attention to places is, how it has changed over a century, and what decides where a place stands.</p>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: Hansard via the UK Parliament API (Open Parliament Licence v3.0), Wikipedia (CC BY-SA 4.0), Wikidata (CC0) · Base map: OpenFreeMap Positron</div>
+<div class="stats">
+<div class="stat"><b>49%</b><span>London's share of all town mentions in the 1910s</span></div>
+<div class="stat"><b>18%</b><span>London's share in the 2010s</span></div>
+<div class="stat"><b>53%</b><span>of the variation in yearly mentions is the place itself</span></div>
+<div class="stat"><b>3.9x</b><span>mentions of a by-election town around polling day, against similar towns</span></div>
+</div>
+
+<h2 id="explore"><span class="n">00 · Explore</span>Any place, month by month</h2>
+<p>Search for a town or city to see how often MPs said "in" its name every month since 1909. Blue ticks are by-elections in a seat named after it, gold ticks disasters near it.</p>
+<div class="ex" id="ex">
+  <div class="ex-top">
+    <div class="srch"><input type="search" id="eq" placeholder="Type a place, e.g. Jarrow" aria-label="Find a place to chart" autocomplete="off"><ul class="sug" id="esug" role="listbox"></ul></div>
+    <div class="ex-tog"><label><input type="radio" name="eres" value="y" checked> Years</label><label><input type="radio" name="eres" value="m"> Months</label><label><input type="checkbox" id="eShare"> As a share of all town mentions</label></div>
+  </div>
+  <h3 id="eName">London</h3>
+  <p class="sub" id="eSub"></p>
+  <div class="ex-wrap"><svg id="exChart" viewBox="0 0 700 260" role="img" aria-label="Chart of Commons mentions of the chosen place over time"></svg><div class="ex-tip" id="eTip"></div></div>
+  <div class="ex-legend"><span><i style="background:#B4442E"></i>mentions</span><span><i style="background:#2F6A9E"></i>by-election</span><span><i style="background:#C98A2B"></i>disaster</span></div>
+  <div class="ex-ev" id="eEv"></div>
+</div>
+
+<h2><span class="n">01 · Concentration</span>From London to everywhere</h2>
+<p>In the 1910s London alone took 49.1% of all the Commons' mentions of UK places, and the ten most mentioned places 78%. Belfast, in the years of the Home Rule crisis, came second. By the 2010s London's share was 18.3% and the top ten's 35%. The number of places mentioned at least once in a decade rose from 360 to 1,318. If attention were shared out equally, the 1910s pattern would be like talking about 4 places; the 2010s pattern, about 26.</p>
+<div class="figure"><img src="img/conc.jpg" alt="Four charts from 1910 to 2025: London's share of town mentions falling from about half to about a fifth, the Gini coefficient over places falling, the effective number of places rising from about 4 to about 26, and the number of places mentioned each year rising" loading="lazy"><p class="src">Dots: decades with 95% intervals. The partial 2020s are shown but not used for the comparisons.</p></div>
+<p>The spread sped up after 1945. The Gini coefficient over places, a standard measure of concentration, fell about 3.4 times faster per decade after 1945 than before. London's own share fell at a similar pace in both periods, so the change after the war is mostly many more towns coming into debate, not London dropping faster.</p>
+<div class="figure"><img src="img/map.jpg" alt="Map of the UK with 851 places: most English towns red (a bigger share of mentions after 1980 than before 1945), London, Glasgow, Belfast, Edinburgh and Liverpool blue (a smaller share)" loading="lazy"><p class="src">738 of 851 places with 20 or more mentions took a bigger share of the Commons' town talk in 1980 to 2025 than in 1910 to 1944.</p></div>
+
+<h2><span class="n">02 · Drivers</span>Size, interest and the electoral map</h2>
+<p>For 2005 to 2025 I can compare places with what the public reads about them on Wikipedia. Five things together account for most of the differences between 1,425 places: size and public interest explain about the same share (39% and 38% of what is explained), the electoral map 15%, geography 5% and recent shocks 3%. A place whose name is part of a seat name is mentioned about 110% more than a similar place that is not.</p>
+<div class="figure"><img src="img/drivers.jpg" alt="Bar chart: size about 39%, public interest about 38%, electoral map 15%, geography 5% and shocks 3% of the explained variation in mentions, 2005 to 2025" loading="lazy"></div>
+<p>Over the whole century, size matters less than it did. Before 1950 a town 1% bigger got 1.53% more mentions; since 1980, 1.18%. A seat name has mattered in every era: places named in a seat were mentioned 188% more before 1950 and 105% more since 1980 than places of the same size. That premium did not grow after 1945.</p>
+<div class="figure"><img src="img/seat.jpg" alt="Two charts by era: the size elasticity falling from about 1.5 to about 1.2, and the premium for a place named in a seat positive in every era" loading="lazy"></div>
+
+<h2><span class="n">03 · Stability</span>Where a place stands is mostly about the place</h2>
+<p>Split the variation in a place's yearly mentions into parts, and 53% is simply the place: its long-run level, the same in every decade. Another 18% is slow change, a place rising or falling over decades. The decade itself, common to every place, is 7%, and year-to-year bursts within a decade 21%. By-elections and disasters, for all their drama, are 0.05%: they are rare, and they move a place for a while, not for good.</p>
+<div class="figure"><img src="img/decomp.jpg" alt="A bar split into parts: the place itself 53%, the place's decade 18%, the decade 7%, the year under 1%, year-to-year noise 21%, by-elections and disasters 0.05%" loading="lazy"></div>
+<p>The order of places is fairly stable from decade to decade, and more so since 1950: the rank correlation between one decade and the next rose from 0.33 to 0.69. I had set 0.7 as the bar for calling it persistent, and no pair of decades quite reached it.</p>
+
+<h2><span class="n">04 · Shocks</span>By-elections and disasters, side by side</h2>
+<p>I ran the by-elections and disasters of the two earlier studies through exactly the same design: each town against five similar towns, month by month. Both make the town's name jump. In the polling month and the two after, by-election towns were mentioned 3.9 times as often as their matched towns; in the month of a disaster and the two after, 3.5 times. Two to three years later, by-election towns were still 39% higher (95% interval 9% to 78%) and disaster towns 10% (-24% to 60%), but the gap between the two is within the noise.</p>
+<div class="figure"><img src="img/shocks.jpg" alt="Line chart from two years before to three years after: by-election and disaster towns both spike at month zero, by-elections with a run-up and a longer tail" loading="lazy"></div>
+<p>What seems to last is change. By-elections where the seat changed hands kept 82% more mentions two to three years on, and disasters with 50 or more deaths 80%; smaller disasters left nothing I can detect after a year. These sub-groups are small, so treat them as pointers.</p>
+
+<h2><span class="n">05 · How I did this</span>Counting "in" a place</h2>
+<p><b>The counts.</b> Hansard's search gives, for each month, the number of Commons speeches containing a phrase. I used "in" plus the place name, for the town list of the first study, with ambiguous names left out (Newport, Durham, Boston) and one more found here: "in Erskine" almost always means "in Erskine May", Parliament's rule book. Longer names are subtracted from shorter ones that begin the same way.</p>
+<p><b>The analyses.</b> I wrote the analysis plan down before running any model. Concentration is measured by decade with intervals from resampling months. The drivers model is a Poisson regression for 2005 to 2025 whose explanatory power is split between groups of variables. The variance split uses every place and every year from 1910 to 2025. Seat names come from every general election since 1910. The shock comparison follows the design of the by-election study for both kinds of event.</p>
+<p><b>What this cannot say.</b> "In" plus a name is a sample of mentions, and the counts say nothing about who spoke or why. The place list is today's: Irish towns before 1922 are missing, populations are modern. The 2020s are only six years and show an unusually sharp rise in the number of places mentioned in 2024 and 2025 that I would want to check. Disasters are tied to the nearest town on the list, which dilutes some of them.</p>
+<details><summary>Sources and licences</summary>
+<ul class="plain">
+<li>Hansard, House of Commons, monthly counts of spoken contributions from the UK Parliament Hansard API. Contains Parliamentary information licensed under the Open Parliament Licence v3.0.</li>
+<li>The four earlier studies (Hotham 2026): <i>Mentioned in the House</i> (doi:10.5281/zenodo.23761431), <i>Who gets talked about?</i> (doi:10.5281/zenodo.24092583), <i>Do by-elections make Parliament listen?</i> (doi:10.5281/zenodo.24094210), disasters (doi:10.5281/zenodo.24094466); constituency names from <i>Who Won Here?</i> (doi:10.5281/zenodo.23761425).</li>
+<li>English Wikipedia lists of UK by-elections and disasters (CC BY-SA 4.0); Wikipedia pageviews and Wikidata (CC0).</li>
+<li>Base map: OpenFreeMap Positron style (OpenStreetMap, ODbL). MapLibre GL JS 4.7.1 (BSD 3-Clause).</li>
+<li>Text and figures CC BY 4.0; code MIT; derived data CC BY 4.0 (fields from Wikipedia lists CC BY-SA 4.0).</li>
+</ul></details>
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.24103127">Read the paper</a><a href="https://github.com/Tristan-Hotham/places-in-parliament">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/places-in-parliament/">Blog post</a></div>
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Which places get Parliament's attention? A century of the House of Commons and the map of the United Kingdom, 1910 to 2025. Zenodo. <a href="https://doi.org/10.5281/zenodo.24103127">10.5281/zenodo.24103127</a></p>
+<p>Code: <a href="https://github.com/Tristan-Hotham/places-in-parliament">github.com/Tristan-Hotham/places-in-parliament</a> (MIT). Text, figures and data CC BY 4.0.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/page.js?v=2026a"></script>
+<!-- map-fullscreen v1 -->
+<style id="mfs-style">
+.mfs-btn{position:absolute;top:10px;right:10px;z-index:1001;width:34px;height:34px;border:2px solid rgba(0,0,0,.25);border-radius:4px;background:#fff;color:#222;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.mfs-btn:hover{background:#f2f2f2}
+.mfs-btn svg{width:18px;height:18px}
+.mfs-host.mfs-btn-left .mfs-btn{right:auto;left:54px}
+.mfs-fake{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;max-width:none!important;max-height:none!important;margin:0!important;z-index:100000!important;border-radius:0!important}
+html.mfs-lock,html.mfs-lock body{overflow:hidden!important}
+:fullscreen.mfs-host{width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;margin:0!important;border-radius:0!important}
+</style>
+<script id="mfs-script">
+(function(){
+  var ICON_OPEN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>';
+  var ICON_CLOSE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>';
+  function poke(){setTimeout(function(){window.dispatchEvent(new Event('resize'));},60);setTimeout(function(){window.dispatchEvent(new Event('resize'));},400);}
+  function realFS(){return document.fullscreenElement||document.webkitFullscreenElement;}
+  function add(el){
+    if(el.__mfs)return; el.__mfs=1;
+    var cs=getComputedStyle(el); if(cs.position==='static')el.style.position='relative';
+    el.classList.add('mfs-host');
+    // avoid clashing with a top-right Leaflet control (e.g. "Map layers")
+    var tr=el.querySelector('.leaflet-top.leaflet-right');
+    if(tr&&tr.children.length){ el.classList.add('mfs-btn-left'); }
+    var b=document.createElement('button'); b.type='button'; b.className='mfs-btn';
+    b.title='Full screen map'; b.setAttribute('aria-label','Full screen map'); b.innerHTML=ICON_OPEN;
+    ['click','dblclick','mousedown','touchstart','wheel'].forEach(function(t){b.addEventListener(t,function(e){e.stopPropagation();},{passive:t!=='click'});});
+    function setIcon(on){b.innerHTML=on?ICON_CLOSE:ICON_OPEN;b.title=on?'Exit full screen':'Full screen map';b.setAttribute('aria-label',b.title);}
+    function exitFake(){el.classList.remove('mfs-fake');document.documentElement.classList.remove('mfs-lock');setIcon(false);poke();}
+    b.addEventListener('click',function(e){
+      e.preventDefault();
+      if(el.classList.contains('mfs-fake')){exitFake();return;}
+      if(realFS()){(document.exitFullscreen||document.webkitExitFullscreen).call(document);return;}
+      var req=el.requestFullscreen||el.webkitRequestFullscreen;
+      if(req){ try{ var p=req.call(el); if(p&&p.catch)p.catch(function(){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();}); }catch(err){el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke();} }
+      else { el.classList.add('mfs-fake');document.documentElement.classList.add('mfs-lock');setIcon(true);poke(); }
+    });
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&el.classList.contains('mfs-fake'))exitFake();});
+    ['fullscreenchange','webkitfullscreenchange'].forEach(function(t){document.addEventListener(t,function(){setIcon(realFS()===el);poke();});});
+    el.appendChild(b);
+  }
+  function scan(){
+    var els=document.querySelectorAll('[data-fullscreen-map], .leaflet-container, .maplibregl-map, .mapboxgl-map');
+    els.forEach(function(el){
+      if(el.closest('.mfs-host')&&!el.classList.contains('mfs-host'))return;
+      var r=el.getBoundingClientRect(); if(r.width<200||r.height<150)return;
+      add(el);
+    });
+  }
+  function start(){scan(); var n=0; var t=setInterval(function(){scan(); if(++n>20)clearInterval(t);},500);}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start); else start();
+})();
+</script>
+<!-- /map-fullscreen -->
+
+<script src="https://maps.tristanhotham.com/assets/site-nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Source Serif 4}[Path=/home/claude/ref/fonts/, UprightFont=SourceSerif4-Regular.ttf, BoldFont=SourceSerif4-Semibold.ttf, ItalicFont=SourceSerif4-It.ttf]
+\setmonofont{IBM Plex Mono}[Path=/home/claude/ref/fonts/, UprightFont=IBMPlexMono-Regular.ttf, BoldFont=IBMPlexMono-Medium.ttf, Scale=0.88]
+\usepackage[a4paper,margin=2.4cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx,booktabs,float,caption,array,xcolor,longtable}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\setstretch{1.08}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\captionsetup{font=small,labelfont=bf}
+\setlength{\bibsep}{3pt}
+\urlstyle{same}
+\hypersetup{pdftitle={Which Places Get Parliament's Attention?},pdfauthor={Dr Tristan Hotham}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Which Places Get Parliament's Attention? A Century of the House of Commons and the Map of the United Kingdom, 1910 to 2025\par}
+\vspace{1.2em}
+{\large Dr Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: DOIURLTOKEN\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+Which parts of the country does a national parliament talk about, and why? This paper joins four earlier studies of place mentions in the House of Commons and adds a century-long synthesis built from monthly counts of contributions containing ``in'' followed by the name of one of {{data.n_clean|int}} UK towns and cities, 1910 to 2025. Attention has spread out. London's share of these mentions fell from {{H.london_1910s|f1}}\% in the 1910s to {{H.london_2010s|f1}}\% in the 2010s, and the Gini coefficient over places from {{H.gini_1910s|f3}} to {{H.gini_2010s|f3}}, falling about {{H.gini_slope_ratio|f1}} times faster per decade after 1945 than before. Yet a place's standing is mostly about the place: in a decomposition of the place-year panel, permanent differences between places account for {{H.dec_place|f1}}\% of the variance and slow, decade-long shifts for {{H.dec_place_decade|f1}}\%, while by-elections and disasters account for {{H.dec_shock|f2}}\%. In 2005 to 2025, size and public interest (Wikipedia pageviews) explain similar shares of which places are mentioned, the electoral map about {{H.shap_seat|f0}}\%. A place that gives its name to a seat was mentioned more in every era, although the premium did not clearly grow after 1945, while the link to population weakened. In one harmonised event study, by-elections and disasters raise mentions about {{H.F_x_peak_B|f1}} and {{H.F_x_peak_D|f1}} times at their peak; the by-election rise is still {{F.F1.lasting__B.b|f0}}\% (95\% CI {{F.F1.lasting__B.lo|f0}} to {{F.F1.lasting__B.hi|f0}}) two to three years on, the disaster rise is not clearly above zero, but the two are not clearly different. The design is observational.
+\end{quote}
+\textbf{Keywords:} parliamentary attention; geographic representation; House of Commons; Hansard; concentration; constituency representation; by-elections; disasters
+
+\section{Introduction}
+A national parliament is a place where the rest of the country is talked about. Members raise their constituencies, ministers announce schemes for named towns, and debates return again and again to particular cities, coalfields, ports and disaster sites. Which places are spoken of, and which are not, is a small but telling part of what it means for a territory to be represented. It also bears on a live political argument in the United Kingdom: that the country's politics has long looked at London and the largest cities and overlooked the towns \citep{mccann2020,rodriguezpose2018,jenningsstoker2016}.
+
+Four earlier preprints measured parts of this picture with the same source, the UK Parliament's Hansard search counts. The first counted Commons mentions of 1,661 UK places from 1909 and showed that mentions grow faster than population and that London's share had fallen \citep{hotham2026a}. The second compared Commons attention with public attention, measured by Wikipedia pageviews, and found that the two agree broadly but that places whose names are part of a seat name are mentioned much more \citep{hotham2026b}. The third followed {{sources.byelection_attention.byelections|int}} by-elections and found that the Commons talks more about the town for about two years after one \citep{hotham2026c}. The fourth followed disasters and found sharp but short spikes of attention \citep{hotham2026d}.
+
+This paper asks the question those studies share: what decides a place's share of parliamentary attention, and how has the answer changed since 1909? It does not repeat the four studies. It puts their measures on one monthly panel of {{data.n_clean|int}} places and {{decomp.n_years|int}} complete years and adds four analyses that none of them made: the concentration of attention over a century, with intervals; a decomposition of the variance of attention into permanent place differences, slow change, common time and shocks; the persistence of the ranking of places across decades; and one harmonised event study in which by-elections and disasters are estimated with the same design, so that their traces can be compared directly. A further analysis extends the seat-name premium of the second study from two decades to a century, using the constituency names at every general election since 1910.
+
+The answers are, in brief, these. Attention has spread out a great deal, and faster after 1945. London's share of mentions fell from about half to under a fifth, and the effective number of places, the number of equally mentioned places that would give the same concentration, rose from {{H.enp_1910s|f1}} to {{H.enp_2010s|f1}}. But the order of places is sticky: most of the variation in a place's yearly mentions is a fixed feature of the place, and even in the present century size and public interest explain most of who is mentioned. The electoral map matters in every era: a place named in a seat is mentioned more than a place of the same size that is not. Shocks matter locally and briefly. By-elections leave a trace that lasts longer than a disaster's in the point estimates, but the difference is within the noise, and the disaster estimate depends on how disasters are tied to towns.
+
+The paper proceeds as follows. Section~\ref{sec:lit} reviews work on parliamentary attention, geographic representation and the concentration of political attention. Section~\ref{sec:data} describes the data and how the four studies are joined. Section~\ref{sec:design} sets out the analysis plan, written before any outcome model was run. Section~\ref{sec:results} reports the results, Section~\ref{sec:robust} the robustness checks Section~\ref{sec:disc} discusses what the pattern means and what it cannot show, and Section~\ref{sec:conc} concludes.
+
+\section{Background and literature}\label{sec:lit}
+\subsection{Attention as a scarce resource}
+The agenda-setting tradition treats political attention as scarce: a legislature can attend to only a few things at once, so attention shifts in bursts when issues or events break through \citep{baumgartner1993,jones2005,kingdon1984}. In Britain, \citet{john2013} traced the policy agenda over the post-war decades, and \citet{jenningsjohn2009} linked the content of the Queen's Speech to public opinion. Studies of public agendas suggest that attention to an issue can rise and fall in a cycle \citep{downs1972}, and focusing events such as disasters can open short windows of attention and change \citep{birkland1998}. \citet{bevanjennings2014} compare how institutions translate public priorities into agendas. This literature is mostly about topics. Places are a different unit: a town is not an issue, but it is the setting of many issues, and its prominence in debate depends both on what happens there and on who is there to speak for it.
+
+\subsection{Geographic and constituency representation}
+Westminster's single-member districts tie each member to a place. The classic accounts of representation distinguish policy, service, allocation and symbolic responsiveness \citep{eulau1977} and several modes of representation \citep{pitkin1967,mansbridge2003}. In Britain the constituency role is thought to have grown over the twentieth century \citep{norton1994,nortonwood1993,searing1994}, and members respond to electoral incentives with constituency service and local focus \citep{cain1987}. Parliamentary questions have been used to measure that focus \citep{martin2011,russo2011,kellermann2016} and to study geographic representation in other legislatures \citep{zittel2019}. Voters, for their part, judge members partly by how they divide their effort between constituency and Westminster work \citep{vivyanwagner2016}. Debate itself is shaped by party and parliamentary rules \citep{proksch2015}, and \citet{eggersspirling2014} used the historical Hansard to study ministerial responsiveness in the nineteenth-century Commons. Political geographers have long argued that place mediates politics \citep{agnew1987} and that British elections are geographical \citep{johnstonpattie2006}. What has been missing is a long-run, place-level measure of how much the national parliament talks about each part of the country.
+
+\subsection{Concentration and persistence}
+Concentration is usually measured with Lorenz curves and the Gini coefficient \citep{lorenz1905}. In urban economics, the relative size of places is persistent even after large temporary shocks \citep{davis2002}. The parallel question for attention is whether the pecking order of places in debate is stable or reshuffled by events. Arguments about ``places that don't matter'' \citep{rodriguezpose2018} and regional discontent \citep{mccann2020} imply that attention is both concentrated and persistent; the long Hansard record allows both to be measured.
+
+\subsection{The four studies and what is new here}
+Table~\ref{tab:sources} lists the four earlier studies. Each answered one question with its own design. This paper adds a common panel, four new analyses and a harmonised event design, and places each earlier result in the overall pattern. It is, as far as I can find, the first century-long, place-level account of the geography of attention in the House of Commons.
+
+{{TABLE_SOURCES}}
+
+\section{Data}\label{sec:data}
+\subsection{Place mentions}
+The outcome throughout is the number of House of Commons spoken contributions in a month that contain the phrase ``in'' followed by a place name, from the UK Parliament Hansard API's timeline statistics, January 1909 to October 2026, for each of the 1,661 place terms of \citet{hotham2026a}. The phrase avoids the ``hon. Member for'' formula, surnames and division lists, and is a sample of mentions rather than all of them. Counts are contributions (speeches), not word occurrences. The series are built exactly as in \citet{hotham2026c}: spelling variants are added to the main name, mentions of longer names that begin with the same words are subtracted (``in Bury'' minus ``in Bury St Edmunds''), and the precision factors of \citet{hotham2026a} scale {{data.n_scaled|int}} ordinary-word names. Names flagged there as shared, namesakes or too ambiguous are left out. A whole-list audit of the 200 most mentioned places found one further error, ``in Erskine'', which is almost always ``in Erskine May'', the Commons procedure manual; it is also left out. That leaves {{data.n_clean|int}} places and {{data.total_1910_2025|int}} contributions in the complete years 1910 to 2025.
+
+Because the total volume of Hansard varies over time, every concentration measure uses shares of the year's or decade's total, and every model uses year or month fixed effects. The decade 2020 to 2025 is partial; it is shown but not used for the main comparisons. Populations are modern (Census 2021 built-up areas in England and Wales, GeoNames elsewhere) and available for {{data.with_pop|int}} places.
+
+\subsection{Public interest, seats and shocks}
+Public interest is measured, for 2005 to 2025 only, by the 2024 English Wikipedia pageviews of each place's article, for the {{drivers.n|int}} places in the main sample of \citet{hotham2026b}, with its seat-name share (the share of years 2005 to 2025 in which the place's name was part of a Commons seat name), local authority and region. For the century, seat names come from the constituency names at every general election since 1900 in the Who Won Here? dataset \citep{hotham2026e}: a place is ``named in a seat'' in a year when its name appears as a whole word in the name of a seat at the most recent general election before 1 July of that year (university seats excluded). {{data.seat_places_ever|int}} places were named in a seat at some point. One correction was made after the first run: ``Cities of London and Westminster'' names the City of London, not London; the first run had linked it to London.
+
+Shocks come from the two event studies. By-elections: every by-election linked to a clean place in \citet{hotham2026c} ({{data.byelection_links|int}} links to {{data.byelection_places|int}} places), and for the event study its pre-set main sample of {{F.flow.byelection_towns|int}} town links from {{F.flow.byelections|int}} by-elections. Disasters: the {{data.disasters_main|int}} disasters of \citet{hotham2026d} (its main list of 64 and the 22 added in its extension), each tied to a town: the event's own search term when it is a clean Hansard place ({{data.disasters_term|int}}), otherwise the nearest clean Hansard place within 10 km of the event's point ({{data.disasters_mapped|int}} mapped in all). The nearest-town rule is a deliberate harmonisation: the disaster study used the site's own phrase (``Aberfan'', ``Piper Alpha''), which has no counterpart for by-elections and no long-run town series.
+
+\section{Research design}\label{sec:design}
+\subsection{Analysis plan}
+The analysis plan was written in the study's notes before any outcome model was run: hypotheses, units, outcomes, specifications, robustness checks and what would count against each hypothesis. It is pre-specified in a written plan, not registered with a third party. Every planned analysis is reported. Three changes were made after the first run and are labelled where they matter: the Erskine and London seat-name corrections above, and the bootstrap intervals for concentration measures (below).
+
+\subsection{A. Concentration}
+For each decade, the measures are London's share of mentions; the share of the ten most mentioned places; the Gini coefficient over all clean places, zeros included; the effective number of places (the inverse of the Herfindahl index); and the dissimilarity (Hoover) index between mention shares and population shares, the share of mentions that would have to move between places to make mentions proportional to population. Intervals come from 1,000 bootstrap draws of months within the decade. Because resampling months leaves rarely mentioned places at zero more often, the bootstrap distribution of the Gini is biased upward (by about {{conc.1910.gini_bias|f3}} in the 1910s); the intervals reported are percentile intervals shifted by the bootstrap bias. This was changed after the first run, when plain percentile intervals did not contain the estimate.
+
+H1: concentration falls; the Gini, the top-ten share and London's share are lower in the 2010s than in the 1910s. H1b: the fall is not only London's (the Gini without London also falls). H2: on the annual series, a segmented trend with a break in 1945 (Newey and West errors, five lags) shows a steeper fall after 1945.
+
+\subsection{B. Drivers, 2005 to 2025}
+For the {{drivers.n|int}} places with pageviews, a Poisson pseudo-maximum likelihood (PPML) model \citep{santossilva2006} of mentions in 2005 to 2025 on five blocks: size (log population), public interest (log pageviews), the electoral map (seat-name share), shocks (number of by-elections naming the place, 2005 to 2023; any disaster at the place, 2005 to 2021) and geography (Scotland, Wales and Northern Ireland indicators and log distance from Charing Cross). Standard errors are clustered by local authority ({{drivers.lads|int}} clusters). The blocks' contributions to the deviance pseudo-$R^2$ are Shapley values over all 32 subsets of blocks \citep{israeli2007}, with 300 bootstrap draws of places for intervals \citep{efron1993}. H3: size is the largest block; public interest and the electoral map each add to it; shocks add little.
+
+\subsection{C. Variance decomposition}
+On the balanced panel of {{decomp.n_places|int}} places and {{decomp.n_years|int}} years, with $y_{it} = \log(1 + \text{mentions}_{it})$, the total sum of squares splits exactly into orthogonal parts: the common decade, the year within the decade, the place (its long-run mean), the place-by-decade interaction (a place's slow rise or fall relative to the others) and the remainder within the place and decade. The remainder is regressed on the two shock indicators, transformed the same way, to give the share due to by-elections (the polling year and the next) and disasters (the year and the next). Intervals come from 500 bootstrap draws of places. H4: the place part is the largest; shocks are a small part of the whole. A placebo moves each place's shock years to random years (200 circular shifts).
+
+\subsection{D. Persistence}
+Spearman correlations between places' mean yearly mentions in adjacent decades (places mentioned in either decade; 500 bootstrap draws of places), and an annual AR(1) of the log share of mentions, $\log((y_{it}+0.5)/Y_t)$, with place and year fixed effects and errors clustered by place; with 116 years, the bias of the within estimator in short panels \citep{nickell1981} is small. H5: adjacent-decade correlations above 0.7 in every decade.
+
+\subsection{E. Seat names over a century}
+On the place-decade panel of the {{E1.places|int}} places with a population, PPML of decade mentions with decade fixed effects (E1), with era-specific coefficients on log population and on the share of the decade's years in which the place was named in a seat, and nation indicators; errors clustered by place. E2 adds place fixed effects, so that the seat-name premium is identified by places that gained or lost a seat name in redistributions ({{E2.switchers|int}} places), with a separate coefficient after 1945; a lead placebo adds the next decade's seat-name share. H6: the premium is positive in every era and larger after 1945, and the size elasticity falls after 1945.
+
+\subsection{F. A harmonised event study of shocks}
+Both shocks are estimated with one design, that of \citet{hotham2026c}: a stacked PPML \citep{cengiz2019,correia2020} of monthly ``in <town>'' mentions over months $-24$ to $+36$ around polling day or the disaster, with town-within-stack and stack-by-month fixed effects; bins for months $-12$ to $-4$, $-3$ to $-1$, 0 to 2 (the peak), 3 to 12 and 13 to 36 (``lasting''), against reference months $-24$ to $-13$; five matched control towns per treated town (same nation, more than 25 km away, no by-election or disaster within the window plus 12 months, nearest on log reference-month mentions and log population); errors clustered by event \citep{cameronmiller2015,abadie2023}. Disasters enter if they have a town, a full window in the data, no by-election naming the town within the window and a town reference mean below 30 mentions a month. One joint model has type-specific bins. H7: both raise attention at the peak; the by-election rise lasts longer (months 13 to 36). The share of the peak still present in months 13 to 36, $(e^{b_{L}}-1)/(e^{b_{P}}-1)$, with $b_L$ the coefficient for months 13 to 36 and $b_P$ for months 0 to 2, is simulated from the coefficient covariance.
+
+\subsection{What the design can and cannot show}
+Everything here is observational. Sections A to E describe and decompose; they do not identify causes. The event designs compare each town with similar towns in the same months and estimate the change in attention that comes with the whole episode (the vacancy, the campaign, the new member, or the disaster and its aftermath), not the effect of any single act.
+
+\section{Results}\label{sec:results}
+\subsection{Attention has spread out}
+Figure~\ref{fig:conc} and Table~\ref{tab:conc} show the main finding. In the 1910s, London alone took {{H.london_1910s|f1}}\% of all Commons mentions of UK places, and the ten most mentioned places {{H.top10_1910s|f1}}\%. By the 2010s London's share was {{H.london_2010s|f1}}\% (difference {{conc_diff_2010_1910.london.b|f1}} points, 95\% CI {{conc_diff_2010_1910.london.lo|f1}} to {{conc_diff_2010_1910.london.hi|f1}}) and the top ten's {{H.top10_2010s|f1}}\%. The Gini over places fell from {{H.gini_1910s|f3}} to {{H.gini_2010s|f3}} (difference {{conc_diff_2010_1910.gini.b|f3}}, CI {{conc_diff_2010_1910.gini.lo|f3}} to {{conc_diff_2010_1910.gini.hi|f3}}); without London it fell by {{conc_diff_2010_1910.gini_xl.b|f3}} (CI {{conc_diff_2010_1910.gini_xl.lo|f3}} to {{conc_diff_2010_1910.gini_xl.hi|f3}}). H1 and H1b are supported. The number of places mentioned at least once in a decade rose from {{H.places_1910s|int}} to {{H.places_2010s|int}}, and the effective number of places from {{H.enp_1910s|f1}} to {{H.enp_2010s|f1}}. The dissimilarity between mentions and population fell from {{H.hoover_1910s|f1}}\% to {{H.hoover_2010s|f1}}\%: in the 1910s, three fifths of all mentions would have had to move to make mentions proportional to modern population; by the 2010s, under a third. In the partial decade 2020 to 2025 London's share fell further, to {{H.london_2020s|f1}}\%, and the effective number of places rose to {{H.enp_2020s|f1}}; the rise in places mentioned in 2024 and 2025 is so steep (Figure~\ref{fig:conc}D) that it should be confirmed before it is interpreted.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{f_conc.pdf}
+\caption{Concentration of Commons place mentions, 1910 to 2025. Lines: single years; dots: decades with 95\% bias-corrected bootstrap intervals (months resampled). Single-year Gini values are higher than decade values because a year has fewer mentions. The dashed line marks 1945.}\label{fig:conc}
+\end{figure}
+
+{{TABLE_CONC}}
+
+The timing supports H2 for the Gini. On the annual series, the Gini fell by {{H.gini_slope_pre|f4}} a decade before 1945 and by {{H.gini_slope_post|f4}} a decade after (difference CI {{seg.gini.diff.lo|f4}} to {{seg.gini.diff.hi|f4}} per decade; Table~\ref{tab:seg}), and the number of places mentioned in a year grew by {{H.places_slope_pre|f1}} a decade before 1945 and {{H.places_slope_post|f1}} after. London's share, by contrast, fell at a similar pace before and after 1945 ({{seg.london.pre.b|f1}} and {{seg.london.post.b|f1}} points a decade; the difference CI includes zero), with a drop between the wartime 1940s and the 1950s. The post-war change is therefore not mainly London losing ground; it is many more towns entering debate. The Lorenz curves (Figure~\ref{fig:lorenz}) show the same shift.
+
+{{TABLE_SEG}}
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.62\textwidth]{f_lorenz.pdf}
+\caption{Lorenz curves of place mentions in the 1910s, 1950s and 2010s.}\label{fig:lorenz}
+\end{figure}
+
+The map (Figure~\ref{fig:map}) shows who gained. Of the {{map.n_map|int}} places with at least 20 mentions, {{map.n_gain|int}} took a larger share of mentions in 1980 to 2025 than in 1910 to 1944 and {{map.n_loss|int}} a smaller one. The losers are mainly the big cities of the early century (London, Glasgow, Edinburgh, Belfast, Liverpool and Dundee among them) and towns at the centre of interwar debate such as Jarrow, Clydebank and West Ham; the gainers are spread across the towns, above all in England.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.86\textwidth]{f_map.pdf}
+\caption{Change in each place's share of Commons town mentions, 1980 to 2025 against 1910 to 1944, for places with 20 or more mentions. Dot size: all mentions 1910 to 2025.}\label{fig:map}
+\end{figure}
+
+\subsection{What explains who is mentioned now}
+In 2005 to 2025 the five blocks explain most of the variation in mentions between places (deviance pseudo-$R^2$ {{drivers.total.b|f3}}; Figure~\ref{fig:drivers}, Table~\ref{tab:drivers}). Size and public interest contribute similar shares, {{H.shap_size|f1}}\% and {{H.shap_views|f1}}\% of the explained part, with overlapping intervals; H3's claim that size is the largest single block is therefore not clearly supported. The electoral map contributes {{H.shap_seat|f1}}\% (interval clear of zero), geography {{H.shap_geo|f1}}\% and shocks {{H.shap_shocks|f1}}\%. In the full model, a place named in a seat throughout the period is mentioned {{drivers.seat_pc.b|f0}}\% more (CI {{drivers.seat_pc.lo|f0}} to {{drivers.seat_pc.hi|f0}}) than a place of the same size and public interest that is not; each by-election goes with {{drivers.byel_pc.b|f0}}\% more mentions (CI {{drivers.byel_pc.lo|f0}} to {{drivers.byel_pc.hi|f0}}) and a disaster with {{drivers.disaster_pc.b|f0}}\% more (CI {{drivers.disaster_pc.lo|f0}} to {{drivers.disaster_pc.hi|f0}}); both intervals include zero over a 21-year total. Welsh places are mentioned more than English places with the same profile, as \citet{hotham2026b} found. The large pseudo-$R^2$ is partly London, but without London it is still {{drivers_robust.1.total|f3}}.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.92\textwidth]{f_drivers.pdf}
+\caption{Shapley decomposition of the deviance pseudo-$R^2$ of the 2005 to 2025 PPML model into five blocks, with 95\% bootstrap intervals (300 draws of places).}\label{fig:drivers}
+\end{figure}
+
+{{TABLE_DRIVERS}}
+
+\subsection{Where a place stands is mostly about the place}
+The variance decomposition (Figure~\ref{fig:decomp}, Table~\ref{tab:decomp}) supports H4. Of the variance of log yearly mentions across {{decomp.n_rows|int}} place-years, {{H.dec_place|f1}}\% (CI {{decomp.place.lo|f1}} to {{decomp.place.hi|f1}}) is the permanent difference between places, {{H.dec_place_decade|f1}}\% the slow, decade-scale rise and fall of particular places, {{H.dec_decade|f1}}\% common change by decade (largely the growth of Hansard and of local talk in it), {{H.dec_year|f1}}\% common year-to-year change, and {{H.dec_within|f1}}\% year-to-year movement within a place's decade. By-elections and disasters account for {{H.dec_shock|f2}}\% (CI {{decomp.shock.lo|f2}} to {{decomp.shock.hi|f2}}), above the placebo (mean {{decomp.placebo_shock.mean|f3}}\%, 95th percentile {{decomp.placebo_shock.p95|f3}}\%; none of 200 placebo draws reached the observed share). The shock share is small because shocks are rare, {{decomp.shock_place_years.byelection|int}} by-election and {{decomp.shock_place_years.disaster|int}} disaster place-years out of {{decomp.n_rows|int}}, not because they do nothing: in a shock year mentions are about {{H.by_logpts_pc|f0}}\% (by-election) and {{H.di_logpts_pc|f0}}\% (disaster) higher than the place's own decade would predict.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{f_decomp.pdf}
+\caption{Decomposition of the variance of log(1 + yearly mentions) on the balanced panel of places and years, 1910 to 2025, with 95\% bootstrap intervals (500 draws of places).}\label{fig:decomp}
+\end{figure}
+
+{{TABLE_DECOMP}}
+
+\subsection{Persistence}
+The order of places is persistent but less so than planned (Figure~\ref{fig:persist}, Table~\ref{tab:persist}). Adjacent-decade rank correlations rose from {{H.sp_1910_1920|f2}} (1910s to 1920s) to {{H.sp_2010_2020|f2}} (2010s to 2020s), and the correlation between the 1910s and the 2010s is {{H.sp_1910_2010|f2}}. None of the eleven adjacent-decade correlations reaches 0.7, so H5 is not supported by its own criterion; the early decades, with few mentions, are noisy, and after 1950 the correlations lie between 0.59 and 0.69. In the annual AR(1) with place and year effects, a place's deviation from its own long-run share carries over with coefficient {{ar1.all.b|f3}} (CI {{ar1.all.lo|f3}} to {{ar1.all.hi|f3}}), a half-life of {{ar1.all.half_life|f2}} years: year-to-year bursts fade within a year or two, around a place level that changes slowly. Within eras the coefficient is lower and rises over time ({{ar1.1910 to 1944.b|f2}}, {{ar1.1945 to 1979.b|f2}}, {{ar1.1980 to 2025.b|f2}}).
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.92\textwidth]{f_persist.pdf}
+\caption{Spearman rank correlations of places' mean yearly mentions between adjacent decades, with 95\% bootstrap intervals (places resampled). The dashed line is the planned threshold of 0.7.}\label{fig:persist}
+\end{figure}
+
+{{TABLE_PERSIST}}
+
+\subsection{Seat names over a century}
+The electoral map has mattered throughout (Figure~\ref{fig:seat}, Table~\ref{tab:seat}). Between places of the same size and nation, a place named in a seat for a whole decade was mentioned {{E1.seat_0.b|f0}}\% more in 1910 to 1949 (CI {{E1.seat_0.lo|f0}} to {{E1.seat_0.hi|f0}}), {{E1.seat_1.b|f0}}\% more in 1950 to 1979 ({{E1.seat_1.lo|f0}} to {{E1.seat_1.hi|f0}}) and {{E1.seat_2.b|f0}}\% more in 1980 to 2025 ({{E1.seat_2.lo|f0}} to {{E1.seat_2.hi|f0}}). The premium did not grow after 1945; if anything it shrank (contrast of the last era with the first {{E1.seat_diff_2_0.b|f0}}\%, CI {{E1.seat_diff_2_0.lo|f0}} to {{E1.seat_diff_2_0.hi|f0}}). The size elasticity, by contrast, fell clearly: from {{E1.lpop_0.b|f2}} before 1950 to {{E1.lpop_1.b|f2}} and {{E1.lpop_2.b|f2}} (differences from the first era {{E1.lpop_diff_1_0.b|f2}} and {{E1.lpop_diff_2_0.b|f2}}, both CIs below zero). Big places still get more than their size alone predicts, but less so than before.
+
+Within places (E2), gaining a seat name in a redistribution goes with {{E2.seat_pre.b|f0}}\% more mentions before 1945 (CI {{E2.seat_pre.lo|f0}} to {{E2.seat_pre.hi|f0}}) and {{E2.seat_post.b|f0}}\% more after (CI {{E2.seat_post.lo|f0}} to {{E2.seat_post.hi|f0}}); the difference, {{E2.seat_post_diff.b|f0}}\% (CI {{E2.seat_post_diff.lo|f0}} to {{E2.seat_post_diff.hi|f0}}), is in the expected direction but its interval includes zero. The lead placebo, next decade's seat name, is {{E2.lead.lead.b|f0}}\% (CI {{E2.lead.lead.lo|f0}} to {{E2.lead.lead.hi|f0}}): close to the line, so part of the within-place premium may reflect places that were already rising before they were named, as \citet{hotham2026b} found for 2005 to 2025. H6 is therefore supported for the falling size elasticity and the persistent premium, and not supported for a larger premium after 1945.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{f_seat.pdf}
+\caption{Size elasticity (A) and the premium for a place named in a seat (B) by era, from PPML models of decade mentions with decade fixed effects (E1, red), and within places with place fixed effects before and after 1945 (E2, blue). 95\% intervals, errors clustered by place.}\label{fig:seat}
+\end{figure}
+
+{{TABLE_SEAT}}
+
+\subsection{Which shocks leave lasting traces}
+In the harmonised design (Figure~\ref{fig:shocks}, Table~\ref{tab:shocks}), both kinds of shock raise mentions sharply. In the polling month and the two after, by-election towns are mentioned {{F.F1.peak__B.b|f0}}\% more than their matched towns (CI {{F.F1.peak__B.lo|f0}} to {{F.F1.peak__B.hi|f0}}); in the disaster month and the two after, disaster towns {{F.F1.peak__D.b|f0}}\% more ({{F.F1.peak__D.lo|f0}} to {{F.F1.peak__D.hi|f0}}). In months 3 to 12, by-election towns are still {{F.F1.year1__B.b|f0}}\% higher ({{F.F1.year1__B.lo|f0}} to {{F.F1.year1__B.hi|f0}}) and disaster towns {{F.F1.year1__D.b|f0}}\% ({{F.F1.year1__D.lo|f0}} to {{F.F1.year1__D.hi|f0}}); the contrast, {{F.F1.contrast.year1.b|f0}}\% (CI {{F.F1.contrast.year1.lo|f0}} to {{F.F1.contrast.year1.hi|f0}}), says disaster attention fades faster in the first year. In months 13 to 36, by-election towns remain {{F.F1.lasting__B.b|f0}}\% higher ({{F.F1.lasting__B.lo|f0}} to {{F.F1.lasting__B.hi|f0}}), disaster towns {{F.F1.lasting__D.b|f0}}\% ({{F.F1.lasting__D.lo|f0}} to {{F.F1.lasting__D.hi|f0}}); but the contrast between them, {{F.F1.contrast.lasting.b|f0}}\% (CI {{F.F1.contrast.lasting.lo|f0}} to {{F.F1.contrast.lasting.hi|f0}}), includes zero. Measured against its own peak, the by-election rise keeps {{F.F1.retained.B.b|f0}}\% of its peak in months 13 to 36 (CI {{F.F1.retained.B.lo|f0}} to {{F.F1.retained.B.hi|f0}}) and the disaster rise {{F.F1.retained.D.b|f0}}\% ({{F.F1.retained.D.lo|f0}} to {{F.F1.retained.D.hi|f0}}). H7 is supported for the peaks and the first year, not for the planned lasting contrast.
+
+Two features stand out. Disasters show no run-up, as expected of sudden events; by-elections rise in the three months before polling, when the vacancy and the campaign are news. And in the exploratory sub-types (Appendix Table~\ref{tab:sub}), the most lasting rises come from by-elections in which the seat changed hands ({{F.subtypes.B changed.lasting.b|f0}}\% in months 13 to 36, CI {{F.subtypes.B changed.lasting.lo|f0}} to {{F.subtypes.B changed.lasting.hi|f0}}; {{F.subtypes.B changed.events|int}} by-elections) and from disasters with 50 or more deaths ({{F.subtypes.D 50+.lasting.b|f0}}\%, CI {{F.subtypes.D 50+.lasting.lo|f0}} to {{F.subtypes.D 50+.lasting.hi|f0}}; {{F.subtypes.D 50+.events|int}} disasters), while smaller disasters leave nothing detectable after a year ({{F.subtypes.D under 50.lasting.b|f0}}\%). One reading, which these exploratory estimates cannot test, is that what leaves a trace is a change: a new member who speaks for the town, or a catastrophe large enough to bring inquiries, compensation and legislation.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{f_shocks.pdf}
+\caption{Harmonised monthly event study of by-elections and disasters: percentage change in ``in <town>'' mentions against five matched towns each, PPML with town-within-stack and stack-by-month fixed effects, errors clustered by event; reference months $-24$ to $-13$; 95\% intervals.}\label{fig:shocks}
+\end{figure}
+
+{{TABLE_SHOCKS}}
+
+\section{Robustness}\label{sec:robust}
+\subsection{Concentration, drivers and decomposition}
+The fall in concentration does not depend on the measurement choices (Appendix Table~\ref{tab:concrob}): without prefix subtraction, without precision scaling, without any one nation, among places of 50,000 or more only, and with Greater London ({{n_glondon_places|int}} places within 25 km of Charing Cross) treated as one place, the Gini is lower in the 2010s than in the 1910s in every check. Greater London's share fell from {{glondon.1910.share|f1}}\% to {{glondon.2010.share|f1}}\%.
+
+The driver shares are stable in ordering without London, in England only and with errors clustered by place (Table~\ref{tab:drivers}). Two checks change the picture in instructive ways. Among the {{drivers_robust.2.n|int}} places of 50,000 or more, the electoral map adds little ({{drivers_robust.2.shapley.electoral map|f3}} of the pseudo-$R^2$): nearly all such places give their name to a seat, so the block has little to explain. On an OLS model of log mentions, which weights small places equally with large ones, public interest is the largest block and the electoral map's share rises to {{drivers_robust.4.shapley.electoral map|f3}} of an $R^2$ of {{drivers_robust.4.total|f3}}.
+
+The variance decomposition is similar with shares of the year's total as the outcome, without prefix subtraction or scaling, without London and without the partial 2020s (Table~\ref{tab:decomp}). Restricting to larger or more mentioned places raises the common decade part (the growth of debate about towns affects them all) and lowers the place part, but the place part remains the largest and shocks remain below 0.1\%.
+
+\subsection{Seat names}
+The between-place premium is positive in every era. The within-place estimates are sensitive (Appendix Table~\ref{tab:seatrob}). Dropping the partial 2020s leaves both premiums positive ({{E_robust.0.seat_pre.b|f0}}\% before 1945, {{E_robust.0.seat_post.b|f0}}\% after) with a difference whose interval includes zero. Among places of 50,000 or more, in England only and on log mentions (OLS, which weights places equally), the premium is clearly larger after 1945 (differences {{E_robust.1.seat_post_diff.b|f0}}\%, {{E_robust.3.seat_post_diff.b|f0}}\% and {{E_robust.4.seat_post_diff.b|f0}}\%, all intervals above zero). Without London, which dominates the common decade effects of a Poisson model, the premium is larger before 1945 ({{E_robust.2.seat_pre.b|f0}}\%) than after ({{E_robust.2.seat_post.b|f0}}\%). The direction of change over time in the within-place premium therefore depends on how places are weighted, and the paper does not claim it.
+
+\subsection{The harmonised event study}
+The by-election peak stays clearly above zero in every check: clustering by town, ten controls, no precision scaling and leaving out any one nation or era (Table~\ref{tab:shockrob}). The lasting estimate does not hold everywhere: without English by-elections or without those of 1980 to 2023 its interval includes zero (without England the months 3 to 12 interval does too), so the lasting trace rests mainly on recent, English by-elections. The disaster estimates are more fragile. Moving every event 24 months earlier (a placebo estimated over months $-24$ to $+12$ around the false date) gives nothing for by-elections but a rise of {{F.P1.year1__D.b|f0}}\% for disasters in false months 3 to 12 (CI {{F.P1.year1__D.lo|f0}} to {{F.P1.year1__D.hi|f0}}), which suggests that some disaster towns were already drawing more attention in the year or two before the event. The disaster estimate also depends on the town rule: for the {{F.flow.main_term|int}} disasters whose own name is a Hansard town (Lockerbie, Dunblane, Omagh, Hungerford, Whitehaven), the rise is far larger at the peak and still {{F.robust.5.lasting_D.b|f0}}\% in months 13 to 36 (CI {{F.robust.5.lasting_D.lo|f0}} to {{F.robust.5.lasting_D.hi|f0}}), above the by-election estimate. The nearest-town rule dilutes disasters named after a pit or a site (``Aberfan'' is not ``in Mountain Ash''). So the comparison of lasting traces is not robust either way: the honest summary is that both kinds of shock can leave traces of two to three years, and the data cannot rank them.
+
+\section{Discussion}\label{sec:disc}
+\subsection{What the pattern says}
+Three findings stand out from the synthesis. First, attention spread out over the century, and faster after 1945, mainly because many more towns entered debate rather than because London fell faster. This fits the account of a growing constituency role in the Commons \citep{norton1994,nortonwood1993} and the incentives for local focus \citep{cain1987}, though the data cannot show who spoke. Second, the map of attention is stable at its core. Most of the variance is a fixed feature of places, and present-day differences are explained by size, public interest and the electoral map in roughly that order of weight. Shocks, however vivid, are a small part of the whole: like the persistence of city sizes after the bombing of Japanese cities \citep{davis2002}, the hierarchy of places in debate absorbs shocks and returns. Third, the electoral map has shaped attention for a century. A place's name on a constituency goes with more mentions in every era, and gaining a seat name goes with more mentions within the same place, although part of that may be anticipation.
+
+The four earlier studies fit inside this picture. The faster-than-proportional growth with population of \citet{hotham2026a} is a feature of every era, but weaker now than before 1950. The agreement of Commons and public attention in \citet{hotham2026b} reappears as public interest explaining as much as population. The by-election rise of \citet{hotham2026c} and the disaster spikes of \citet{hotham2026d} are real but small parts of the long-run variance. Debates about ``places that don't matter'' \citep{rodriguezpose2018} can take some comfort from the long spread of attention and some concern from the stability of the order.
+
+\subsection{Limitations}
+First, the measure: ``in <place>'' is a sample of mentions; it misses ``my constituency'' and ``the town'', and some mentions refer to an institution (a hospital, a prison) rather than the town. Counts are contributions, not words, and the API's index of older, scanned volumes may differ from that of recent ones. Second, the place list is today's: Irish places before 1922 are absent, Northern Ireland enters only through its present-day towns, and populations are modern. Third, a whole-list audit found one large false match (Erskine May) and others may remain among smaller places. Fourth, the 2020s are partial and show an abrupt rise in the number of places mentioned that needs checking against Hansard's own indexing. Fifth, the analyses are observational; the decomposition and the driver models describe and do not identify causes. Sixth, the harmonised event study ties disasters to towns by a rule that dilutes some, and its placebo for disasters is not clean. Seventh, the data do not say who spoke, so the role of the local member, the obvious mechanism behind the seat-name premium and the by-election trace, cannot be tested directly.
+
+\subsection{Implications}
+For research on representation, the long Hansard record allows place-level attention to be measured consistently across a century, and the decomposition shows what any explanation has to account for: a stable order of places, slowly reshuffled. For debates about regional imbalance, the evidence is mixed: Westminster's talk about places is far less metropolitan than it was, but the places it talks about are still, to a large degree, the places it talked about before.
+
+\section{Conclusion}\label{sec:conc}
+Over a century the House of Commons has come to talk about far more of the country. London's share of place mentions fell from about half to under a fifth and the effective number of places rose more than six-fold, faster after 1945. Yet who is talked about is mostly settled by lasting features of places: size, public interest and the electoral map. By-elections and disasters move attention sharply, and the largest of them leave traces for two or three years, but they rarely move a place's standing for good.
+
+\section*{Data availability statement}
+Data and code: Zenodo DOI DOIURLTOKEN. The interactive page is at \url{{{PAGE}}} and the repository at \url{{{REPO}}}. Hansard counts are from the UK Parliament Hansard API (Open Parliament Licence v3.0); places, flags and precision factors from \citet{hotham2026a}; pageviews and seat shares from \citet{hotham2026b}; by-election links from \citet{hotham2026c} (by-election lists from English Wikipedia, CC BY-SA 4.0); disasters from \citet{hotham2026d}; constituency names from \citet{hotham2026e} (Wikidata, CC0).
+
+\section*{AI statement}
+{{AI}}
+
+\begin{thebibliography}{99}
+\bibitem[Abadie et al.(2023)]{abadie2023} Abadie, A., Athey, S., Imbens, G. W. and Wooldridge, J. M. (2023) When should you adjust standard errors for clustering? \textit{Quarterly Journal of Economics} 138(1), 1 to 35. doi:10.1093/qje/qjac038.
+\bibitem[Agnew(1987)]{agnew1987} Agnew, J. A. (1987) \textit{Place and Politics: The Geographical Mediation of State and Society}. Boston: Allen and Unwin.
+\bibitem[Baumgartner and Jones(1993)]{baumgartner1993} Baumgartner, F. R. and Jones, B. D. (1993) \textit{Agendas and Instability in American Politics}. Chicago: University of Chicago Press.
+\bibitem[Bevan and Jennings(2014)]{bevanjennings2014} Bevan, S. and Jennings, W. (2014) Representation, agendas and institutions. \textit{European Journal of Political Research} 53(1), 37 to 56. doi:10.1111/1475-6765.12023.
+\bibitem[Birkland(1998)]{birkland1998} Birkland, T. A. (1998) Focusing events, mobilization, and agenda setting. \textit{Journal of Public Policy} 18(1), 53 to 74. doi:10.1017/S0143814X98000038.
+\bibitem[Cain et al.(1987)]{cain1987} Cain, B., Ferejohn, J. and Fiorina, M. (1987) \textit{The Personal Vote: Constituency Service and Electoral Independence}. Cambridge, MA: Harvard University Press.
+\bibitem[Cameron and Miller(2015)]{cameronmiller2015} Cameron, A. C. and Miller, D. L. (2015) A practitioner's guide to cluster-robust inference. \textit{Journal of Human Resources} 50(2), 317 to 372.
+\bibitem[Cengiz et al.(2019)]{cengiz2019} Cengiz, D., Dube, A., Lindner, A. and Zipperer, B. (2019) The effect of minimum wages on low-wage jobs. \textit{Quarterly Journal of Economics} 134(3), 1405 to 1454. doi:10.1093/qje/qjz014.
+\bibitem[Correia et al.(2020)]{correia2020} Correia, S., Guimar\~aes, P. and Zylkin, T. (2020) Fast Poisson estimation with high-dimensional fixed effects. \textit{Stata Journal} 20(1), 95 to 115. doi:10.1177/1536867X20909691.
+\bibitem[Davis and Weinstein(2002)]{davis2002} Davis, D. R. and Weinstein, D. E. (2002) Bones, bombs, and break points: the geography of economic activity. \textit{American Economic Review} 92(5), 1269 to 1289. doi:10.1257/000282802762024502.
+\bibitem[Downs(1972)]{downs1972} Downs, A. (1972) Up and down with ecology: the ``issue-attention cycle''. \textit{The Public Interest} 28, 38 to 50.
+\bibitem[Efron and Tibshirani(1993)]{efron1993} Efron, B. and Tibshirani, R. J. (1993) \textit{An Introduction to the Bootstrap}. New York: Chapman and Hall.
+\bibitem[Eggers and Spirling(2014)]{eggersspirling2014} Eggers, A. C. and Spirling, A. (2014) Ministerial responsiveness in Westminster systems: institutional choices and House of Commons debate, 1832 to 1915. \textit{American Journal of Political Science} 58(4), 873 to 887. doi:10.1111/ajps.12090.
+\bibitem[Eulau and Karps(1977)]{eulau1977} Eulau, H. and Karps, P. D. (1977) The puzzle of representation: specifying components of responsiveness. \textit{Legislative Studies Quarterly} 2(3), 233 to 254. doi:10.2307/439340.
+\bibitem[Hotham(2026a)]{hotham2026a} Hotham, T. (2026a) \textit{Mentioned in the House: which places does Parliament talk about? Place mentions in House of Commons debates, 1909 to 2026}. Preprint, Zenodo. doi:10.5281/zenodo.23761431.
+\bibitem[Hotham(2026b)]{hotham2026b} Hotham, T. (2026b) \textit{Who gets talked about? Public attention on Wikipedia and parliamentary attention in the House of Commons to UK places, 2005 to 2025}. Preprint, Zenodo. doi:10.5281/zenodo.24092583.
+\bibitem[Hotham(2026c)]{hotham2026c} Hotham, T. (2026c) \textit{Do by-elections make Parliament listen? Parliamentary attention to by-election constituencies in the House of Commons, 1911 to 2023}. Preprint, Zenodo. doi:10.5281/zenodo.24094210.
+\bibitem[Hotham(2026d)]{hotham2026d} Hotham, T. (2026d) \textit{Does Parliament notice disasters, and whose? Attention in the House of Commons to the places of UK disasters, 1910 to 2020}. Preprint, Zenodo. doi:10.5281/zenodo.24094466.
+\bibitem[Hotham(2026e)]{hotham2026e} Hotham, T. (2026e) \textit{Who Won Here? Every UK general election since 1832 on one map}. Zenodo. doi:10.5281/zenodo.23761425.
+\bibitem[Israeli(2007)]{israeli2007} Israeli, O. (2007) A Shapley-based decomposition of the R-square of a linear regression. \textit{Journal of Economic Inequality} 5(2), 199 to 212. doi:10.1007/s10888-006-9036-6.
+\bibitem[Jennings and John(2009)]{jenningsjohn2009} Jennings, W. and John, P. (2009) The dynamics of political attention: public opinion and the Queen's Speech in the United Kingdom. \textit{American Journal of Political Science} 53(4), 838 to 854. doi:10.1111/j.1540-5907.2009.00404.x.
+\bibitem[Jennings and Stoker(2016)]{jenningsstoker2016} Jennings, W. and Stoker, G. (2016) The bifurcation of politics: two Englands. \textit{Political Quarterly} 87(3), 372 to 382. doi:10.1111/1467-923X.12228.
+\bibitem[John et al.(2013)]{john2013} John, P., Bertelli, A., Jennings, W. and Bevan, S. (2013) \textit{Policy Agendas in British Politics}. Basingstoke: Palgrave Macmillan. doi:10.1057/9780230390409.
+\bibitem[Johnston and Pattie(2006)]{johnstonpattie2006} Johnston, R. and Pattie, C. (2006) \textit{Putting Voters in their Place: Geography and Elections in Great Britain}. Oxford: Oxford University Press.
+\bibitem[Jones and Baumgartner(2005)]{jones2005} Jones, B. D. and Baumgartner, F. R. (2005) \textit{The Politics of Attention: How Government Prioritizes Problems}. Chicago: University of Chicago Press.
+\bibitem[Kellermann(2016)]{kellermann2016} Kellermann, M. (2016) Electoral vulnerability, constituency focus, and parliamentary questions in the House of Commons. \textit{British Journal of Politics and International Relations} 18(1), 90 to 106. doi:10.1111/1467-856X.12075.
+\bibitem[Kingdon(1984)]{kingdon1984} Kingdon, J. W. (1984) \textit{Agendas, Alternatives, and Public Policies}. Boston: Little, Brown.
+\bibitem[Lorenz(1905)]{lorenz1905} Lorenz, M. O. (1905) Methods of measuring the concentration of wealth. \textit{Publications of the American Statistical Association} 9(70), 209 to 219. doi:10.2307/2276207.
+\bibitem[Mansbridge(2003)]{mansbridge2003} Mansbridge, J. (2003) Rethinking representation. \textit{American Political Science Review} 97(4), 515 to 528.
+\bibitem[Martin(2011)]{martin2011} Martin, S. (2011) Using parliamentary questions to measure constituency focus: an application to the Irish case. \textit{Political Studies} 59(2), 472 to 488. doi:10.1111/j.1467-9248.2011.00885.x.
+\bibitem[McCann(2020)]{mccann2020} McCann, P. (2020) Perceptions of regional inequality and the geography of discontent: insights from the UK. \textit{Regional Studies} 54(2), 256 to 267. doi:10.1080/00343404.2019.1619928.
+\bibitem[Nickell(1981)]{nickell1981} Nickell, S. (1981) Biases in dynamic models with fixed effects. \textit{Econometrica} 49(6), 1417 to 1426.
+\bibitem[Norton(1994)]{norton1994} Norton, P. (1994) The growth of the constituency role of the MP. \textit{Parliamentary Affairs} 47(4), 705 to 720.
+\bibitem[Norton and Wood(1993)]{nortonwood1993} Norton, P. and Wood, D. M. (1993) \textit{Back from Westminster: British Members of Parliament and Their Constituents}. Lexington: University Press of Kentucky.
+\bibitem[Pitkin(1967)]{pitkin1967} Pitkin, H. F. (1967) \textit{The Concept of Representation}. Berkeley: University of California Press.
+\bibitem[Proksch and Slapin(2015)]{proksch2015} Proksch, S.-O. and Slapin, J. B. (2015) \textit{The Politics of Parliamentary Debate: Parties, Rebels and Representation}. Cambridge: Cambridge University Press.
+\bibitem[Rodr\'iguez-Pose(2018)]{rodriguezpose2018} Rodr\'iguez-Pose, A. (2018) The revenge of the places that don't matter (and what to do about it). \textit{Cambridge Journal of Regions, Economy and Society} 11(1), 189 to 209.
+\bibitem[Russo(2011)]{russo2011} Russo, F. (2011) The constituency as a focus of representation: studying the Italian case through the analysis of parliamentary questions. \textit{Journal of Legislative Studies} 17(3), 290 to 301. doi:10.1080/13572334.2011.595122.
+\bibitem[Santos Silva and Tenreyro(2006)]{santossilva2006} Santos Silva, J. M. C. and Tenreyro, S. (2006) The log of gravity. \textit{Review of Economics and Statistics} 88(4), 641 to 658. doi:10.1162/rest.88.4.641.
+\bibitem[Searing(1994)]{searing1994} Searing, D. D. (1994) \textit{Westminster's World: Understanding Political Roles}. Cambridge, MA: Harvard University Press.
+\bibitem[Vivyan and Wagner(2016)]{vivyanwagner2016} Vivyan, N. and Wagner, M. (2016) House or home? Constituent preferences over legislator effort allocation. \textit{European Journal of Political Research} 55(1), 81 to 99. doi:10.1111/1475-6765.12119.
+\bibitem[Zittel et al.(2019)]{zittel2019} Zittel, T., Nyhuis, D. and Baumann, M. (2019) Geographic representation in party-dominated legislatures: a quantitative text analysis of parliamentary questions in the German Bundestag. \textit{Legislative Studies Quarterly} 44(4), 681 to 711. doi:10.1111/lsq.12238.
+\end{thebibliography}
+
+\appendix
+\section{Appendix: further tables}
+{{TABLE_CONCROB}}
+
+{{TABLE_SEATROB}}
+
+{{TABLE_SUB}}
+
+{{TABLE_SHOCKROB}}
+
+\subsection*{A.1 Data construction}
+Monthly series: raw API counts per place term; variants added (25 spellings, e.g.\ Barrow in Furness to Barrow-in-Furness); for each place, counts of every longer place name that begins with the same words subtracted month by month (floored at zero); multiplied by the precision factor of \citet{hotham2026a} for ordinary-word names. Excluded: names flagged shared, namesake or below 60\% precision in \citet{hotham2026a}, and Erskine (this paper's audit). Annual and decade totals sum complete months. Seat names: whole-word matching of place names to seat names at each general election, longest name first and without overlaps, with the aliases of \citet{hotham2026c} and the City of London correction. Disaster towns: the event's own term if a clean Hansard place, else the nearest clean Hansard place to the event point within 10 km (Appendix data file \texttt{disaster\_towns.csv} lists every mapping, with distances). All files and code are in the data and code archive.
+\end{document}

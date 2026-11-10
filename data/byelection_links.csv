@@ -1,0 +1,944 @@
+id,seat,date,term,year,main,changed,cause_group,era
+1909-01_tamworth,Tamworth,1909-01-16,Tamworth,1909,0,0,death,1911 to 1944
+1909-02_taunton,Taunton,1909-02-23,Taunton,1909,0,0,resignation,1911 to 1944
+1909-03_glasgow_central,Glasgow Central,1909-03-02,Glasgow,1909,0,1,death,1911 to 1944
+1909-03_edinburgh_south,Edinburgh South,1909-03-04,Edinburgh,1909,0,0,same MP,1911 to 1944
+1909-03_hawick_burghs,Hawick Burghs,1909-03-05,Hawick,1909,0,0,resignation,1911 to 1944
+1909-03_croydon,Croydon,1909-03-29,Croydon,1909,0,0,death,1911 to 1944
+1909-04_edinburgh_east,Edinburgh East,1909-04-16,Edinburgh,1909,0,0,resignation,1911 to 1944
+1909-05_sheffield_attercliffe,Sheffield Attercliffe,1909-05-04,Sheffield,1909,0,1,resignation,1911 to 1944
+1909-05_stratford_on_avon,Stratford-on-Avon,1909-05-04,Stratford-upon-Avon,1909,0,1,resignation,1911 to 1944
+1909-05_edinburgh_west,Edinburgh West,1909-05-17,Edinburgh,1909,0,0,resignation,1911 to 1944
+1909-07_dumfries_burghs,Dumfries Burghs,1909-07-20,Dumfries,1909,0,0,same MP,1911 to 1944
+1909-07_high_peak,High Peak,1909-07-22,High Peak,1909,0,0,same MP,1911 to 1944
+1910-02_swansea_district,Swansea District,1910-02-28,Swansea,1910,0,0,same MP,1911 to 1944
+1910-03_rotherham,Rotherham,1910-03-01,Rotherham,1910,0,0,resignation,1911 to 1944
+1910-03_barnstaple,Barnstaple,1910-03-02,Barnstaple,1910,0,0,same MP,1911 to 1944
+1910-03_ilkeston,Ilkeston,1910-03-07,Ilkeston,1910,0,0,resignation,1911 to 1944
+1910-03_shipley,Shipley,1910-03-10,Shipley,1910,0,0,same MP,1911 to 1944
+1910-03_reading,Reading,1910-03-12,Reading,1910,0,0,same MP,1911 to 1944
+1910-04_edinburgh_south,Edinburgh South,1910-04-29,Edinburgh,1910,0,0,resignation,1911 to 1944
+1910-04_crewe,Crewe,1910-04-30,Crewe,1910,0,0,death,1911 to 1944
+1910-06_lewes,Lewes,1910-06-17,Lewes,1910,0,0,death,1911 to 1944
+1910-06_hartlepool,Hartlepool,1910-06-20,Hartlepool,1910,0,0,scandal,1911 to 1944
+1910-07_liverpool_kirkdale,Liverpool Kirkdale,1910-07-20,Kirkdale,1910,0,0,death,1911 to 1944
+1910-07_liverpool_kirkdale,Liverpool Kirkdale,1910-07-20,Liverpool,1910,0,0,death,1911 to 1944
+1910-10_south_shields,South Shields,1910-10-27,South Shields,1910,0,0,resignation,1911 to 1944
+1910-11_walthamstow,Walthamstow,1910-11-01,Walthamstow,1910,0,0,resignation,1911 to 1944
+1911-02_horncastle,Horncastle,1911-02-16,Horncastle,1911,0,0,resignation,1911 to 1944
+1911-02_westbury,Westbury,1911-02-22,Westbury,1911,0,0,resignation,1911 to 1944
+1911-03_bootle,Bootle,1911-03-27,Bootle,1911,0,0,resignation,1911 to 1944
+1911-04_cheltenham,Cheltenham,1911-04-28,Cheltenham,1911,0,1,scandal,1911 to 1944
+1911-05_birmingham_south,Birmingham South,1911-05-03,Birmingham,1911,0,0,resignation,1911 to 1944
+1911-05_barnstaple,Barnstaple,1911-05-06,Barnstaple,1911,0,0,resignation,1911 to 1944
+1911-06_ross_and_cromarty,Ross and Cromarty,1911-06-14,Cromarty,1911,0,0,death,1911 to 1944
+1911-06_brighton,Brighton,1911-06-26,Brighton,1911,0,0,resignation,1911 to 1944
+1911-07_glasgow_tradeston,Glasgow Tradeston,1911-07-06,Glasgow,1911,0,0,resignation,1911 to 1944
+1911-07_west_ham_north,West Ham North,1911-07-08,West Ham,1911,0,0,scandal,1911 to 1944
+1911-07_luton,Luton,1911-07-20,Luton,1911,0,0,resignation,1911 to 1944
+1911-07_bethnal_green_south_west,Bethnal Green South West,1911-07-29,Bethnal Green,1911,0,0,resignation,1911 to 1944
+1911-08_middleton,Middleton,1911-08-02,Middleton,1911,0,0,same MP,1911 to 1944
+1911-09_kilmarnock_burghs,Kilmarnock Burghs,1911-09-26,Kilmarnock,1911,0,0,death,1911 to 1944
+1911-10_keighley,Keighley,1911-10-27,Keighley,1911,0,0,death,1911 to 1944
+1911-11_bristol_east,Bristol East,1911-11-03,Bristol,1911,0,0,same MP,1911 to 1944
+1911-11_oldham,Oldham,1911-11-13,Oldham,1911,0,1,resignation,1911 to 1944
+1911-11_hitchin,Hitchin,1911-11-23,Hitchin,1911,0,0,death,1911 to 1944
+1912-01_carmarthen_district,Carmarthen District,1912-01-29,Carmarthen,1912,0,0,same MP,1911 to 1944
+1912-02_edinburgh_east,Edinburgh East,1912-02-02,Edinburgh,1912,0,0,death,1911 to 1944
+1912-02_glasgow_st_rollox,Glasgow St Rollox,1912-02-26,Glasgow,1912,0,0,same MP,1911 to 1944
+1912-03_manchester_south,Manchester South,1912-03-05,Manchester,1912,0,1,resignation,1911 to 1944
+1912-03_hereford,Hereford,1912-03-08,Hereford,1912,1,0,resignation,1911 to 1944
+1912-03_leominster,Leominster,1912-03-18,Leominster,1912,1,0,resignation,1911 to 1944
+1912-03_epsom,Epsom,1912-03-21,Epsom,1912,1,0,death,1911 to 1944
+1912-04_nottingham_east,Nottingham East,1912-04-19,Nottingham,1912,0,0,resignation,1911 to 1944
+1912-06_holmfirth,Holmfirth,1912-06-20,Holmfirth,1912,1,0,resignation,1911 to 1944
+1912-07_ilkeston,Ilkeston,1912-07-01,Ilkeston,1912,0,0,same MP,1911 to 1944
+1912-07_crewe,Crewe,1912-07-26,Crewe,1912,1,1,death,1911 to 1944
+1912-08_manchester_north_west,Manchester North West,1912-08-08,Manchester,1912,0,1,resignation,1911 to 1944
+1912-11_taunton,Taunton,1912-11-11,Taunton,1912,1,0,resignation,1911 to 1944
+1912-11_bolton,Bolton,1912-11-23,Bolton,1912,0,0,death,1911 to 1944
+1912-11_bow_and_bromley,Bow and Bromley,1912-11-26,Bow,1912,1,1,resignation,1911 to 1944
+1913-01_flint_boroughs,Flint Boroughs,1913-01-21,Flint,1913,1,0,death,1911 to 1944
+1913-01_londonderry_city,Londonderry City,1913-01-30,Londonderry,1913,0,1,resignation,1911 to 1944
+1913-02_chorley,Chorley,1913-02-19,Chorley,1913,1,0,resignation,1911 to 1944
+1913-03_houghton_le_spring,Houghton-le-Spring,1913-03-18,Houghton-Le-Spring,1913,1,0,death,1911 to 1944
+1913-03_kendal,Kendal,1913-03-18,Kendal,1913,1,1,death,1911 to 1944
+1913-04_shrewsbury,Shrewsbury,1913-04-22,Shrewsbury,1913,1,0,death,1911 to 1944
+1913-05_newmarket,Newmarket,1913-05-16,Newmarket,1913,1,1,death,1911 to 1944
+1913-05_altrincham,Altrincham,1913-05-28,Altrincham,1913,1,0,resignation,1911 to 1944
+1913-06_dover,Dover,1913-06-23,Dover,1913,1,0,death,1911 to 1944
+1913-06_leicester,Leicester,1913-06-27,Leicester,1913,1,0,resignation,1911 to 1944
+1913-08_chesterfield,Chesterfield,1913-08-20,Chesterfield,1913,1,1,death,1911 to 1944
+1913-11_reading,Reading,1913-11-08,Reading,1913,1,1,resignation,1911 to 1944
+1913-11_keighley,Keighley,1913-11-11,Keighley,1913,0,0,same MP,1911 to 1944
+1913-12_wick_burghs,Wick Burghs,1913-12-08,Wick,1913,0,0,same MP,1911 to 1944
+1914-02_bethnal_green_south_west,Bethnal Green South West,1914-02-19,Bethnal Green,1914,1,1,resignation,1911 to 1944
+1914-04_belfast_east,Belfast East,1914-04-06,Belfast,1914,0,0,death,1911 to 1944
+1914-05_great_grimsby,Great Grimsby,1914-05-12,Grimsby,1914,1,0,death,1911 to 1944
+1914-05_ipswich,Ipswich,1914-05-23,Ipswich,1914,1,1,death,1911 to 1944
+1914-06_brighton,Brighton,1914-06-29,Brighton,1914,1,0,resignation,1911 to 1944
+1914-07_birmingham_west,Birmingham West,1914-07-14,Birmingham,1914,0,0,death,1911 to 1944
+1914-08_swansea_district,Swansea District,1914-08-13,Swansea,1914,0,0,same MP,1911 to 1944
+1914-09_bolton,Bolton,1914-09-22,Bolton,1914,0,0,death,1911 to 1944
+1914-09_the_hartlepools,The Hartlepools,1914-09-22,Hartlepool,1914,1,0,death,1911 to 1944
+1914-11_londonderry_city,Londonderry City,1914-11-30,Londonderry,1914,0,0,death,1911 to 1944
+1914-12_sheffield_attercliffe,Sheffield Attercliffe,1914-12-28,Sheffield,1914,0,0,death,1911 to 1944
+1915-02_norwich,Norwich,1915-02-06,Norwich,1915,0,0,resignation,1911 to 1944
+1915-02_swansea_district,Swansea District,1915-02-06,Swansea,1915,0,0,resignation,1911 to 1944
+1915-02_scarborough,Scarborough,1915-02-09,Scarborough,1915,0,0,same MP,1911 to 1944
+1915-02_shipley,Shipley,1915-02-09,Shipley,1915,1,0,death,1911 to 1944
+1915-02_thirsk_and_malton,Thirsk and Malton,1915-02-12,Malton,1915,1,0,resignation,1911 to 1944
+1915-02_thirsk_and_malton,Thirsk and Malton,1915-02-12,Thirsk,1915,1,0,resignation,1911 to 1944
+1915-02_saffron_walden,Saffron Walden,1915-02-13,Saffron Walden,1915,0,0,same MP,1911 to 1944
+1915-02_liverpool_kirkdale,Liverpool Kirkdale,1915-02-15,Kirkdale,1915,1,0,resignation,1911 to 1944
+1915-02_liverpool_kirkdale,Liverpool Kirkdale,1915-02-15,Liverpool,1915,0,0,resignation,1911 to 1944
+1915-02_maidstone,Maidstone,1915-02-22,Maidstone,1915,1,0,resignation,1911 to 1944
+1915-03_carmarthen_boroughs,Carmarthen Boroughs,1915-03-17,Carmarthen,1915,0,0,same MP,1911 to 1944
+1915-05_kilmarnock_burghs,Kilmarnock Burghs,1915-05-28,Kilmarnock,1915,1,0,death,1911 to 1944
+1915-06_preston,Preston,1915-06-09,Preston,1915,1,0,resignation,1911 to 1944
+1915-06_keighley,Keighley,1915-06-29,Keighley,1915,0,0,resignation,1911 to 1944
+1915-07_glasgow_central,Glasgow Central,1915-07-16,Glasgow,1915,0,0,resignation,1911 to 1944
+1915-11_uxbridge,Uxbridge,1915-11-10,Uxbridge,1915,1,0,death,1911 to 1944
+1915-11_heywood,Heywood,1915-11-10,Heywood,1915,1,0,death,1911 to 1944
+1915-11_cardiff,Cardiff,1915-11-12,Cardiff,1915,1,0,death,1911 to 1944
+1915-11_st_austell,St Austell,1915-11-24,St Austell,1915,1,0,death,1911 to 1944
+1915-11_st_helens,St Helens,1915-11-24,St Helens,1915,0,0,same MP,1911 to 1944
+1915-11_merthyr_tydfil,Merthyr Tydfil,1915-11-25,Merthyr,1915,1,1,death,1911 to 1944
+1915-11_tiverton,Tiverton,1915-11-30,Tiverton,1915,1,0,death,1911 to 1944
+1916-01_portsmouth,Portsmouth,1916-01-15,Portsmouth,1916,1,0,resignation,1911 to 1944
+1916-01_bradford_central,Bradford Central,1916-01-21,Bradford,1916,0,0,death,1911 to 1944
+1916-01_rotherham,Rotherham,1916-01-26,Rotherham,1916,0,0,same MP,1911 to 1944
+1916-02_liverpool_east_toxteth,Liverpool East Toxteth,1916-02-21,Liverpool,1916,0,0,resignation,1911 to 1944
+1916-02_bolton,Bolton,1916-02-29,Bolton,1916,0,0,resignation,1911 to 1944
+1916-02_chester,Chester,1916-02-29,Chester,1916,1,0,resignation,1911 to 1944
+1916-02_droitwich,Droitwich,1916-02-29,Droitwich,1916,1,0,resignation,1911 to 1944
+1916-03_cockermouth,Cockermouth,1916-03-02,Cockermouth,1916,1,0,resignation,1911 to 1944
+1916-03_hertford,Hertford,1916-03-09,Hertford,1916,1,1,resignation,1911 to 1944
+1916-03_south_shields,South Shields,1916-03-18,South Shields,1916,0,0,death,1911 to 1944
+1916-04_wimbledon,Wimbledon,1916-04-19,Wimbledon,1916,1,0,resignation,1911 to 1944
+1916-05_tewkesbury,Tewkesbury,1916-05-16,Tewkesbury,1916,1,0,death,1911 to 1944
+1916-05_widnes,Widnes,1916-05-22,Widnes,1916,0,0,same MP,1911 to 1944
+1916-05_south_londonderry,South Londonderry,1916-05-22,Londonderry,1916,0,0,resignation,1911 to 1944
+1916-08_exeter,Exeter,1916-08-07,Exeter,1916,0,0,same MP,1911 to 1944
+1916-08_bodmin,Bodmin,1916-08-15,Bodmin,1916,1,0,resignation,1911 to 1944
+1916-08_berwick_upon_tweed,Berwick-upon-Tweed,1916-08-16,Berwick-upon-Tweed,1916,1,0,resignation,1911 to 1944
+1916-08_abingdon,Abingdon,1916-08-29,Abingdon,1916,1,0,resignation,1911 to 1944
+1916-09_mansfield,Mansfield,1916-09-20,Mansfield,1916,1,0,death,1911 to 1944
+1916-10_winchester,Winchester,1916-10-19,Winchester,1916,1,0,death,1911 to 1944
+1916-12_ashton_under_lyne,Ashton-under-Lyne,1916-12-23,Ashton-under-Lyne,1916,1,0,resignation,1911 to 1944
+1916-12_sheffield_hallam,Sheffield Hallam,1916-12-23,Sheffield,1916,0,1,resignation,1911 to 1944
+1916-12_derby,Derby,1916-12-29,Derby,1916,1,0,resignation,1911 to 1944
+1917-01_inverness_shire,Inverness-shire,1917-01-02,Inverness,1917,1,0,resignation,1911 to 1944
+1917-02_rotherham,Rotherham,1917-02-05,Rotherham,1917,0,0,resignation,1911 to 1944
+1917-02_rossendale,Rossendale,1917-02-13,Rossendale,1917,1,0,resignation,1911 to 1944
+1917-02_tamworth,Tamworth,1917-02-23,Tamworth,1917,1,0,resignation,1911 to 1944
+1917-03_stockton_on_tees,Stockton-on-Tees,1917-03-20,Stockton,1917,1,0,death,1911 to 1944
+1917-03_oxford,Oxford,1917-03-30,Oxford,1917,1,0,resignation,1911 to 1944
+1917-04_aberdeen_south,Aberdeen South,1917-04-03,Aberdeen,1917,0,0,resignation,1911 to 1944
+1917-04_belfast_south,Belfast South,1917-04-09,Belfast,1917,0,0,same MP,1911 to 1944
+1917-05_edinburgh_south,Edinburgh South,1917-05-13,Edinburgh,1917,0,0,resignation,1911 to 1944
+1917-06_henley,Henley,1917-06-20,Henley,1917,1,0,death,1911 to 1944
+1917-06_epping,Epping,1917-06-28,Epping,1917,1,0,resignation,1911 to 1944
+1917-06_liverpool_abercromby,Liverpool Abercromby,1917-06-28,Liverpool,1917,0,0,resignation,1911 to 1944
+1917-07_belfast_south,Belfast South,1917-07-02,Belfast,1917,0,0,death,1911 to 1944
+1917-07_fulham,Fulham,1917-07-03,Fulham,1917,0,0,same MP,1911 to 1944
+1917-07_cambridge,Cambridge,1917-07-25,Cambridge,1917,1,0,resignation,1911 to 1944
+1917-07_dundee,Dundee,1917-07-30,Dundee,1917,0,0,same MP,1911 to 1944
+1917-08_norwich,Norwich,1917-08-26,Norwich,1917,0,0,same MP,1911 to 1944
+1917-10_islington_east,Islington East,1917-10-23,Islington,1917,0,0,death,1911 to 1944
+1917-10_spalding,Spalding,1917-10-25,Spalding,1917,1,0,death,1911 to 1944
+1917-10_basingstoke,Basingstoke,1917-10-25,Basingstoke,1917,0,0,resignation,1911 to 1944
+1917-11_salford_north,Salford North,1917-11-02,Salford,1917,0,1,death,1911 to 1944
+1917-12_wisbech,Wisbech,1917-12-14,Wisbech,1917,0,0,death,1911 to 1944
+1917-12_southampton,Southampton,1917-12-19,Southampton,1917,0,0,same MP,1911 to 1944
+1918-01_prestwich,Prestwich,1918-01-31,Prestwich,1918,0,0,resignation,1911 to 1944
+1918-03_manchester_south,Manchester South,1918-03-22,Manchester,1918,0,0,death,1911 to 1944
+1918-04_birmingham_west,Birmingham West,1918-04-25,Birmingham,1918,0,0,same MP,1911 to 1944
+1918-04_keighley,Keighley,1918-04-26,Keighley,1918,0,0,death,1911 to 1944
+1918-05_exeter,Exeter,1918-05-07,Exeter,1918,0,0,resignation,1911 to 1944
+1918-05_newcastle_upon_tyne,Newcastle-upon-Tyne,1918-05-13,Newcastle upon Tyne,1918,0,0,same MP,1911 to 1944
+1918-06_gravesend,Gravesend,1918-06-07,Gravesend,1918,0,0,resignation,1911 to 1944
+1918-06_bridgwater,Bridgwater,1918-06-18,Bridgwater,1918,0,0,same MP,1911 to 1944
+1918-07_manchester_north_east,Manchester North East,1918-07-16,Manchester,1918,0,0,same MP,1911 to 1944
+1918-07_fareham,Fareham,1918-07-18,Fareham,1918,0,0,resignation,1911 to 1944
+1918-07_east_grinstead,East Grinstead,1918-07-29,East Grinstead,1918,0,0,same MP,1911 to 1944
+1918-08_canterbury,Canterbury,1918-08-09,Canterbury,1918,0,0,death,1911 to 1944
+1918-09_banbury,Banbury,1918-09-24,Banbury,1918,0,0,resignation,1911 to 1944
+1918-10_bath,Bath,1918-10-15,Bath,1918,0,0,death,1911 to 1944
+1918-10_elgin_burghs,Elgin Burghs,1918-10-25,Elgin,1918,0,0,death,1911 to 1944
+1918-10_south_shields,South Shields,1918-10-28,South Shields,1918,0,0,resignation,1911 to 1944
+1918-10_prestwich,Prestwich,1918-10-28,Prestwich,1918,0,0,death,1911 to 1944
+1918-11_wilton,Wilton,1918-11-06,Wilton,1918,0,0,resignation,1911 to 1944
+1919-02_liverpool_west_derby,Liverpool West Derby,1919-02-26,Liverpool,1919,0,0,resignation,1911 to 1944
+1919-03_north_londonderry,North Londonderry,1919-03-04,Londonderry,1919,0,0,resignation,1911 to 1944
+1919-07_swansea_east,Swansea East,1919-07-10,Swansea,1919,0,0,death,1911 to 1944
+1919-08_widnes,Widnes,1919-08-30,Widnes,1919,0,1,resignation,1911 to 1944
+1919-09_pontefract,Pontefract,1919-09-06,Pontefract,1919,0,0,death,1911 to 1944
+1919-10_manchester_rusholme,Manchester Rusholme,1919-10-07,Manchester,1919,0,0,death,1911 to 1944
+1919-11_chester_le_street,Chester-le-Street,1919-11-13,Chester-le-Street,1919,0,0,resignation,1911 to 1944
+1919-11_croydon_south,Croydon South,1919-11-14,Croydon,1919,0,0,resignation,1911 to 1944
+1919-11_plymouth_sutton,Plymouth Sutton,1919-11-28,Plymouth,1919,0,0,resignation,1911 to 1944
+1919-12_st_albans,St Albans,1919-12-10,St Albans,1919,0,0,resignation,1911 to 1944
+1920-01_ashton_under_lyne,Ashton-under-Lyne,1920-01-31,Ashton-under-Lyne,1920,1,0,resignation,1911 to 1944
+1920-02_paisley,Paisley,1920-02-12,Paisley,1920,1,0,death,1911 to 1944
+1920-02_horncastle,Horncastle,1920-02-25,Horncastle,1920,1,0,resignation,1911 to 1944
+1920-03_stockport,Stockport,1920-03-27,Stockport,1920,1,0,death,1911 to 1944
+1920-03_dartford,Dartford,1920-03-27,Dartford,1920,1,1,death,1911 to 1944
+1920-03_basingstoke,Basingstoke,1920-03-31,Basingstoke,1920,1,0,resignation,1911 to 1944
+1920-04_northampton,Northampton,1920-04-01,Northampton,1920,0,0,same MP,1911 to 1944
+1920-04_edinburgh_south,Edinburgh South,1920-04-09,Edinburgh,1920,0,0,same MP,1911 to 1944
+1920-04_edinburgh_north,Edinburgh North,1920-04-09,Edinburgh,1920,0,0,resignation,1911 to 1944
+1920-04_sunderland,Sunderland,1920-04-24,Sunderland,1920,0,0,same MP,1911 to 1944
+1920-06_nelson_and_colne,Nelson and Colne,1920-06-17,Colne,1920,1,0,resignation,1911 to 1944
+1920-07_ebbw_vale,Ebbw Vale,1920-07-26,Ebbw Vale,1920,1,0,resignation,1911 to 1944
+1920-07_woodbridge,Woodbridge,1920-07-28,Woodbridge,1920,1,0,resignation,1911 to 1944
+1920-09_ilford,Ilford,1920-09-25,Ilford,1920,1,0,death,1911 to 1944
+1920-11_hemel_hempstead,Hemel Hempstead,1920-11-09,Hemel Hempstead,1920,1,0,death,1911 to 1944
+1920-11_middleton_and_prestwich,Middleton and Prestwich,1920-11-22,Middleton,1920,0,0,same MP,1911 to 1944
+1920-11_middleton_and_prestwich,Middleton and Prestwich,1920-11-22,Prestwich,1920,0,0,same MP,1911 to 1944
+1920-12_rhondda_west,Rhondda West,1920-12-21,Rhondda,1920,1,0,resignation,1911 to 1944
+1920-12_abertillery,Abertillery,1920-12-21,Abertillery,1920,1,0,resignation,1911 to 1944
+1921-01_hereford,Hereford,1921-01-11,Hereford,1921,1,0,resignation,1911 to 1944
+1921-01_dover,Dover,1921-01-12,Dover,1921,1,1,resignation,1911 to 1944
+1921-03_dudley,Dudley,1921-03-03,Dudley,1921,1,1,resignation,1911 to 1944
+1921-03_kirkcaldy_burghs,Kirkcaldy Burghs,1921-03-04,Kirkcaldy,1921,1,1,resignation,1911 to 1944
+1921-03_birmingham_moseley,Birmingham Moseley,1921-03-04,Birmingham,1921,0,0,resignation,1911 to 1944
+1921-03_penistone,Penistone,1921-03-05,Penistone,1921,1,1,resignation,1911 to 1944
+1921-03_birmingham_west,Birmingham West,1921-03-31,Birmingham,1921,0,0,same MP,1911 to 1944
+1921-04_taunton,Taunton,1921-04-08,Taunton,1921,1,0,resignation,1911 to 1944
+1921-04_bristol_west,Bristol West,1921-04-09,Bristol,1921,0,0,same MP,1911 to 1944
+1921-04_glasgow_pollok,Glasgow Pollok,1921-04-14,Glasgow,1921,0,0,same MP,1911 to 1944
+1921-04_bewdley,Bewdley,1921-04-19,Bewdley,1921,0,0,same MP,1911 to 1944
+1921-04_chichester,Chichester,1921-04-23,Chichester,1921,1,0,resignation,1911 to 1944
+1921-04_bedford,Bedford,1921-04-23,Bedford,1921,0,0,same MP,1911 to 1944
+1921-05_hastings,Hastings,1921-05-04,Hastings,1921,1,0,resignation,1911 to 1944
+1921-05_penrith_and_cockermouth,Penrith and Cockermouth,1921-05-13,Cockermouth,1921,1,0,resignation,1911 to 1944
+1921-05_penrith_and_cockermouth,Penrith and Cockermouth,1921-05-13,Penrith,1921,1,0,resignation,1911 to 1944
+1921-05_abingdon,Abingdon,1921-05-14,Abingdon,1921,1,0,resignation,1911 to 1944
+1921-06_heywood_and_radcliffe,Heywood and Radcliffe,1921-06-08,Heywood,1921,1,1,resignation,1911 to 1944
+1921-06_heywood_and_radcliffe,Heywood and Radcliffe,1921-06-08,Radcliffe,1921,1,1,resignation,1911 to 1944
+1921-06_belfast_duncairn,Belfast Duncairn,1921-06-23,Belfast,1921,0,0,resignation,1911 to 1944
+1921-07_hertford,Hertford,1921-07-16,Hertford,1921,1,1,resignation,1911 to 1944
+1921-08_caerphilly,Caerphilly,1921-08-24,Caerphilly,1921,1,0,death,1911 to 1944
+1921-08_south_londonderry,South Londonderry,1921-08-29,Londonderry,1921,0,0,resignation,1911 to 1944
+1921-10_westhoughton,Westhoughton,1921-10-05,Westhoughton,1921,1,0,death,1911 to 1944
+1922-01_ludlow,Ludlow,1922-01-04,Ludlow,1922,0,0,death,1911 to 1944
+1922-01_tamworth,Tamworth,1922-01-17,Tamworth,1922,0,0,death,1911 to 1944
+1922-01_south_londonderry,South Londonderry,1922-01-18,Londonderry,1922,0,0,death,1911 to 1944
+1922-02_manchester_clayton,Manchester Clayton,1922-02-18,Manchester,1922,0,1,death,1911 to 1944
+1922-02_bodmin,Bodmin,1922-02-24,Bodmin,1922,0,1,death,1911 to 1944
+1922-03_wolverhampton_west,Wolverhampton West,1922-03-07,Wolverhampton,1922,0,0,death,1911 to 1944
+1922-03_liverpool_exchange,Liverpool Exchange,1922-03-13,Liverpool,1922,0,0,same MP,1911 to 1944
+1922-03_cambridge,Cambridge,1922-03-16,Cambridge,1922,0,0,resignation,1911 to 1944
+1922-03_inverness,Inverness,1922-03-16,Inverness,1922,0,0,resignation,1911 to 1944
+1922-03_chertsey,Chertsey,1922-03-24,Chertsey,1922,0,0,death,1911 to 1944
+1922-03_leicester_east,Leicester East,1922-03-30,Leicester,1922,0,1,resignation,1911 to 1944
+1922-05_city_of_london,City of London,1922-05-19,City of London,1922,0,0,resignation,1911 to 1944
+1922-06_north_londonderry,North Londonderry,1922-06-04,Londonderry,1922,0,0,death,1911 to 1944
+1922-06_newbury,Newbury,1922-06-10,Newbury,1922,0,0,resignation,1911 to 1944
+1922-06_moray_and_nairn,Moray and Nairn,1922-06-21,Nairn,1922,0,0,resignation,1911 to 1944
+1922-06_banbury,Banbury,1922-06-22,Banbury,1922,0,0,same MP,1911 to 1944
+1922-06_nottingham_east,Nottingham East,1922-06-29,Nottingham,1922,0,0,death,1911 to 1944
+1922-07_pontypridd,Pontypridd,1922-07-25,Pontypridd,1922,0,1,resignation,1911 to 1944
+1922-12_portsmouth_south,Portsmouth South,1922-12-13,Portsmouth,1922,0,0,resignation,1911 to 1944
+1923-01_newcastle_upon_tyne_east,Newcastle-upon-Tyne East,1923-01-17,Newcastle upon Tyne,1923,0,0,death,1911 to 1944
+1923-02_darlington,Darlington,1923-02-28,Darlington,1923,0,0,resignation,1911 to 1944
+1923-03_mitcham,Mitcham,1923-03-03,Mitcham,1923,0,1,resignation,1911 to 1944
+1923-03_willesden_east,Willesden East,1923-03-03,Willesden,1923,0,1,resignation,1911 to 1944
+1923-03_liverpool_edge_hill,Liverpool Edge Hill,1923-03-06,Liverpool,1923,0,1,resignation,1911 to 1944
+1923-04_ludlow,Ludlow,1923-04-19,Ludlow,1923,0,0,resignation,1911 to 1944
+1923-05_berwick_upon_tweed,Berwick-upon-Tweed,1923-05-31,Berwick-upon-Tweed,1923,0,1,scandal,1911 to 1944
+1923-06_tiverton,Tiverton,1923-06-21,Tiverton,1923,0,1,death,1911 to 1944
+1923-06_morpeth,Morpeth,1923-06-21,Morpeth,1923,0,0,death,1911 to 1944
+1923-07_leeds_central,Leeds Central,1923-07-26,Leeds,1923,0,0,death,1911 to 1944
+1923-08_portsmouth_south,Portsmouth South,1923-08-13,Portsmouth,1923,0,0,resignation,1911 to 1944
+1923-10_yeovil,Yeovil,1923-10-30,Yeovil,1923,0,0,death,1911 to 1944
+1923-10_rutland_and_stamford,Rutland and Stamford,1923-10-30,Stamford,1923,0,0,death,1911 to 1944
+1924-02_city_of_london,City of London,1924-02-01,City of London,1924,0,0,resignation,1911 to 1944
+1924-02_burnley,Burnley,1924-02-28,Burnley,1924,0,0,death,1911 to 1944
+1924-03_dover,Dover,1924-03-12,Dover,1924,0,0,same MP,1911 to 1944
+1924-05_liverpool_west_toxteth,Liverpool West Toxteth,1924-05-22,Liverpool,1924,0,1,resignation,1911 to 1944
+1924-05_glasgow_kelvingrove,Glasgow Kelvingrove,1924-05-23,Glasgow,1924,0,0,death,1911 to 1944
+1924-06_oxford,Oxford,1924-06-05,Oxford,1924,0,1,scandal,1911 to 1944
+1924-07_lewes,Lewes,1924-07-09,Lewes,1924,0,0,resignation,1911 to 1944
+1924-08_carmarthen,Carmarthen,1924-08-14,Carmarthen,1924,0,0,resignation,1911 to 1944
+1924-12_dundee,Dundee,1924-12-22,Dundee,1924,0,0,death,1911 to 1944
+1925-02_walsall,Walsall,1925-02-27,Walsall,1925,0,0,same MP,1911 to 1944
+1925-06_ayr_burghs,Ayr Burghs,1925-06-12,Ayr,1925,0,0,resignation,1911 to 1944
+1925-06_eastbourne,Eastbourne,1925-06-17,Eastbourne,1925,0,0,resignation,1911 to 1944
+1925-06_oldham,Oldham,1925-06-24,Oldham,1925,0,0,resignation,1911 to 1944
+1925-09_stockport,Stockport,1925-09-17,Stockport,1925,0,1,death,1911 to 1944
+1925-12_bury_st_edmunds,Bury St Edmunds,1925-12-01,Bury St Edmunds,1925,0,0,same MP,1911 to 1944
+1925-12_ripon,Ripon,1925-12-05,Ripon,1925,1,0,resignation,1911 to 1944
+1926-02_darlington,Darlington,1926-02-17,Darlington,1926,1,1,death,1911 to 1944
+1926-07_wallsend,Wallsend,1926-07-21,Wallsend,1926,1,0,resignation,1911 to 1944
+1926-11_chelmsford,Chelmsford,1926-11-30,Chelmsford,1926,1,0,resignation,1911 to 1944
+1926-12_smethwick,Smethwick,1926-12-21,Smethwick,1926,1,0,resignation,1911 to 1944
+1927-02_stourbridge,Stourbridge,1927-02-23,Stourbridge,1927,1,1,death,1911 to 1944
+1927-06_westbury,Westbury,1927-06-16,Westbury,1927,1,0,death,1911 to 1944
+1927-06_brixton,Brixton,1927-06-27,Brixton,1927,1,0,resignation,1911 to 1944
+1927-11_southend,Southend,1927-11-19,Southend,1927,1,0,resignation,1911 to 1944
+1927-11_canterbury,Canterbury,1927-11-24,Canterbury,1927,1,0,resignation,1911 to 1944
+1928-01_northampton,Northampton,1928-01-09,Northampton,1928,1,1,death,1911 to 1944
+1928-01_faversham,Faversham,1928-01-25,Faversham,1928,1,0,death,1911 to 1944
+1928-02_bristol_west,Bristol West,1928-02-02,Bristol,1928,0,0,resignation,1911 to 1944
+1928-02_ilford,Ilford,1928-02-23,Ilford,1928,1,0,death,1911 to 1944
+1928-03_middlesbrough_west,Middlesbrough West,1928-03-07,Middlesbrough,1928,1,0,death,1911 to 1944
+1928-06_carmarthen,Carmarthen,1928-06-28,Carmarthen,1928,0,0,resignation,1911 to 1944
+1928-07_epsom,Epsom,1928-07-04,Epsom,1928,0,0,resignation,1911 to 1944
+1928-07_halifax,Halifax,1928-07-13,Halifax,1928,0,1,resignation,1911 to 1944
+1928-07_sheffield_hallam,Sheffield Hallam,1928-07-16,Sheffield,1928,0,0,resignation,1911 to 1944
+1928-08_aberdeen_north,Aberdeen North,1928-08-16,Aberdeen,1928,0,0,death,1911 to 1944
+1928-09_cheltenham,Cheltenham,1928-09-26,Cheltenham,1928,0,0,death,1911 to 1944
+1928-10_tavistock,Tavistock,1928-10-11,Tavistock,1928,0,0,death,1911 to 1944
+1928-10_ashton_under_lyne,Ashton-under-Lyne,1928-10-29,Ashton-under-Lyne,1928,0,1,scandal,1911 to 1944
+1929-01_londonderry,Londonderry,1929-01-29,Londonderry,1929,0,0,resignation,1911 to 1944
+1929-02_battersea_south,Battersea South,1929-02-07,Battersea,1929,0,1,resignation,1911 to 1944
+1929-02_bishop_auckland,Bishop Auckland,1929-02-07,Bishop Auckland,1929,0,0,death,1911 to 1944
+1929-03_liverpool_east_toxteth,Liverpool East Toxteth,1929-03-19,Liverpool,1929,0,0,death,1911 to 1944
+1929-03_bath,Bath,1929-03-21,Bath,1929,0,0,death,1911 to 1944
+1929-07_preston,Preston,1929-07-31,Preston,1929,0,1,same MP,1911 to 1944
+1929-08_leeds_south_east,Leeds South East,1929-08-01,Leeds,1929,0,0,resignation,1911 to 1944
+1929-11_kilmarnock,Kilmarnock,1929-11-27,Kilmarnock,1929,0,0,death,1911 to 1944
+1929-12_tamworth,Tamworth,1929-12-02,Tamworth,1929,0,0,resignation,1911 to 1944
+1929-12_liverpool_scotland,Liverpool Scotland,1929-12-14,Liverpool,1929,0,1,death,1911 to 1944
+1930-02_sheffield_brightside,Sheffield Brightside,1930-02-06,Sheffield,1930,0,0,resignation,1911 to 1944
+1930-05_fulham_west,Fulham West,1930-05-06,Fulham,1930,0,1,resignation,1911 to 1944
+1930-05_nottingham_central,Nottingham Central,1930-05-27,Nottingham,1930,0,0,resignation,1911 to 1944
+1930-06_glasgow_shettleston,Glasgow Shettleston,1930-06-26,Glasgow,1930,0,0,death,1911 to 1944
+1930-11_shipley,Shipley,1930-11-06,Shipley,1930,0,1,death,1911 to 1944
+1931-01_bristol_east,Bristol East,1931-01-16,Bristol,1931,0,0,death,1911 to 1944
+1931-02_liverpool_east_toxteth,Liverpool East Toxteth,1931-02-05,Liverpool,1931,0,0,resignation,1911 to 1944
+1931-02_islington_east,Islington East,1931-02-19,Islington,1931,0,0,death,1911 to 1944
+1931-02_fareham,Fareham,1931-02-20,Fareham,1931,0,0,resignation,1911 to 1944
+1931-03_pontypridd,Pontypridd,1931-03-19,Pontypridd,1931,0,0,resignation,1911 to 1944
+1931-03_sunderland,Sunderland,1931-03-26,Sunderland,1931,0,1,death,1911 to 1944
+1931-04_ashton_under_lyne,Ashton-under-Lyne,1931-04-30,Ashton-under-Lyne,1931,0,1,death,1911 to 1944
+1931-05_scarborough_and_whitby,Scarborough and Whitby,1931-05-06,Scarborough,1931,0,0,resignation,1911 to 1944
+1931-05_scarborough_and_whitby,Scarborough and Whitby,1931-05-06,Whitby,1931,0,0,resignation,1911 to 1944
+1931-05_glasgow_st_rollox,Glasgow St Rollox,1931-05-07,Glasgow,1931,0,0,death,1911 to 1944
+1931-05_stroud,Stroud,1931-05-21,Stroud,1931,0,0,resignation,1911 to 1944
+1931-05_rutherglen,Rutherglen,1931-05-21,Rutherglen,1931,0,0,death,1911 to 1944
+1931-06_gateshead,Gateshead,1931-06-08,Gateshead,1931,0,0,death,1911 to 1944
+1931-06_manchester_ardwick,Manchester Ardwick,1931-06-22,Manchester,1931,0,0,death,1911 to 1944
+1931-06_liverpool_wavertree,Liverpool Wavertree,1931-06-23,Liverpool,1931,0,0,resignation,1911 to 1944
+1931-08_guildford,Guildford,1931-08-25,Guildford,1931,0,0,death,1911 to 1944
+1932-02_croydon_south,Croydon South,1932-02-09,Croydon,1932,0,0,resignation,1911 to 1944
+1932-02_henley,Henley,1932-02-25,Henley,1932,0,0,death,1911 to 1944
+1932-04_wakefield,Wakefield,1932-04-21,Wakefield,1932,0,1,death,1911 to 1944
+1932-04_eastbourne,Eastbourne,1932-04-28,Eastbourne,1932,0,0,death,1911 to 1944
+1932-06_montrose_burghs,Montrose Burghs,1932-06-28,Montrose,1932,0,0,resignation,1911 to 1944
+1932-07_wednesbury,Wednesbury,1932-07-26,Wednesbury,1932,0,1,resignation,1911 to 1944
+1933-01_liverpool_exchange,Liverpool Exchange,1933-01-19,Liverpool,1933,0,0,death,1911 to 1944
+1933-02_rotherham,Rotherham,1933-02-27,Rotherham,1933,1,1,resignation,1911 to 1944
+1933-03_rhondda_east,Rhondda East,1933-03-28,Rhondda,1933,1,0,death,1911 to 1944
+1933-05_normanton,Normanton,1933-05-08,Normanton,1933,1,0,death,1911 to 1944
+1933-06_hitchin,Hitchin,1933-06-08,Hitchin,1933,1,0,death,1911 to 1944
+1933-06_altrincham,Altrincham,1933-06-14,Altrincham,1933,1,0,resignation,1911 to 1944
+1933-09_clay_cross,Clay Cross,1933-09-01,Clay Cross,1933,1,0,death,1911 to 1944
+1933-10_fulham_east,Fulham East,1933-10-25,Fulham,1933,1,1,death,1911 to 1944
+1933-11_kilmarnock,Kilmarnock,1933-11-02,Kilmarnock,1933,1,0,resignation,1911 to 1944
+1933-11_skipton,Skipton,1933-11-07,Skipton,1933,1,0,death,1911 to 1944
+1933-11_manchester_rusholme,Manchester Rusholme,1933-11-21,Manchester,1933,0,0,resignation,1911 to 1944
+1933-11_rutland_and_stamford,Rutland and Stamford,1933-11-21,Stamford,1933,1,0,death,1911 to 1944
+1934-02_cambridge,Cambridge,1934-02-08,Cambridge,1934,1,0,resignation,1911 to 1944
+1934-02_lowestoft,Lowestoft,1934-02-15,Lowestoft,1934,1,0,resignation,1911 to 1944
+1934-02_portsmouth_north,Portsmouth North,1934-02-19,Portsmouth,1934,0,0,resignation,1911 to 1944
+1934-04_basingstoke,Basingstoke,1934-04-19,Basingstoke,1934,1,0,resignation,1911 to 1944
+1934-05_hemsworth,Hemsworth,1934-05-17,Hemsworth,1934,1,0,death,1911 to 1944
+1934-06_merthyr,Merthyr,1934-06-05,Merthyr,1934,1,1,death,1911 to 1944
+1934-06_monmouth,Monmouth,1934-06-14,Monmouth,1934,1,0,death,1911 to 1944
+1934-06_weston_super_mare,Weston-super-Mare,1934-06-26,Weston-super-Mare,1934,1,0,resignation,1911 to 1944
+1934-10_swindon,Swindon,1934-10-25,Swindon,1934,1,1,resignation,1911 to 1944
+1934-11_putney,Putney,1934-11-28,Putney,1934,0,0,death,1911 to 1944
+1935-02_liverpool_wavertree,Liverpool Wavertree,1935-02-06,Liverpool,1935,0,1,resignation,1911 to 1944
+1935-03_eastbourne,Eastbourne,1935-03-29,Eastbourne,1935,0,0,death,1911 to 1944
+1935-05_edinburgh_west,Edinburgh West,1935-05-02,Edinburgh,1935,0,0,resignation,1911 to 1944
+1935-05_tamworth,Tamworth,1935-05-10,Tamworth,1935,0,0,death,1911 to 1944
+1935-05_aberdeen_south,Aberdeen South,1935-05-21,Aberdeen,1935,0,0,death,1911 to 1944
+1935-06_city_of_london,City of London,1935-06-26,City of London,1935,0,0,resignation,1911 to 1944
+1935-07_liverpool_west_derby,Liverpool West Derby,1935-07-06,Liverpool,1935,0,0,death,1911 to 1944
+1935-07_liverpool_west_toxteth,Liverpool West Toxteth,1935-07-16,Liverpool,1935,0,1,resignation,1911 to 1944
+1935-07_sevenoaks,Sevenoaks,1935-07-20,Sevenoaks,1935,0,0,resignation,1911 to 1944
+1936-02_ross_and_cromarty,Ross and Cromarty,1936-02-10,Cromarty,1936,0,1,resignation,1911 to 1944
+1936-03_llanelli,Llanelli,1936-03-26,Llanelli,1936,0,0,death,1911 to 1944
+1936-05_peckham,Peckham,1936-05-06,Peckham,1936,0,1,resignation,1911 to 1944
+1936-06_lewes,Lewes,1936-06-18,Lewes,1936,0,0,resignation,1911 to 1944
+1936-07_derby,Derby,1936-07-09,Derby,1936,0,1,resignation,1911 to 1944
+1936-07_balham_and_tooting,Balham and Tooting,1936-07-23,Tooting,1936,0,0,resignation,1911 to 1944
+1936-07_east_grinstead,East Grinstead,1936-07-23,East Grinstead,1936,0,0,resignation,1911 to 1944
+1936-10_birmingham_erdington,Birmingham Erdington,1936-10-20,Birmingham,1936,0,0,death,1911 to 1944
+1936-11_clay_cross,Clay Cross,1936-11-05,Clay Cross,1936,0,0,death,1911 to 1944
+1936-11_preston,Preston,1936-11-25,Preston,1936,1,0,resignation,1911 to 1944
+1936-11_greenock,Greenock,1936-11-26,Greenock,1936,1,1,death,1911 to 1944
+1937-02_manchester_gorton,Manchester Gorton,1937-02-18,Manchester,1937,0,0,death,1911 to 1944
+1937-03_tonbridge,Tonbridge,1937-03-23,Tonbridge,1937,1,0,death,1911 to 1944
+1937-03_farnham,Farnham,1937-03-23,Farnham,1937,1,0,resignation,1911 to 1944
+1937-04_stalybridge_and_hyde,Stalybridge and Hyde,1937-04-28,Stalybridge,1937,1,0,resignation,1911 to 1944
+1937-04_birmingham_west,Birmingham West,1937-04-29,Birmingham,1937,0,0,death,1911 to 1944
+1937-05_york,York,1937-05-06,York,1937,1,0,resignation,1911 to 1944
+1937-06_glasgow_hillhead,Glasgow Hillhead,1937-06-10,Glasgow,1937,0,0,resignation,1911 to 1944
+1937-06_buckingham,Buckingham,1937-06-11,Buckingham,1937,1,0,resignation,1911 to 1944
+1937-06_plymouth_drake,Plymouth Drake,1937-06-15,Plymouth,1937,0,0,death,1911 to 1944
+1937-06_cheltenham,Cheltenham,1937-06-22,Cheltenham,1937,1,1,resignation,1911 to 1944
+1937-06_hemel_hempstead,Hemel Hempstead,1937-06-22,Hemel Hempstead,1937,1,0,resignation,1911 to 1944
+1937-06_ilford,Ilford,1937-06-29,Ilford,1937,1,0,resignation,1911 to 1944
+1937-06_bewdley,Bewdley,1937-06-29,Bewdley,1937,1,0,resignation,1911 to 1944
+1937-07_chertsey,Chertsey,1937-07-02,Chertsey,1937,1,0,death,1911 to 1944
+1937-09_glasgow_springburn,Glasgow Springburn,1937-09-07,Glasgow,1937,0,0,death,1911 to 1944
+1937-10_islington_north,Islington North,1937-10-13,Islington,1937,0,1,death,1911 to 1944
+1937-11_hastings,Hastings,1937-11-24,Hastings,1937,1,0,resignation,1911 to 1944
+1938-01_farnworth,Farnworth,1938-01-27,Farnworth,1938,1,0,death,1911 to 1944
+1938-02_pontypridd,Pontypridd,1938-02-11,Pontypridd,1938,1,0,death,1911 to 1944
+1938-02_ipswich,Ipswich,1938-02-16,Ipswich,1938,1,1,resignation,1911 to 1944
+1938-04_city_of_london,City of London,1938-04-06,City of London,1938,0,0,death,1911 to 1944
+1938-04_fulham_west,Fulham West,1938-04-06,Fulham,1938,1,1,death,1911 to 1944
+1938-05_lichfield,Lichfield,1938-05-05,Lichfield,1938,1,1,death,1911 to 1944
+1938-05_aylesbury,Aylesbury,1938-05-19,Aylesbury,1938,1,0,resignation,1911 to 1944
+1938-06_stafford,Stafford,1938-06-09,Stafford,1938,1,0,resignation,1911 to 1944
+1938-06_barnsley,Barnsley,1938-06-16,Barnsley,1938,1,0,death,1911 to 1944
+1938-07_willesden_east,Willesden East,1938-07-28,Willesden,1938,1,0,death,1911 to 1944
+1938-10_oxford,Oxford,1938-10-27,Oxford,1938,1,0,death,1911 to 1944
+1938-11_dartford,Dartford,1938-11-07,Dartford,1938,1,1,death,1911 to 1944
+1938-11_walsall,Walsall,1938-11-16,Walsall,1938,1,0,death,1911 to 1944
+1938-11_bridgwater,Bridgwater,1938-11-17,Bridgwater,1938,1,1,resignation,1911 to 1944
+1938-11_doncaster,Doncaster,1938-11-17,Doncaster,1938,0,0,death,1911 to 1944
+1938-11_fylde,Fylde,1938-11-30,Fylde,1938,1,0,death,1911 to 1944
+1938-12_kinross_and_western_perthshire,Kinross and Western Perthshire,1938-12-21,Kinross,1938,1,0,resignation,1911 to 1944
+1939-02_ripon,Ripon,1939-02-23,Ripon,1939,1,0,death,1911 to 1944
+1939-03_batley_and_morley,Batley and Morley,1939-03-09,Batley,1939,1,0,death,1911 to 1944
+1939-03_batley_and_morley,Batley and Morley,1939-03-09,Morley,1939,1,0,death,1911 to 1944
+1939-05_sheffield_hallam,Sheffield Hallam,1939-05-10,Sheffield,1939,0,0,death,1911 to 1944
+1939-05_birmingham_aston,Birmingham Aston,1939-05-17,Aston,1939,1,0,resignation,1911 to 1944
+1939-05_birmingham_aston,Birmingham Aston,1939-05-17,Birmingham,1939,0,0,resignation,1911 to 1944
+1939-05_kennington,Kennington,1939-05-24,Kennington,1939,1,1,death,1911 to 1944
+1939-07_caerphilly,Caerphilly,1939-07-04,Caerphilly,1939,1,0,death,1911 to 1944
+1939-07_portsmouth_south,Portsmouth South,1939-07-12,Portsmouth,1939,0,0,resignation,1911 to 1944
+1939-07_monmouth,Monmouth,1939-07-25,Monmouth,1939,1,0,resignation,1911 to 1944
+1939-08_brecon_and_radnorshire,Brecon and Radnorshire,1939-08-01,Brecon,1939,1,1,resignation,1911 to 1944
+1939-10_fareham,Fareham,1939-10-06,Fareham,1939,1,0,resignation,1911 to 1944
+1939-10_high_peak,High Peak,1939-10-07,High Peak,1939,1,0,death,1911 to 1944
+1939-10_ormskirk,Ormskirk,1939-10-27,Ormskirk,1939,1,0,resignation,1911 to 1944
+1939-10_ashton_under_lyne,Ashton-under-Lyne,1939-10-28,Ashton-under-Lyne,1939,1,0,death,1911 to 1944
+1939-11_macclesfield,Macclesfield,1939-11-22,Macclesfield,1939,1,0,resignation,1911 to 1944
+1939-12_streatham,Streatham,1939-12-07,Streatham,1939,1,0,resignation,1911 to 1944
+1939-12_stretford,Stretford,1939-12-08,Stretford,1939,1,0,death,1911 to 1944
+1939-12_wells,Wells,1939-12-13,Wells,1939,1,0,death,1911 to 1944
+1940-02_southampton,Southampton,1940-02-01,Southampton,1940,0,1,resignation,1911 to 1944
+1940-02_swansea_east,Swansea East,1940-02-05,Swansea,1940,1,0,resignation,1911 to 1944
+1940-02_city_of_london,City of London,1940-02-05,City of London,1940,0,1,resignation,1911 to 1944
+1940-02_belfast_east,Belfast East,1940-02-08,Belfast,1940,0,0,resignation,1911 to 1944
+1940-03_kettering,Kettering,1940-03-06,Kettering,1940,1,0,resignation,1911 to 1944
+1940-03_city_of_chester,City of Chester,1940-03-07,Chester,1940,1,0,resignation,1911 to 1944
+1940-03_leeds_north_east,Leeds North East,1940-03-13,Leeds,1940,0,0,resignation,1911 to 1944
+1940-04_battersea_north,Battersea North,1940-04-17,Battersea,1940,1,0,resignation,1911 to 1944
+1940-04_glasgow_pollok,Glasgow Pollok,1940-04-30,Glasgow,1940,0,0,death,1911 to 1944
+1940-05_brighton,Brighton,1940-05-09,Brighton,1940,0,0,resignation,1911 to 1944
+1940-06_middleton_and_prestwich,Middleton and Prestwich,1940-06-01,Middleton,1940,1,0,death,1911 to 1944
+1940-06_middleton_and_prestwich,Middleton and Prestwich,1940-06-01,Prestwich,1940,1,0,death,1911 to 1944
+1940-06_newcastle_upon_tyne_north,Newcastle upon Tyne North,1940-06-07,Newcastle upon Tyne,1940,0,1,resignation,1911 to 1944
+1940-06_bow_and_bromley,Bow and Bromley,1940-06-12,Bow,1940,1,0,death,1911 to 1944
+1940-06_croydon_north,Croydon North,1940-06-19,Croydon,1940,1,0,resignation,1911 to 1944
+1940-06_bournemouth,Bournemouth,1940-06-27,Bournemouth,1940,1,0,resignation,1911 to 1944
+1940-07_newcastle_upon_tyne_west,Newcastle upon Tyne West,1940-07-05,Newcastle upon Tyne,1940,0,0,resignation,1911 to 1944
+1940-07_montrose_burghs,Montrose Burghs,1940-07-05,Montrose,1940,1,0,resignation,1911 to 1944
+1940-07_nottingham_central,Nottingham Central,1940-07-19,Nottingham,1940,0,0,death,1911 to 1944
+1940-07_rochdale,Rochdale,1940-07-20,Rochdale,1940,1,0,resignation,1911 to 1944
+1940-08_middlesbrough_west,Middlesbrough West,1940-08-07,Middlesbrough,1940,1,0,resignation,1911 to 1944
+1940-08_mitcham,Mitcham,1940-08-19,Mitcham,1940,1,0,death,1911 to 1944
+1940-08_heywood_and_radcliffe,Heywood and Radcliffe,1940-08-28,Heywood,1940,1,0,death,1911 to 1944
+1940-08_heywood_and_radcliffe,Heywood and Radcliffe,1940-08-28,Radcliffe,1940,1,0,death,1911 to 1944
+1940-09_bolton,Bolton,1940-09-13,Bolton,1940,1,0,death,1911 to 1944
+1940-09_manchester_exchange,Manchester Exchange,1940-09-21,Manchester,1940,0,0,death,1911 to 1944
+1940-09_preston,Preston,1940-09-25,Preston,1940,1,0,death,1911 to 1944
+1940-11_aldershot,Aldershot,1940-11-26,Aldershot,1940,1,0,resignation,1911 to 1944
+1940-11_southampton,Southampton,1940-11-27,Southampton,1940,0,1,resignation,1911 to 1944
+1940-12_northampton,Northampton,1940-12-06,Northampton,1940,1,0,resignation,1911 to 1944
+1940-12_birmingham_edgbaston,Birmingham Edgbaston,1940-12-18,Birmingham,1940,0,0,death,1911 to 1944
+1941-02_doncaster,Doncaster,1941-02-06,Doncaster,1941,1,0,death,1911 to 1944
+1941-02_petersfield,Petersfield,1941-02-22,Petersfield,1941,1,0,resignation,1911 to 1944
+1941-03_hitchin,Hitchin,1941-03-10,Hitchin,1941,1,0,death,1911 to 1944
+1941-03_bodmin,Bodmin,1941-03-11,Bodmin,1941,1,0,death,1911 to 1944
+1941-03_carmarthen,Carmarthen,1941-03-26,Carmarthen,1941,1,0,resignation,1911 to 1944
+1941-04_great_yarmouth,Great Yarmouth,1941-04-08,Great Yarmouth,1941,1,0,death,1911 to 1944
+1941-04_west_bromwich,West Bromwich,1941-04-16,West Bromwich,1941,1,0,resignation,1911 to 1944
+1941-04_mansfield,Mansfield,1941-04-22,Mansfield,1941,1,0,death,1911 to 1944
+1941-07_greenock,Greenock,1941-07-10,Greenock,1941,1,0,resignation,1911 to 1944
+1941-07_edinburgh_west,Edinburgh West,1941-07-12,Edinburgh,1941,0,0,resignation,1911 to 1944
+1941-07_dudley,Dudley,1941-07-23,Dudley,1941,1,0,death,1911 to 1944
+1941-07_pontefract,Pontefract,1941-07-24,Pontefract,1941,1,0,death,1911 to 1944
+1941-08_berwick_upon_tweed,Berwick-upon-Tweed,1941-08-18,Berwick-upon-Tweed,1941,1,0,resignation,1911 to 1944
+1941-09_scarborough_and_whitby,Scarborough and Whitby,1941-09-24,Scarborough,1941,1,0,scandal,1911 to 1944
+1941-09_scarborough_and_whitby,Scarborough and Whitby,1941-09-24,Whitby,1941,1,0,scandal,1911 to 1944
+1941-11_brighton,Brighton,1941-11-15,Brighton,1941,0,0,resignation,1911 to 1944
+1941-12_harrow,Harrow,1941-12-02,Harrow,1941,1,0,death,1911 to 1944
+1941-12_edinburgh_central,Edinburgh Central,1941-12-11,Edinburgh,1941,0,0,resignation,1911 to 1944
+1942-02_keighley,Keighley,1942-02-13,Keighley,1942,1,0,death,1911 to 1944
+1942-03_nuneaton,Nuneaton,1942-03-09,Nuneaton,1942,1,0,resignation,1911 to 1944
+1942-03_manchester_gorton,Manchester Gorton,1942-03-11,Manchester,1942,0,0,resignation,1911 to 1944
+1942-03_newcastle_under_lyme,Newcastle-under-Lyme,1942-03-11,Newcastle-under-Lyme,1942,1,0,resignation,1911 to 1944
+1942-03_wigan,Wigan,1942-03-11,Wigan,1942,1,0,death,1911 to 1944
+1942-03_grantham,Grantham,1942-03-25,Grantham,1942,1,1,resignation,1911 to 1944
+1942-04_tavistock,Tavistock,1942-04-02,Tavistock,1942,1,0,death,1911 to 1944
+1942-04_cardiff_east,Cardiff East,1942-04-13,Cardiff,1942,0,1,resignation,1911 to 1944
+1942-04_glasgow_cathcart,Glasgow Cathcart,1942-04-29,Glasgow,1942,0,0,death,1911 to 1944
+1942-04_wallasey,Wallasey,1942-04-29,Wallasey,1942,1,1,resignation,1911 to 1944
+1942-04_rugby,Rugby,1942-04-29,Rugby,1942,1,1,resignation,1911 to 1944
+1942-05_putney,Putney,1942-05-08,Putney,1942,1,0,death,1911 to 1944
+1942-05_chichester,Chichester,1942-05-25,Chichester,1942,1,0,death,1911 to 1944
+1942-06_llandaff_and_barry,Llandaff and Barry,1942-06-10,Barry,1942,1,0,death,1911 to 1944
+1942-06_maldon,Maldon,1942-06-25,Maldon,1942,1,1,death,1911 to 1944
+1942-07_spennymoor,Spennymoor,1942-07-21,Spennymoor,1942,1,0,resignation,1911 to 1944
+1942-08_rothwell,Rothwell,1942-08-07,Rothwell,1942,1,0,death,1911 to 1944
+1942-08_sheffield_park,Sheffield Park,1942-08-27,Sheffield,1942,0,0,death,1911 to 1944
+1942-10_manchester_clayton,Manchester Clayton,1942-10-17,Manchester,1942,0,0,death,1911 to 1944
+1943-02_belfast_west,Belfast West,1943-02-09,Belfast,1943,0,1,death,1911 to 1944
+1943-02_midlothian_and_peebles_northern,Midlothian and Peebles Northern,1943-02-11,Peebles,1943,1,0,resignation,1911 to 1944
+1943-02_kings_lynn,King's Lynn,1943-02-12,King's Lynn,1943,1,0,death,1911 to 1944
+1943-02_portsmouth_north,Portsmouth North,1943-02-16,Portsmouth,1943,0,0,resignation,1911 to 1944
+1943-02_bristol_central,Bristol Central,1943-02-18,Bristol,1943,0,0,death,1911 to 1944
+1943-02_watford,Watford,1943-02-23,Watford,1943,1,0,resignation,1911 to 1944
+1943-04_buckingham,Buckingham,1943-04-04,Buckingham,1943,1,0,death,1911 to 1944
+1943-04_daventry,Daventry,1943-04-20,Daventry,1943,1,1,death,1911 to 1944
+1943-06_the_hartlepools,The Hartlepools,1943-06-01,Hartlepool,1943,1,0,death,1911 to 1944
+1943-06_newark,Newark,1943-06-08,Newark,1943,1,0,resignation,1911 to 1944
+1943-06_birmingham_aston,Birmingham Aston,1943-06-09,Aston,1943,1,0,death,1911 to 1944
+1943-06_birmingham_aston,Birmingham Aston,1943-06-09,Birmingham,1943,0,0,death,1911 to 1944
+1943-08_chippenham,Chippenham,1943-08-24,Chippenham,1943,1,0,death,1911 to 1944
+1943-10_st_albans,St Albans,1943-10-05,St Albans,1943,1,0,death,1911 to 1944
+1943-10_peterborough,Peterborough,1943-10-15,Peterborough,1943,1,0,resignation,1911 to 1944
+1943-11_consett,Consett,1943-11-15,Consett,1943,1,0,death,1911 to 1944
+1943-12_darwen,Darwen,1943-12-15,Darwen,1943,1,0,death,1911 to 1944
+1944-01_skipton,Skipton,1944-01-07,Skipton,1944,1,1,death,1911 to 1944
+1944-02_brighton,Brighton,1944-02-03,Brighton,1944,1,0,resignation,1911 to 1944
+1944-02_kirkcaldy_burghs,Kirkcaldy Burghs,1944-02-17,Kirkcaldy,1944,1,0,resignation,1911 to 1944
+1944-02_sheffield_attercliffe,Sheffield Attercliffe,1944-02-21,Sheffield,1944,0,0,resignation,1911 to 1944
+1944-02_bury_st_edmunds,Bury St Edmunds,1944-02-29,Bury St Edmunds,1944,1,0,death,1911 to 1944
+1944-04_clay_cross,Clay Cross,1944-04-14,Clay Cross,1944,1,0,death,1911 to 1944
+1944-07_manchester_rusholme,Manchester Rusholme,1944-07-08,Manchester,1944,0,0,death,1911 to 1944
+1944-09_bilston,Bilston,1944-09-20,Bilston,1944,0,0,death,1911 to 1944
+1944-10_chelsea,Chelsea,1944-10-11,Chelsea,1944,0,0,resignation,1911 to 1944
+1944-10_berwick_upon_tweed,Berwick-upon-Tweed,1944-10-17,Berwick-upon-Tweed,1944,0,0,death,1911 to 1944
+1945-04_motherwell,Motherwell,1945-04-12,Motherwell,1945,0,1,death,1945 to 1979
+1945-04_chelmsford,Chelmsford,1945-04-26,Chelmsford,1945,0,1,death,1945 to 1979
+1945-05_middlesbrough_west,Middlesbrough West,1945-05-14,Middlesbrough,1945,0,0,death,1945 to 1979
+1945-05_neath,Neath,1945-05-15,Neath,1945,0,0,death,1945 to 1979
+1945-10_smethwick,Smethwick,1945-10-01,Smethwick,1945,0,0,death,1945 to 1979
+1945-10_ashton_under_lyne,Ashton-under-Lyne,1945-10-02,Ashton-under-Lyne,1945,0,0,resignation,1945 to 1979
+1945-10_edinburgh_east,Edinburgh East,1945-10-03,Edinburgh,1945,0,0,resignation,1945 to 1979
+1945-10_monmouth,Monmouth,1945-10-31,Monmouth,1945,0,0,death,1945 to 1979
+1945-10_city_of_london,City of London,1945-10-31,City of London,1945,0,0,resignation,1945 to 1979
+1945-11_bournemouth,Bournemouth,1945-11-15,Bournemouth,1945,0,0,resignation,1945 to 1979
+1945-11_kensington_south,Kensington South,1945-11-20,Kensington,1945,0,0,resignation,1945 to 1979
+1945-12_tottenham_north,Tottenham North,1945-12-13,Tottenham,1945,0,0,resignation,1945 to 1979
+1946-01_preston,Preston,1946-01-31,Preston,1946,0,0,death,1945 to 1979
+1946-02_glasgow_cathcart,Glasgow Cathcart,1946-02-12,Glasgow,1946,0,0,death,1945 to 1979
+1946-02_heywood_and_radcliffe,Heywood and Radcliffe,1946-02-21,Heywood,1946,0,0,death,1945 to 1979
+1946-02_heywood_and_radcliffe,Heywood and Radcliffe,1946-02-21,Radcliffe,1946,0,0,death,1945 to 1979
+1946-02_hemsworth,Hemsworth,1946-02-22,Hemsworth,1946,0,0,death,1945 to 1979
+1946-07_bexley,Bexley,1946-07-22,Bexley,1946,1,0,resignation,1945 to 1979
+1946-07_pontypool,Pontypool,1946-07-23,Pontypool,1946,1,0,death,1945 to 1979
+1946-07_battersea_north,Battersea North,1946-07-25,Battersea,1946,1,0,resignation,1945 to 1979
+1946-08_glasgow_bridgeton,Glasgow Bridgeton,1946-08-29,Glasgow,1946,0,0,death,1945 to 1979
+1946-11_aberdeen_south,Aberdeen South,1946-11-26,Aberdeen,1946,0,0,resignation,1945 to 1979
+1946-12_aberdare,Aberdare,1946-12-05,Aberdare,1946,1,0,resignation,1945 to 1979
+1946-12_kilmarnock,Kilmarnock,1946-12-05,Kilmarnock,1946,1,0,resignation,1945 to 1979
+1947-02_normanton,Normanton,1947-02-11,Normanton,1947,1,0,resignation,1945 to 1979
+1947-05_jarrow,Jarrow,1947-05-07,Jarrow,1947,1,0,death,1945 to 1979
+1947-09_liverpool_edge_hill,Liverpool Edge Hill,1947-09-11,Liverpool,1947,0,0,death,1945 to 1979
+1947-09_islington_west,Islington West,1947-09-25,Islington,1947,0,0,resignation,1945 to 1979
+1947-11_gravesend,Gravesend,1947-11-26,Gravesend,1947,1,0,scandal,1945 to 1979
+1947-11_edinburgh_east,Edinburgh East,1947-11-27,Edinburgh,1947,0,0,resignation,1945 to 1979
+1947-12_epsom,Epsom,1947-12-04,Epsom,1947,1,0,resignation,1945 to 1979
+1948-01_glasgow_camlachie,Glasgow Camlachie,1948-01-28,Glasgow,1948,0,1,death,1945 to 1979
+1948-02_paisley,Paisley,1948-02-18,Paisley,1948,1,0,resignation,1945 to 1979
+1948-03_wigan,Wigan,1948-03-04,Wigan,1948,1,0,death,1945 to 1979
+1948-03_croydon_north,Croydon North,1948-03-11,Croydon,1948,1,0,resignation,1945 to 1979
+1948-03_brigg,Brigg,1948-03-24,Brigg,1948,1,0,resignation,1945 to 1979
+1948-09_glasgow_gorbals,Glasgow Gorbals,1948-09-30,Glasgow,1948,0,0,resignation,1945 to 1979
+1948-10_stirling_and_falkirk,Stirling and Falkirk,1948-10-07,Falkirk,1948,1,0,death,1945 to 1979
+1948-10_stirling_and_falkirk,Stirling and Falkirk,1948-10-07,Stirling,1948,1,0,death,1945 to 1979
+1948-11_edmonton,Edmonton,1948-11-13,Edmonton,1948,1,0,death,1945 to 1979
+1948-11_glasgow_hillhead,Glasgow Hillhead,1948-11-25,Glasgow,1948,0,0,resignation,1945 to 1979
+1949-02_batley_and_morley,Batley and Morley,1949-02-17,Batley,1949,1,0,death,1945 to 1979
+1949-02_batley_and_morley,Batley and Morley,1949-02-17,Morley,1949,1,0,death,1945 to 1979
+1949-07_leeds_west,Leeds West,1949-07-21,Leeds,1949,0,0,death,1945 to 1979
+1949-12_bradford_south,Bradford South,1949-12-08,Bradford,1949,0,0,death,1945 to 1979
+1950-04_sheffield_neepsend,Sheffield Neepsend,1950-04-05,Sheffield,1950,0,0,resignation,1945 to 1979
+1950-05_brighouse_and_spenborough,Brighouse and Spenborough,1950-05-04,Brighouse,1950,0,0,death,1945 to 1979
+1950-09_leicester_north_east,Leicester North East,1950-09-28,Leicester,1950,0,0,resignation,1945 to 1979
+1950-10_glasgow_scotstoun,Glasgow Scotstoun,1950-10-25,Glasgow,1950,0,0,death,1945 to 1979
+1950-11_oxford,Oxford,1950-11-02,Oxford,1950,0,0,resignation,1945 to 1979
+1950-11_birmingham_handsworth,Birmingham Handsworth,1950-11-16,Birmingham,1950,0,0,death,1945 to 1979
+1950-11_belfast_west,Belfast West,1950-11-29,Belfast,1950,0,0,scandal,1945 to 1979
+1950-11_bristol_south_east,Bristol South East,1950-11-30,Bristol,1950,0,0,resignation,1945 to 1979
+1950-11_abertillery,Abertillery,1950-11-30,Abertillery,1950,0,0,death,1945 to 1979
+1951-02_bristol_west,Bristol West,1951-02-15,Bristol,1951,0,0,death,1945 to 1979
+1951-04_ormskirk,Ormskirk,1951-04-05,Ormskirk,1951,0,0,resignation,1945 to 1979
+1951-04_harrow_west,Harrow West,1951-04-21,Harrow,1951,0,0,resignation,1945 to 1979
+1951-05_londonderry,Londonderry,1951-05-19,Londonderry,1951,0,0,resignation,1945 to 1979
+1951-06_westhoughton,Westhoughton,1951-06-21,Westhoughton,1951,0,0,resignation,1945 to 1979
+1952-02_bournemouth_east_and_christchurch,Bournemouth East and Christchurch,1952-02-06,Bournemouth,1952,0,0,resignation,1945 to 1979
+1952-02_southport,Southport,1952-02-06,Southport,1952,0,0,resignation,1945 to 1979
+1952-02_leeds_south_east,Leeds South East,1952-02-07,Leeds,1952,0,0,resignation,1945 to 1979
+1952-07_dundee_east,Dundee East,1952-07-17,Dundee,1952,0,0,death,1945 to 1979
+1952-11_belfast_south,Belfast South,1952-11-04,Belfast,1952,0,0,resignation,1945 to 1979
+1952-11_birmingham_small_heath,Birmingham Small Heath,1952-11-27,Birmingham,1952,0,0,death,1945 to 1979
+1952-11_farnworth,Farnworth,1952-11-27,Farnworth,1952,1,0,death,1945 to 1979
+1953-02_canterbury,Canterbury,1953-02-12,Canterbury,1953,1,0,resignation,1945 to 1979
+1953-03_barnsley,Barnsley,1953-03-31,Barnsley,1953,1,0,resignation,1945 to 1979
+1953-03_stoke_on_trent_north,Stoke-on-Trent North,1953-03-31,Stoke-on-Trent,1953,0,0,death,1945 to 1979
+1953-05_sunderland_south,Sunderland South,1953-05-13,Sunderland,1953,1,1,death,1945 to 1979
+1953-06_abingdon,Abingdon,1953-06-30,Abingdon,1953,1,0,resignation,1945 to 1979
+1953-07_birmingham_edgbaston,Birmingham Edgbaston,1953-07-02,Birmingham,1953,0,0,resignation,1945 to 1979
+1953-11_crosby,Crosby,1953-11-12,Crosby,1953,1,0,resignation,1945 to 1979
+1953-11_ormskirk,Ormskirk,1953-11-12,Ormskirk,1953,1,0,resignation,1945 to 1979
+1954-02_ilford_north,Ilford North,1954-02-03,Ilford,1954,1,0,resignation,1945 to 1979
+1954-02_harwich,Harwich,1954-02-11,Harwich,1954,1,0,resignation,1945 to 1979
+1954-02_bournemouth_west,Bournemouth West,1954-02-18,Bournemouth,1954,0,0,resignation,1945 to 1979
+1954-03_arundel_and_shoreham,Arundel and Shoreham,1954-03-09,Arundel,1954,1,0,resignation,1945 to 1979
+1954-03_harrogate,Harrogate,1954-03-11,Harrogate,1954,1,0,resignation,1945 to 1979
+1954-04_edinburgh_east,Edinburgh East,1954-04-08,Edinburgh,1954,0,0,resignation,1945 to 1979
+1954-04_motherwell,Motherwell,1954-04-14,Motherwell,1954,1,0,death,1945 to 1979
+1954-09_croydon_east,Croydon East,1954-09-30,Croydon,1954,0,0,death,1945 to 1979
+1954-10_wakefield,Wakefield,1954-10-21,Wakefield,1954,0,0,death,1945 to 1979
+1954-10_aldershot,Aldershot,1954-10-28,Aldershot,1954,0,0,resignation,1945 to 1979
+1954-10_aberdare,Aberdare,1954-10-28,Aberdare,1954,0,0,death,1945 to 1979
+1954-11_sutton_and_cheam,Sutton and Cheam,1954-11-04,Sutton,1954,0,0,resignation,1945 to 1979
+1954-11_morpeth,Morpeth,1954-11-04,Morpeth,1954,0,0,death,1945 to 1979
+1954-11_liverpool_west_derby,Liverpool West Derby,1954-11-18,Liverpool,1954,0,0,resignation,1945 to 1979
+1954-12_inverness,Inverness,1954-12-21,Inverness,1954,0,0,resignation,1945 to 1979
+1955-01_orpington,Orpington,1955-01-20,Orpington,1955,0,0,death,1945 to 1979
+1955-01_edinburgh_north,Edinburgh North,1955-01-27,Edinburgh,1955,0,0,resignation,1945 to 1979
+1955-02_stockport_south,Stockport South,1955-02-03,Stockport,1955,0,0,resignation,1945 to 1979
+1955-03_wrexham,Wrexham,1955-03-17,Wrexham,1955,0,0,death,1945 to 1979
+1955-12_gateshead_west,Gateshead West,1955-12-07,Gateshead,1955,0,0,death,1945 to 1979
+1955-12_greenock,Greenock,1955-12-08,Greenock,1955,0,0,death,1945 to 1979
+1955-12_torquay,Torquay,1955-12-15,Torquay,1955,0,0,death,1945 to 1979
+1956-02_blaydon,Blaydon,1956-02-02,Blaydon,1956,0,0,death,1945 to 1979
+1956-02_leeds_north_east,Leeds North East,1956-02-09,Leeds,1956,0,0,resignation,1945 to 1979
+1956-02_gainsborough,Gainsborough,1956-02-14,Gainsborough,1956,0,0,resignation,1945 to 1979
+1956-02_hereford,Hereford,1956-02-14,Hereford,1956,0,0,resignation,1945 to 1979
+1956-02_taunton,Taunton,1956-02-14,Taunton,1956,0,0,resignation,1945 to 1979
+1956-03_walthamstow_west,Walthamstow West,1956-03-01,Walthamstow,1956,0,0,resignation,1945 to 1979
+1956-06_tonbridge,Tonbridge,1956-06-07,Tonbridge,1956,1,0,resignation,1945 to 1979
+1956-09_chester_le_street,Chester-le-Street,1956-09-27,Chester-le-Street,1956,1,0,death,1945 to 1979
+1956-11_city_of_chester,City of Chester,1956-11-15,Chester,1956,1,0,resignation,1945 to 1979
+1957-02_carmarthen,Carmarthen,1957-02-28,Carmarthen,1957,1,1,death,1945 to 1979
+1957-02_wednesbury,Wednesbury,1957-02-28,Wednesbury,1957,1,0,resignation,1945 to 1979
+1957-03_bristol_west,Bristol West,1957-03-07,Bristol,1957,0,0,resignation,1945 to 1979
+1957-03_warwick_and_leamington,Warwick and Leamington,1957-03-07,Leamington,1957,1,0,resignation,1945 to 1979
+1957-03_warwick_and_leamington,Warwick and Leamington,1957-03-07,Warwick,1957,1,0,resignation,1945 to 1979
+1957-03_beckenham,Beckenham,1957-03-21,Beckenham,1957,1,0,resignation,1945 to 1979
+1957-03_newcastle_upon_tyne_north,Newcastle-upon-Tyne North,1957-03-21,Newcastle upon Tyne,1957,0,0,resignation,1945 to 1979
+1957-05_edinburgh_south,Edinburgh South,1957-05-29,Edinburgh,1957,0,0,resignation,1945 to 1979
+1957-09_gloucester,Gloucester,1957-09-12,Gloucester,1957,1,0,death,1945 to 1979
+1957-10_ipswich,Ipswich,1957-10-24,Ipswich,1957,1,0,death,1945 to 1979
+1957-11_leicester_south_east,Leicester South-East,1957-11-28,Leicester,1957,0,0,resignation,1945 to 1979
+1957-12_liverpool_garston,Liverpool Garston,1957-12-05,Garston,1957,1,0,resignation,1945 to 1979
+1957-12_liverpool_garston,Liverpool Garston,1957-12-05,Liverpool,1957,0,0,resignation,1945 to 1979
+1958-02_rochdale,Rochdale,1958-02-12,Rochdale,1958,1,1,death,1945 to 1979
+1958-03_glasgow_kelvingrove,Glasgow Kelvingrove,1958-03-13,Glasgow,1958,0,1,death,1945 to 1979
+1958-05_islington_north,Islington North,1958-05-15,Islington,1958,0,0,death,1945 to 1979
+1958-06_wigan,Wigan,1958-06-12,Wigan,1958,1,0,death,1945 to 1979
+1958-06_weston_super_mare,Weston-super-Mare,1958-06-12,Weston-super-Mare,1958,1,0,death,1945 to 1979
+1958-06_st_helens,St Helens,1958-06-12,St Helens,1958,1,0,resignation,1945 to 1979
+1958-11_morecambe_and_lonsdale,Morecambe and Lonsdale,1958-11-06,Morecambe,1958,0,0,resignation,1945 to 1979
+1958-11_chichester,Chichester,1958-11-06,Chichester,1958,0,0,resignation,1945 to 1979
+1958-11_pontypool,Pontypool,1958-11-10,Pontypool,1958,0,0,resignation,1945 to 1979
+1959-01_southend_west,Southend West,1959-01-29,Southend,1959,0,0,death,1945 to 1979
+1959-03_belfast_east,Belfast East,1959-03-19,Belfast,1959,0,0,death,1945 to 1979
+1959-03_harrow_east,Harrow East,1959-03-19,Harrow,1959,0,0,scandal,1945 to 1979
+1959-06_penistone,Penistone,1959-06-11,Penistone,1959,0,0,death,1945 to 1979
+1959-06_whitehaven,Whitehaven,1959-06-18,Whitehaven,1959,0,0,death,1945 to 1979
+1960-03_brighouse_and_spenborough,Brighouse and Spenborough,1960-03-17,Brighouse,1960,0,1,death,1945 to 1979
+1960-03_harrow_west,Harrow West,1960-03-17,Harrow,1960,0,0,death,1945 to 1979
+1960-05_edinburgh_north,Edinburgh North,1960-05-19,Edinburgh,1960,0,0,resignation,1945 to 1979
+1960-11_bolton_east,Bolton East,1960-11-16,Bolton,1960,1,0,resignation,1945 to 1979
+1960-11_carshalton,Carshalton,1960-11-16,Carshalton,1960,1,0,resignation,1945 to 1979
+1960-11_ludlow,Ludlow,1960-11-16,Ludlow,1960,1,0,death,1945 to 1979
+1960-11_petersfield,Petersfield,1960-11-16,Petersfield,1960,1,0,resignation,1945 to 1979
+1960-11_tiverton,Tiverton,1960-11-16,Tiverton,1960,1,0,resignation,1945 to 1979
+1960-11_ebbw_vale,Ebbw Vale,1960-11-17,Ebbw Vale,1960,1,0,death,1945 to 1979
+1960-11_blyth,Blyth,1960-11-24,Blyth,1960,1,0,resignation,1945 to 1979
+1961-03_worcester,Worcester,1961-03-16,Worcester,1961,1,0,resignation,1945 to 1979
+1961-03_high_peak,High Peak,1961-03-16,High Peak,1961,1,0,resignation,1945 to 1979
+1961-03_colchester,Colchester,1961-03-16,Colchester,1961,1,0,resignation,1945 to 1979
+1961-03_birmingham_small_heath,Birmingham Small Heath,1961-03-23,Birmingham,1961,0,0,death,1945 to 1979
+1961-04_paisley,Paisley,1961-04-20,Paisley,1961,1,0,resignation,1945 to 1979
+1961-04_warrington,Warrington,1961-04-20,Warrington,1961,1,0,resignation,1945 to 1979
+1961-05_bristol_south_east,Bristol South East,1961-05-04,Bristol,1961,0,1,resignation,1945 to 1979
+1961-11_manchester_moss_side,Manchester Moss Side,1961-11-07,Manchester,1961,0,0,death,1945 to 1979
+1961-11_oswestry,Oswestry,1961-11-09,Oswestry,1961,1,0,resignation,1945 to 1979
+1961-11_glasgow_bridgeton,Glasgow Bridgeton,1961-11-16,Glasgow,1961,0,0,resignation,1945 to 1979
+1962-03_lincoln,Lincoln,1962-03-08,Lincoln,1962,1,0,resignation,1945 to 1979
+1962-03_blackpool_north,Blackpool North,1962-03-13,Blackpool,1962,1,0,resignation,1945 to 1979
+1962-03_middlesbrough_east,Middlesbrough East,1962-03-14,Middlesbrough,1962,0,0,resignation,1945 to 1979
+1962-03_orpington,Orpington,1962-03-14,Orpington,1962,1,1,resignation,1945 to 1979
+1962-03_pontefract,Pontefract,1962-03-22,Pontefract,1962,1,0,death,1945 to 1979
+1962-04_stockton_on_tees,Stockton-on-Tees,1962-04-05,Stockton,1962,1,0,resignation,1945 to 1979
+1962-04_derby_north,Derby North,1962-04-17,Derby,1962,0,0,death,1945 to 1979
+1962-06_middlesbrough_west,Middlesbrough West,1962-06-06,Middlesbrough,1962,0,1,resignation,1945 to 1979
+1962-07_leicester_north_east,Leicester North East,1962-07-12,Leicester,1962,0,0,resignation,1945 to 1979
+1962-11_chippenham,Chippenham,1962-11-22,Chippenham,1962,1,0,resignation,1945 to 1979
+1962-11_glasgow_woodside,Glasgow Woodside,1962-11-22,Glasgow,1962,0,1,resignation,1945 to 1979
+1963-03_rotherham,Rotherham,1963-03-28,Rotherham,1963,1,0,death,1945 to 1979
+1963-03_swansea_east,Swansea East,1963-03-28,Swansea,1963,1,0,death,1945 to 1979
+1963-06_leeds_south,Leeds South,1963-06-20,Leeds,1963,0,0,death,1945 to 1979
+1963-07_west_bromwich,West Bromwich,1963-07-04,West Bromwich,1963,1,0,death,1945 to 1979
+1963-08_bristol_south_east,Bristol South East,1963-08-20,Bristol,1963,0,1,resignation,1945 to 1979
+1963-10_belfast_south,Belfast South,1963-10-22,Belfast,1963,0,0,death,1945 to 1979
+1963-11_kinross_and_western_perthshire,Kinross and Western Perthshire,1963-11-07,Kinross,1963,0,0,death,1945 to 1979
+1963-11_luton,Luton,1963-11-07,Luton,1963,0,1,resignation,1945 to 1979
+1963-11_dundee_west,Dundee West,1963-11-21,Dundee,1963,0,0,death,1945 to 1979
+1963-12_manchester_openshaw,Manchester Openshaw,1963-12-05,Manchester,1963,0,0,death,1945 to 1979
+1963-12_sudbury_and_woodbridge,Sudbury and Woodbridge,1963-12-05,Sudbury,1963,0,0,resignation,1945 to 1979
+1963-12_sudbury_and_woodbridge,Sudbury and Woodbridge,1963-12-05,Woodbridge,1963,0,0,resignation,1945 to 1979
+1964-05_devizes,Devizes,1964-05-14,Devizes,1964,0,0,death,1945 to 1979
+1964-05_rutherglen,Rutherglen,1964-05-14,Rutherglen,1964,0,1,death,1945 to 1979
+1964-05_winchester,Winchester,1964-05-14,Winchester,1964,0,0,resignation,1945 to 1979
+1964-05_bury_st_edmunds,Bury St Edmunds,1964-05-14,Bury St Edmunds,1964,0,0,death,1945 to 1979
+1964-06_faversham,Faversham,1964-06-04,Faversham,1964,0,0,death,1945 to 1979
+1964-06_liverpool_scotland,Liverpool Scotland,1964-06-11,Liverpool,1964,0,0,death,1945 to 1979
+1965-01_nuneaton,Nuneaton,1965-01-21,Nuneaton,1965,0,0,resignation,1945 to 1979
+1965-02_altrincham_and_sale,Altrincham and Sale,1965-02-04,Altrincham,1965,0,0,resignation,1945 to 1979
+1965-02_east_grinstead,East Grinstead,1965-02-04,East Grinstead,1965,0,0,resignation,1945 to 1979
+1965-03_saffron_walden,Saffron Walden,1965-03-23,Saffron Walden,1965,0,0,resignation,1945 to 1979
+1965-03_roxburgh_selkirk_and_peebles,"Roxburgh, Selkirk and Peebles",1965-03-24,Peebles,1965,0,1,death,1945 to 1979
+1965-03_roxburgh_selkirk_and_peebles,"Roxburgh, Selkirk and Peebles",1965-03-24,Selkirk,1965,0,1,death,1945 to 1979
+1965-04_abertillery,Abertillery,1965-04-01,Abertillery,1965,0,0,death,1945 to 1979
+1965-05_birmingham_hall_green,Birmingham Hall Green,1965-05-06,Birmingham,1965,0,0,resignation,1945 to 1979
+1965-07_hove,Hove,1965-07-22,Hove,1965,0,0,resignation,1945 to 1979
+1965-11_cities_of_london_and_westminster,Cities of London and Westminster,1965-11-04,London,1965,0,1,death,1945 to 1979
+1966-07_carmarthen,Carmarthen,1966-07-14,Carmarthen,1966,0,1,death,1945 to 1979
+1967-03_glasgow_pollok,Glasgow Pollok,1967-03-09,Glasgow,1967,0,1,death,1945 to 1979
+1967-03_nuneaton,Nuneaton,1967-03-09,Nuneaton,1967,0,0,resignation,1945 to 1979
+1967-03_rhondda_west,Rhondda West,1967-03-09,Rhondda,1967,0,0,death,1945 to 1979
+1967-03_honiton,Honiton,1967-03-16,Honiton,1967,0,0,death,1945 to 1979
+1967-04_brierley_hill,Brierley Hill,1967-04-27,Brierley Hill,1967,1,0,death,1945 to 1979
+1967-09_cambridge,Cambridge,1967-09-21,Cambridge,1967,1,1,death,1945 to 1979
+1967-09_walthamstow_west,Walthamstow West,1967-09-21,Walthamstow,1967,0,1,death,1945 to 1979
+1967-11_leicester_south_west,Leicester South West,1967-11-02,Leicester,1967,0,1,resignation,1945 to 1979
+1967-11_manchester_gorton,Manchester Gorton,1967-11-02,Manchester,1967,0,0,death,1945 to 1979
+1968-03_kensington_south,Kensington South,1968-03-14,Kensington,1968,1,0,resignation,1945 to 1979
+1968-03_dudley,Dudley,1968-03-28,Dudley,1968,1,1,resignation,1945 to 1979
+1968-03_warwick_and_leamington,Warwick and Leamington,1968-03-28,Leamington,1968,1,0,death,1945 to 1979
+1968-03_warwick_and_leamington,Warwick and Leamington,1968-03-28,Warwick,1968,1,0,death,1945 to 1979
+1968-06_oldham_west,Oldham West,1968-06-13,Oldham,1968,1,1,resignation,1945 to 1979
+1968-06_sheffield_brightside,Sheffield Brightside,1968-06-13,Sheffield,1968,0,0,death,1945 to 1979
+1968-06_nelson_and_colne,Nelson and Colne,1968-06-27,Colne,1968,1,1,death,1945 to 1979
+1968-07_caerphilly,Caerphilly,1968-07-18,Caerphilly,1968,1,0,death,1945 to 1979
+1969-03_weston_super_mare,Weston-super-Mare,1969-03-27,Weston-super-Mare,1969,1,0,death,1945 to 1979
+1969-03_walthamstow_east,Walthamstow East,1969-03-27,Walthamstow,1969,0,1,death,1945 to 1979
+1969-03_brighton_pavilion,Brighton Pavilion,1969-03-27,Brighton,1969,1,0,resignation,1945 to 1979
+1969-05_chichester,Chichester,1969-05-22,Chichester,1969,1,0,death,1945 to 1979
+1969-06_birmingham_ladywood,Birmingham Ladywood,1969-06-26,Birmingham,1969,0,1,death,1945 to 1979
+1969-10_glasgow_gorbals,Glasgow Gorbals,1969-10-30,Glasgow,1969,0,0,death,1945 to 1979
+1969-10_islington_north,Islington North,1969-10-30,Islington,1969,0,0,death,1945 to 1979
+1969-10_newcastle_under_lyme,Newcastle-under-Lyme,1969-10-30,Newcastle-under-Lyme,1969,0,0,death,1945 to 1979
+1969-10_swindon,Swindon,1969-10-30,Swindon,1969,0,1,resignation,1945 to 1979
+1969-12_wellingborough,Wellingborough,1969-12-04,Wellingborough,1969,0,1,death,1945 to 1979
+1970-03_bridgwater,Bridgwater,1970-03-12,Bridgwater,1970,0,0,death,1945 to 1979
+1971-04_liverpool_scotland,Liverpool Scotland,1971-04-01,Liverpool,1971,0,0,resignation,1945 to 1979
+1971-04_arundel_and_shoreham,Arundel and Shoreham,1971-04-01,Arundel,1971,0,0,death,1945 to 1979
+1971-05_southampton_itchen,Southampton Itchen,1971-05-27,Southampton,1971,0,1,resignation,1945 to 1979
+1971-05_bromsgrove,Bromsgrove,1971-05-27,Bromsgrove,1971,0,1,death,1945 to 1979
+1971-05_goole,Goole,1971-05-27,Goole,1971,0,0,death,1945 to 1979
+1971-07_greenwich,Greenwich,1971-07-08,Greenwich,1971,1,0,resignation,1945 to 1979
+1971-09_stirling_and_falkirk,Stirling and Falkirk,1971-09-16,Falkirk,1971,1,0,death,1945 to 1979
+1971-09_stirling_and_falkirk,Stirling and Falkirk,1971-09-16,Stirling,1971,1,0,death,1945 to 1979
+1971-09_widnes,Widnes,1971-09-23,Widnes,1971,1,0,death,1945 to 1979
+1971-09_macclesfield,Macclesfield,1971-09-30,Macclesfield,1971,1,0,resignation,1945 to 1979
+1972-04_merthyr_tydfil,Merthyr Tydfil,1972-04-13,Merthyr,1972,1,1,death,1945 to 1979
+1972-10_rochdale,Rochdale,1972-10-26,Rochdale,1972,1,1,death,1945 to 1979
+1972-12_uxbridge,Uxbridge,1972-12-07,Uxbridge,1972,1,0,death,1945 to 1979
+1972-12_sutton_and_cheam,Sutton and Cheam,1972-12-07,Sutton,1972,0,1,resignation,1945 to 1979
+1973-03_chester_le_street,Chester-le-Street,1973-03-01,Chester-le-Street,1973,0,0,death,1945 to 1979
+1973-03_dundee_east,Dundee East,1973-03-01,Dundee,1973,0,0,resignation,1945 to 1979
+1973-03_lincoln,Lincoln,1973-03-01,Lincoln,1973,0,1,same MP,1945 to 1979
+1973-05_west_bromwich,West Bromwich,1973-05-24,West Bromwich,1973,0,0,resignation,1945 to 1979
+1973-05_westhoughton,Westhoughton,1973-05-24,Westhoughton,1973,0,0,death,1945 to 1979
+1973-06_manchester_exchange,Manchester Exchange,1973-06-27,Manchester,1973,0,0,death,1945 to 1979
+1973-07_isle_of_ely,Isle of Ely,1973-07-26,Ely,1973,0,1,death,1945 to 1979
+1973-07_ripon,Ripon,1973-07-26,Ripon,1973,0,1,death,1945 to 1979
+1973-11_berwick_upon_tweed,Berwick-upon-Tweed,1973-11-08,Berwick-upon-Tweed,1973,0,1,scandal,1945 to 1979
+1973-11_edinburgh_north,Edinburgh North,1973-11-08,Edinburgh,1973,0,0,resignation,1945 to 1979
+1973-11_glasgow_govan,Glasgow Govan,1973-11-08,Glasgow,1973,0,1,death,1945 to 1979
+1973-11_hove,Hove,1973-11-08,Hove,1973,0,0,death,1945 to 1979
+1976-03_coventry_north_west,Coventry North West,1976-03-04,Coventry,1976,0,0,death,1945 to 1979
+1976-03_carshalton,Carshalton,1976-03-11,Carshalton,1976,1,0,resignation,1945 to 1979
+1976-06_rotherham,Rotherham,1976-06-24,Rotherham,1976,1,0,death,1945 to 1979
+1976-11_newcastle_upon_tyne_central,Newcastle-upon-Tyne Central,1976-11-04,Newcastle upon Tyne,1976,0,0,resignation,1945 to 1979
+1976-11_walsall_north,Walsall North,1976-11-04,Walsall,1976,1,1,scandal,1945 to 1979
+1976-11_workington,Workington,1976-11-04,Workington,1976,1,1,resignation,1945 to 1979
+1976-12_cambridge,Cambridge,1976-12-02,Cambridge,1976,1,0,resignation,1945 to 1979
+1977-02_city_of_london_and_westminster_south,City of London and Westminster South,1977-02-24,City of London,1977,1,0,resignation,1945 to 1979
+1977-03_birmingham_stechford,Birmingham Stechford,1977-03-31,Birmingham,1977,0,1,resignation,1945 to 1979
+1977-04_grimsby,Grimsby,1977-04-28,Grimsby,1977,1,0,death,1945 to 1979
+1977-07_saffron_walden,Saffron Walden,1977-07-07,Saffron Walden,1977,1,0,death,1945 to 1979
+1977-08_birmingham_ladywood,Birmingham Ladywood,1977-08-18,Birmingham,1977,0,0,resignation,1945 to 1979
+1977-11_bournemouth_east,Bournemouth East,1977-11-24,Bournemouth,1977,1,0,resignation,1945 to 1979
+1978-03_ilford_north,Ilford North,1978-03-02,Ilford,1978,1,1,death,1945 to 1979
+1978-04_glasgow_garscadden,Glasgow Garscadden,1978-04-13,Glasgow,1978,0,0,death,1945 to 1979
+1978-04_epsom_and_ewell,Epsom and Ewell,1978-04-27,Epsom,1978,1,0,resignation,1945 to 1979
+1978-04_epsom_and_ewell,Epsom and Ewell,1978-04-27,Ewell,1978,1,0,resignation,1945 to 1979
+1978-07_manchester_moss_side,Manchester Moss Side,1978-07-13,Manchester,1978,0,0,death,1945 to 1979
+1978-07_penistone,Penistone,1978-07-13,Penistone,1978,0,0,death,1945 to 1979
+1978-10_pontefract_and_castleford,Pontefract and Castleford,1978-10-26,Castleford,1978,0,0,death,1945 to 1979
+1978-10_pontefract_and_castleford,Pontefract and Castleford,1978-10-26,Pontefract,1978,0,0,death,1945 to 1979
+1979-03_clitheroe,Clitheroe,1979-03-01,Clitheroe,1979,0,0,death,1945 to 1979
+1979-03_knutsford,Knutsford,1979-03-01,Knutsford,1979,0,0,resignation,1945 to 1979
+1979-03_liverpool_edge_hill,Liverpool Edge Hill,1979-03-29,Liverpool,1979,0,1,death,1945 to 1979
+1979-09_manchester_central,Manchester Central,1979-09-27,Manchester,1979,0,0,resignation,1945 to 1979
+1980-03_southend_east,Southend East,1980-03-13,Southend,1980,0,0,death,1980 to 2023
+1980-06_glasgow_central,Glasgow Central,1980-06-26,Glasgow,1980,0,0,death,1980 to 2023
+1981-07_warrington,Warrington,1981-07-16,Warrington,1981,1,0,resignation,1980 to 2023
+1981-10_croydon_north_west,Croydon North West,1981-10-22,Croydon,1981,0,1,death,1980 to 2023
+1981-11_crosby,Crosby,1981-11-26,Crosby,1981,1,1,death,1980 to 2023
+1982-03_belfast_south,Belfast South,1982-03-04,Belfast,1982,0,0,death,1980 to 2023
+1982-03_glasgow_hillhead,Glasgow Hillhead,1982-03-25,Glasgow,1982,0,1,death,1980 to 2023
+1982-05_beaconsfield,Beaconsfield,1982-05-27,Beaconsfield,1982,1,0,death,1980 to 2023
+1982-06_mitcham_and_morden,Mitcham and Morden,1982-06-03,Mitcham,1982,1,1,resignation,1980 to 2023
+1982-06_mitcham_and_morden,Mitcham and Morden,1982-06-03,Morden,1982,1,1,resignation,1980 to 2023
+1982-06_coatbridge_and_airdrie,Coatbridge and Airdrie,1982-06-24,Airdrie,1982,0,0,death,1980 to 2023
+1982-06_coatbridge_and_airdrie,Coatbridge and Airdrie,1982-06-24,Coatbridge,1982,0,0,death,1980 to 2023
+1982-10_peckham,Peckham,1982-10-28,Peckham,1982,0,0,death,1980 to 2023
+1982-10_birmingham_northfield,Birmingham Northfield,1982-10-28,Birmingham,1982,0,1,death,1980 to 2023
+1982-12_glasgow_queens_park,Glasgow Queen's Park,1982-12-02,Glasgow,1982,0,0,death,1980 to 2023
+1983-03_darlington,Darlington,1983-03-24,Darlington,1983,0,0,death,1980 to 2023
+1983-07_penrith_and_the_border,Penrith and the Border,1983-07-28,Penrith,1983,0,0,resignation,1980 to 2023
+1984-03_chesterfield,Chesterfield,1984-03-01,Chesterfield,1984,0,0,resignation,1980 to 2023
+1984-05_stafford,Stafford,1984-05-03,Stafford,1984,0,0,death,1980 to 2023
+1984-06_portsmouth_south,Portsmouth South,1984-06-14,Portsmouth,1984,1,1,death,1980 to 2023
+1985-07_brecon_and_radnor,Brecon and Radnor,1985-07-04,Brecon,1985,1,1,death,1980 to 2023
+1986-01_newry_and_armagh,Newry & Armagh,1986-01-23,Newry,1986,1,1,resignation,1980 to 2023
+1986-01_belfast_north,Belfast North,1986-01-23,Belfast,1986,0,0,same MP,1980 to 2023
+1986-01_belfast_south,Belfast South,1986-01-23,Belfast,1986,0,0,same MP,1980 to 2023
+1986-01_east_londonderry,East Londonderry,1986-01-23,Londonderry,1986,0,0,same MP,1980 to 2023
+1986-01_belfast_east,Belfast East,1986-01-23,Belfast,1986,0,0,same MP,1980 to 2023
+1986-04_fulham,Fulham,1986-04-10,Fulham,1986,1,1,death,1980 to 2023
+1986-07_newcastle_under_lyme,Newcastle-under-Lyme,1986-07-17,Newcastle-under-Lyme,1986,0,0,resignation,1980 to 2023
+1987-02_greenwich,Greenwich,1987-02-26,Greenwich,1987,0,1,death,1980 to 2023
+1987-03_truro,Truro,1987-03-12,Truro,1987,0,0,death,1980 to 2023
+1988-07_kensington,Kensington,1988-07-14,Kensington,1988,1,0,death,1980 to 2023
+1988-11_glasgow_govan,Glasgow Govan,1988-11-10,Glasgow,1988,0,1,resignation,1980 to 2023
+1988-12_epping_forest,Epping Forest,1988-12-15,Epping,1988,1,0,death,1980 to 2023
+1989-02_pontypridd,Pontypridd,1989-02-23,Pontypridd,1989,1,0,death,1980 to 2023
+1989-06_glasgow_central,Glasgow Central,1989-06-15,Glasgow,1989,0,0,death,1980 to 2023
+1990-10_eastbourne,Eastbourne,1990-10-18,Eastbourne,1990,1,1,death,1980 to 2023
+1990-11_bradford_north,Bradford North,1990-11-08,Bradford,1990,0,0,death,1980 to 2023
+1990-11_paisley_north,Paisley North,1990-11-29,Paisley,1990,1,0,death,1980 to 2023
+1990-11_paisley_south,Paisley South,1990-11-29,Paisley,1990,1,0,death,1980 to 2023
+1991-04_neath,Neath,1991-04-04,Neath,1991,1,0,death,1980 to 2023
+1991-05_monmouth,Monmouth,1991-05-16,Monmouth,1991,0,1,death,1980 to 2023
+1991-07_liverpool_walton,Liverpool Walton,1991-07-04,Liverpool,1991,0,0,death,1980 to 2023
+1991-11_hemsworth,Hemsworth,1991-11-07,Hemsworth,1991,0,0,death,1980 to 2023
+1993-05_newbury,Newbury,1993-05-06,Newbury,1993,1,1,death,1980 to 2023
+1994-05_rotherham,Rotherham,1994-05-05,Rotherham,1994,1,0,death,1980 to 2023
+1994-06_dagenham,Dagenham,1994-06-09,Dagenham,1994,1,0,resignation,1980 to 2023
+1994-06_bradford_south,Bradford South,1994-06-09,Bradford,1994,0,0,death,1980 to 2023
+1994-06_eastleigh,Eastleigh,1994-06-09,Eastleigh,1994,1,1,death,1980 to 2023
+1994-06_barking,Barking,1994-06-09,Barking,1994,1,0,death,1980 to 2023
+1994-12_dudley_west,Dudley West,1994-12-15,Dudley,1994,1,1,death,1980 to 2023
+1995-05_perth_and_kinross,Perth and Kinross,1995-05-25,Kinross,1995,1,1,death,1980 to 2023
+1995-07_littleborough_and_saddleworth,Littleborough and Saddleworth,1995-07-27,Littleborough,1995,1,1,death,1980 to 2023
+1995-07_littleborough_and_saddleworth,Littleborough and Saddleworth,1995-07-27,Saddleworth,1995,1,1,death,1980 to 2023
+1996-02_hemsworth,Hemsworth,1996-02-01,Hemsworth,1996,1,0,death,1980 to 2023
+1996-12_barnsley_east,Barnsley East,1996-12-12,Barnsley,1996,0,0,death,1980 to 2023
+1997-07_uxbridge,Uxbridge,1997-07-31,Uxbridge,1997,0,0,death,1980 to 2023
+1997-11_paisley_south,Paisley South,1997-11-06,Paisley,1997,0,0,death,1980 to 2023
+1997-11_beckenham,Beckenham,1997-11-20,Beckenham,1997,0,0,scandal,1980 to 2023
+1997-11_winchester,Winchester,1997-11-20,Winchester,1997,0,0,same MP,1980 to 2023
+1999-06_leeds_central,Leeds Central,1999-06-10,Leeds,1999,0,0,death,1980 to 2023
+1999-09_wigan,Wigan,1999-09-23,Wigan,1999,1,0,death,1980 to 2023
+1999-11_kensington_and_chelsea,Kensington and Chelsea,1999-11-25,Chelsea,1999,1,0,death,1980 to 2023
+1999-11_kensington_and_chelsea,Kensington and Chelsea,1999-11-25,Kensington,1999,1,0,death,1980 to 2023
+2000-05_romsey,Romsey,2000-05-04,Romsey,2000,1,1,death,1980 to 2023
+2000-06_tottenham,Tottenham,2000-06-22,Tottenham,2000,0,0,death,1980 to 2023
+2000-11_glasgow_anniesland,Glasgow Anniesland,2000-11-23,Glasgow,2000,0,0,death,1980 to 2023
+2000-11_preston,Preston,2000-11-23,Preston,2000,0,0,death,1980 to 2023
+2000-11_west_bromwich_west,West Bromwich West,2000-11-23,West Bromwich,2000,0,1,resignation,1980 to 2023
+2000-12_falkirk_west,Falkirk West,2000-12-21,Falkirk,2000,0,0,resignation,1980 to 2023
+2001-11_ipswich,Ipswich,2001-11-22,Ipswich,2001,0,0,death,1980 to 2023
+2003-09_brent_east,Brent East,2003-09-18,Brent,2003,0,1,death,1980 to 2023
+2004-07_leicester_south,Leicester South,2004-07-15,Leicester,2004,0,1,death,1980 to 2023
+2004-07_birmingham_hodge_hill,Birmingham Hodge Hill,2004-07-15,Birmingham,2004,0,0,resignation,1980 to 2023
+2004-09_hartlepool,Hartlepool,2004-09-30,Hartlepool,2004,0,0,resignation,1980 to 2023
+2005-09_livingston,Livingston,2005-09-29,Livingston,2005,0,0,death,1980 to 2023
+2006-02_dunfermline_and_west_fife,Dunfermline and West Fife,2006-02-09,Dunfermline,2006,0,1,death,1980 to 2023
+2006-06_bromley_and_chislehurst,Bromley and Chislehurst,2006-06-29,Chislehurst,2006,1,0,death,1980 to 2023
+2007-07_sedgefield,Sedgefield,2007-07-19,Sedgefield,2007,1,0,resignation,1980 to 2023
+2007-07_ealing_southall,Ealing Southall,2007-07-19,Southall,2007,1,0,death,1980 to 2023
+2008-05_crewe_and_nantwich,Crewe and Nantwich,2008-05-22,Crewe,2008,1,1,death,1980 to 2023
+2008-05_crewe_and_nantwich,Crewe and Nantwich,2008-05-22,Nantwich,2008,1,1,death,1980 to 2023
+2008-06_henley,Henley,2008-06-26,Henley,2008,1,0,resignation,1980 to 2023
+2008-07_haltemprice_and_howden,Haltemprice and Howden,2008-07-10,Howden,2008,0,0,same MP,1980 to 2023
+2008-07_glasgow_east,Glasgow East,2008-07-24,Glasgow,2008,0,1,resignation,1980 to 2023
+2008-11_glenrothes,Glenrothes,2008-11-06,Glenrothes,2008,1,0,death,1980 to 2023
+2009-07_norwich_north,Norwich North,2009-07-23,Norwich,2009,0,1,resignation,1980 to 2023
+2009-11_glasgow_north_east,Glasgow North East,2009-11-12,Glasgow,2009,0,1,resignation,1980 to 2023
+2011-01_oldham_east_and_saddleworth,Oldham East and Saddleworth,2011-01-13,Oldham,2011,0,0,scandal,1980 to 2023
+2011-01_oldham_east_and_saddleworth,Oldham East and Saddleworth,2011-01-13,Saddleworth,2011,0,0,scandal,1980 to 2023
+2011-03_barnsley_central,Barnsley Central,2011-03-03,Barnsley,2011,0,0,scandal,1980 to 2023
+2011-05_leicester_south,Leicester South,2011-05-05,Leicester,2011,0,0,resignation,1980 to 2023
+2011-06_belfast_west,Belfast West,2011-06-09,Belfast,2011,0,0,resignation,1980 to 2023
+2011-12_feltham_and_heston,Feltham and Heston,2011-12-15,Feltham,2011,1,0,death,1980 to 2023
+2011-12_feltham_and_heston,Feltham and Heston,2011-12-15,Heston,2011,1,0,death,1980 to 2023
+2012-03_bradford_west,Bradford West,2012-03-29,Bradford,2012,0,1,resignation,1980 to 2023
+2012-11_manchester_central,Manchester Central,2012-11-15,Manchester,2012,0,0,resignation,1980 to 2023
+2012-11_corby,Corby,2012-11-15,Corby,2012,1,1,resignation,1980 to 2023
+2012-11_cardiff_south_and_penarth,Cardiff South and Penarth,2012-11-15,Cardiff,2012,0,0,resignation,1980 to 2023
+2012-11_cardiff_south_and_penarth,Cardiff South and Penarth,2012-11-15,Penarth,2012,1,0,resignation,1980 to 2023
+2012-11_rotherham,Rotherham,2012-11-29,Rotherham,2012,1,0,scandal,1980 to 2023
+2012-11_middlesbrough,Middlesbrough,2012-11-29,Middlesbrough,2012,1,0,death,1980 to 2023
+2012-11_croydon_north,Croydon North,2012-11-29,Croydon,2012,0,0,death,1980 to 2023
+2013-02_eastleigh,Eastleigh,2013-02-28,Eastleigh,2013,1,0,resignation,1980 to 2023
+2013-05_south_shields,South Shields,2013-05-02,South Shields,2013,1,0,resignation,1980 to 2023
+2014-06_newark,Newark,2014-06-05,Newark,2014,0,0,scandal,1980 to 2023
+2014-10_heywood_and_middleton,Heywood and Middleton,2014-10-09,Heywood,2014,0,0,death,1980 to 2023
+2014-10_heywood_and_middleton,Heywood and Middleton,2014-10-09,Middleton,2014,0,0,death,1980 to 2023
+2014-10_clacton,Clacton,2014-10-09,Clacton,2014,0,1,same MP,1980 to 2023
+2014-11_rochester_and_strood,Rochester and Strood,2014-11-20,Rochester,2014,0,1,same MP,1980 to 2023
+2014-11_rochester_and_strood,Rochester and Strood,2014-11-20,Strood,2014,0,1,same MP,1980 to 2023
+2015-12_oldham_west_and_royton,Oldham West and Royton,2015-12-03,Oldham,2015,0,0,death,1980 to 2023
+2015-12_oldham_west_and_royton,Oldham West and Royton,2015-12-03,Royton,2015,0,0,death,1980 to 2023
+2016-05_sheffield_brightside_and_hillsborough,Sheffield Brightside and Hillsborough,2016-05-05,Sheffield,2016,0,0,death,1980 to 2023
+2016-06_tooting,Tooting,2016-06-16,Tooting,2016,0,0,resignation,1980 to 2023
+2016-10_batley_and_spen,Batley and Spen,2016-10-20,Batley,2016,0,0,death,1980 to 2023
+2016-10_witney,Witney,2016-10-20,Witney,2016,0,0,resignation,1980 to 2023
+2016-12_sleaford_and_north_hykeham,Sleaford and North Hykeham,2016-12-08,North Hykeham,2016,0,0,resignation,1980 to 2023
+2016-12_sleaford_and_north_hykeham,Sleaford and North Hykeham,2016-12-08,Sleaford,2016,0,0,resignation,1980 to 2023
+2017-02_stoke_on_trent_central,Stoke-on-Trent Central,2017-02-23,Stoke-on-Trent,2017,0,0,resignation,1980 to 2023
+2019-06_peterborough,Peterborough,2019-06-06,Peterborough,2019,0,0,scandal,1980 to 2023
+2019-08_brecon_and_radnorshire,Brecon and Radnorshire,2019-08-01,Brecon,2019,0,1,scandal,1980 to 2023
+2021-05_hartlepool,Hartlepool,2021-05-06,Hartlepool,2021,1,1,scandal,1980 to 2023
+2021-05_airdrie_and_shotts,Airdrie and Shotts,2021-05-13,Airdrie,2021,1,0,resignation,1980 to 2023
+2021-06_chesham_and_amersham,Chesham and Amersham,2021-06-17,Amersham,2021,1,1,death,1980 to 2023
+2021-06_chesham_and_amersham,Chesham and Amersham,2021-06-17,Chesham,2021,1,1,death,1980 to 2023
+2021-07_batley_and_spen,Batley and Spen,2021-07-01,Batley,2021,1,0,resignation,1980 to 2023
+2021-12_old_bexley_and_sidcup,Old Bexley and Sidcup,2021-12-02,Bexley,2021,1,0,death,1980 to 2023
+2022-02_southend_west,Southend West,2022-02-03,Southend,2022,1,0,death,1980 to 2023
+2022-03_birmingham_erdington,Birmingham Erdington,2022-03-03,Birmingham,2022,0,0,death,1980 to 2023
+2022-06_wakefield,Wakefield,2022-06-23,Wakefield,2022,1,1,scandal,1980 to 2023
+2022-06_tiverton_and_honiton,Tiverton and Honiton,2022-06-23,Honiton,2022,1,1,scandal,1980 to 2023
+2022-06_tiverton_and_honiton,Tiverton and Honiton,2022-06-23,Tiverton,2022,1,1,scandal,1980 to 2023
+2022-12_city_of_chester,City of Chester,2022-12-01,Chester,2022,1,0,scandal,1980 to 2023
+2022-12_stretford_and_urmston,Stretford and Urmston,2022-12-15,Stretford,2022,1,0,resignation,1980 to 2023
+2022-12_stretford_and_urmston,Stretford and Urmston,2022-12-15,Urmston,2022,1,0,resignation,1980 to 2023
+2023-07_selby_and_ainsty,Selby and Ainsty,2023-07-20,Selby,2023,0,1,resignation,1980 to 2023
+2023-07_somerton_and_frome,Somerton and Frome,2023-07-20,Frome,2023,0,1,scandal,1980 to 2023
+2023-07_somerton_and_frome,Somerton and Frome,2023-07-20,Somerton,2023,0,1,scandal,1980 to 2023
+2023-07_uxbridge_and_south_ruislip,Uxbridge and South Ruislip,2023-07-20,South Ruislip,2023,0,0,scandal,1980 to 2023
+2023-07_uxbridge_and_south_ruislip,Uxbridge and South Ruislip,2023-07-20,Uxbridge,2023,0,0,scandal,1980 to 2023
+2023-10_rutherglen_and_hamilton_west,Rutherglen and Hamilton West,2023-10-05,Rutherglen,2023,0,1,scandal,1980 to 2023
+2023-10_tamworth,Tamworth,2023-10-19,Tamworth,2023,0,1,scandal,1980 to 2023
+2024-02_wellingborough,Wellingborough,2024-02-15,Wellingborough,2024,0,1,scandal,1980 to 2023
+2024-02_kingswood,Kingswood,2024-02-15,Kingswood,2024,0,1,resignation,1980 to 2023
+2024-02_rochdale,Rochdale,2024-02-29,Rochdale,2024,0,1,death,1980 to 2023
+2024-05_blackpool_south,Blackpool South,2024-05-02,Blackpool,2024,0,1,scandal,1980 to 2023
+2025-05_runcorn_and_helsby,Runcorn and Helsby,2025-05-01,Runcorn,2025,0,1,scandal,1980 to 2023
+2026-02_gorton_and_denton,Gorton and Denton,2026-02-26,Denton,2026,0,1,scandal,1980 to 2023
+2026-06_arbroath_and_broughty_ferry,Arbroath and Broughty Ferry,2026-06-18,Arbroath,2026,0,0,resignation,1980 to 2023
+2026-06_arbroath_and_broughty_ferry,Arbroath and Broughty Ferry,2026-06-18,Broughty Ferry,2026,0,0,resignation,1980 to 2023
+2026-06_aberdeen_south,Aberdeen South,2026-06-18,Aberdeen,2026,0,1,resignation,1980 to 2023
+2026-08_clacton,Clacton,2026-08-13,Clacton,2026,0,0,same MP,1980 to 2023

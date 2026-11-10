@@ -1,0 +1,87 @@
+id,event,date,year,deaths,typegrp,da_term,da_kind,town,km,how,lat,lon,nation,k0,window_ok,mapped,byel_in_window,ref_mean,city,dup,main,type,term,eid
+pretoria,Pretoria Pit disaster (Hulton Colliery),1910-12-21,1910,344.0,Mining,Pretoria Pit,plain,Atherton,1.4,nearest Hansard town,53.536,-2.487,England,23,0,1,0,,0,0,0,disaster,Atherton,D:pretoria
+wellington,Wellington Pit disaster,1910-05-11,1910,136.0,Mining,Wellington Pit,plain,Whitehaven,0.7,nearest Hansard town,54.546,-3.594,England,16,0,1,0,,0,0,0,disaster,Whitehaven,D:wellington
+cadeby,Cadeby Main pit disaster,1912-07-09,1912,91.0,Mining,Cadeby,plain,Conisbrough,0.9,nearest Hansard town,53.49,-1.228,England,42,1,1,0,0.0,0,0,1,disaster,Conisbrough,D:cadeby
+senghenydd,Senghenydd colliery disaster,1913-10-14,1913,439.0,Mining,Senghenydd,plain,Pontypridd,4.3,nearest Hansard town,51.611,-3.281,Wales,57,1,1,0,0.0,0,0,1,disaster,Pontypridd,D:senghenydd
+quintinshill,Quintinshill rail crash,1915-05-22,1915,226.0,Transport,Quintinshill,plain,Longtown,4.4,nearest Hansard town,55.012,-3.04,England,76,1,1,0,0.0,0,0,1,disaster,Longtown,D:quintinshill
+faversham,Faversham gunpowder mill explosion,1916-04-02,1916,109.0,Fire or explosion,Faversham,in,Faversham,0.0,event term is a Hansard town,51.315,0.889,England,87,1,1,0,0.0,0,0,1,disaster,Faversham,D:faversham
+minnie,Minnie Pit disaster,1918-01-12,1918,155.0,Mining,Minnie Pit,plain,Madeley,4.4,nearest Hansard town,53.037,-2.31,England,108,1,1,0,0.0,0,0,1,disaster,Madeley,D:minnie
+abermule,Abermule train collision,1921-01-26,1921,17.0,Transport,Abermule,plain,Newtown,6.2,nearest Hansard town,52.545,-3.237,Wales,144,1,1,0,0.0,0,0,1,disaster,Newtown,D:abermule
+marine,Marine Colliery disaster (Cwm),1927-03-01,1927,52.0,Mining,Ebbw Vale,in,Ebbw Vale,0.0,event term is a Hansard town,51.777,-3.208,Wales,218,1,1,0,0.0,0,0,1,disaster,Ebbw Vale,D:marine
+glencinema,Glen Cinema disaster,1929-12-31,1929,71.0,Crowd crush,Paisley,in,Paisley,0.0,event term is a Hansard town,55.832,-4.432,Scotland,251,1,1,0,0.08333333333333333,0,0,1,disaster,Paisley,D:glencinema
+cardowan,Cardowan Colliery explosion,1932-11-16,1932,11.0,Mining,Cardowan,plain,Bishopbriggs,3.0,nearest Hansard town,55.89,-4.18,Scotland,286,1,1,0,0.0,0,0,1,disaster,Bishopbriggs,D:cardowan
+gresford,Gresford disaster,1934-09-22,1934,266.0,Mining,Gresford,plain,Wrexham,2.9,nearest Hansard town,53.073,-2.991,Wales,308,1,1,0,0.0,0,0,1,disaster,Wrexham,D:gresford
+croydon,Croydon typhoid outbreak,1937-10-15,1937,43.0,Other,Croydon,in,Croydon,0.0,event term is a Hansard town,51.383,-0.1,England,345,1,1,1,0.5,0,0,0,disaster,Croydon,D:croydon
+castlecary,Castlecary rail disaster,1937-12-10,1937,35.0,Transport,Castlecary,plain,Cumbernauld,3.9,nearest Hansard town,55.98,-3.97,Scotland,347,1,1,0,0.0,0,0,1,disaster,Cumbernauld,D:castlecary
+huddersfield,Booth's clothing factory fire,1941-10-31,1941,49.0,Fire or explosion,Huddersfield,in,Huddersfield,0.0,event term is a Hansard town,53.649,-1.784,England,393,1,1,0,0.0,0,0,1,disaster,Huddersfield,D:huddersfield
+bethnalgreen,Bethnal Green tube station crush,1943-03-03,1943,173.0,Crowd crush,Bethnal Green,plain,Bethnal Green,0.4,nearest Hansard town,51.527,-0.055,England,410,1,1,0,0.08333333333333333,0,0,1,disaster,Bethnal Green,D:bethnalgreen
+freckleton,Freckleton air disaster,1944-08-23,1944,61.0,Transport,Freckleton,in,Freckleton,0.0,event term is a Hansard town,53.755,-2.865,England,427,1,1,0,0.0,0,0,1,disaster,Freckleton,D:freckleton
+williampit,William Pit disaster,1947-08-15,1947,104.0,Mining,Whitehaven,in,Whitehaven,0.0,event term is a Hansard town,54.549,-3.584,England,463,1,1,0,0.0,0,0,1,disaster,Whitehaven,D:williampit
+creswell,Creswell Colliery disaster,1950-09-26,1950,80.0,Mining,Creswell,plain,Bolsover,6.5,nearest Hansard town,53.264,-1.216,England,500,1,1,0,0.0,0,0,1,disaster,Bolsover,D:creswell
+knockshinnoch,Knockshinnoch disaster,1950-09-07,1950,13.0,Mining,Knockshinnoch,plain,New Cumnock,0.0,nearest Hansard town,55.397,-4.184,Scotland,500,1,1,0,0.0,0,0,1,disaster,New Cumnock,D:knockshinnoch
+easington,Easington Colliery disaster,1951-05-29,1951,81.0,Mining,Easington Colliery,plain,Peterlee,2.9,nearest Hansard town,54.785,-1.35,England,508,1,1,0,0.0,0,0,1,disaster,Peterlee,D:easington
+lynmouth,Lynmouth flood,1952-08-15,1952,34.0,Other,Lynmouth,plain,Lynton,0.5,nearest Hansard town,51.231,-3.829,England,523,1,1,0,0.0,0,0,1,disaster,Lynton,D:lynmouth
+harrow,Harrow and Wealdstone rail crash,1952-10-08,1952,112.0,Transport,Harrow and Wealdstone,plain,Wealdstone,0.9,nearest Hansard town,51.592,-0.335,England,525,1,1,0,0.0,0,0,1,disaster,Wealdstone,D:harrow
+lewisham,Lewisham rail crash,1957-12-04,1957,90.0,Transport,Lewisham,plain,Greenwich,1.4,nearest Hansard town,51.465,-0.012,England,587,1,1,0,0.0,0,0,1,disaster,Greenwich,D:lewisham
+auchengeich,Auchengeich mining disaster,1959-09-18,1959,47.0,Mining,Auchengeich,plain,Kirkintilloch,4.6,nearest Hansard town,55.914,-4.095,Scotland,608,1,1,0,0.0,0,0,1,disaster,Kirkintilloch,D:auchengeich
+sixbells,Six Bells colliery disaster,1960-06-28,1960,45.0,Mining,Six Bells,plain,Abertillery,2.3,nearest Hansard town,51.71,-3.13,Wales,617,1,1,0,0.08333333333333333,0,0,1,disaster,Abertillery,D:sixbells
+aberfan,Aberfan disaster,1966-10-21,1966,146.0,Mining,Aberfan,plain,Mountain Ash,2.4,nearest Hansard town,51.695,-3.348,Wales,693,1,1,0,0.0,0,0,1,disaster,Mountain Ash,D:aberfan
+stockport,Stockport air disaster,1967-06-04,1967,72.0,Transport,Stockport,in,Stockport,0.0,event term is a Hansard town,53.41,-2.158,England,701,1,1,0,0.25,0,0,1,disaster,Stockport,D:stockport
+thirsk,Thirsk rail crash,1967-07-31,1967,7.0,Transport,Thirsk,in,Thirsk,0.0,event term is a Hansard town,54.232,-1.343,England,702,1,1,0,0.0,0,0,1,disaster,Thirsk,D:thirsk
+hixon,Hixon rail crash,1968-01-06,1968,11.0,Transport,Hixon,plain,Rugeley,8.6,nearest Hansard town,52.83,-1.99,England,708,1,1,0,0.0,0,0,1,disaster,Rugeley,D:hixon
+ibrox,Ibrox disaster,1971-01-02,1971,66.0,Crowd crush,Ibrox,plain,Glasgow,3.3,nearest Hansard town,55.854,-4.307,Scotland,744,1,1,1,14.833333333333334,0,0,0,disaster,Glasgow,D:ibrox
+ballymurphy,Ballymurphy killings,1971-08-09,1971,11.0,Bombing or shooting,Ballymurphy,plain,Belfast,4.9,nearest Hansard town,54.59,-6.0,Northern Ireland,751,1,1,0,8.0,0,0,1,disaster,Belfast,D:ballymurphy
+bloodysunday,Bloody Sunday (Derry),1972-01-30,1972,14.0,Bombing or shooting,Londonderry,in,Londonderry,0.0,event term is a Hansard town,54.997,-7.326,Northern Ireland,756,1,1,0,1.25,0,0,1,disaster,Londonderry,D:bloodysunday
+eltham,Eltham Well Hall rail crash,1972-06-11,1972,6.0,Transport,Eltham Well Hall,plain,Eltham,0.2,nearest Hansard town,51.452,0.052,England,761,1,1,0,0.0,0,0,1,disaster,Eltham,D:eltham
+staines,Staines air disaster (BEA Flight 548),1972-06-18,1972,118.0,Transport,Staines,in,Staines,0.0,event term is a Hansard town,51.431,-0.506,England,761,1,1,0,0.0,0,0,1,disaster,Staines,D:staines
+flixborough,Flixborough disaster,1974-06-01,1974,28.0,Fire or explosion,Flixborough,plain,Scunthorpe,5.5,nearest Hansard town,53.62,-0.7,England,785,1,1,0,0.25,0,0,1,disaster,Scunthorpe,D:flixborough
+birmingham,Birmingham pub bombings,1974-11-21,1974,21.0,Bombing or shooting,Birmingham,in,Birmingham,0.0,event term is a Hansard town,52.48,-1.902,England,790,1,1,1,10.75,0,0,0,disaster,Birmingham,D:birmingham
+moorgate,Moorgate tube crash,1975-02-28,1975,43.0,Transport,Moorgate,plain,City of London,0.5,nearest Hansard town,51.518,-0.089,England,793,1,1,1,0.0,0,0,0,disaster,City of London,D:moorgate
+golborne,Golborne Colliery explosion,1979-03-18,1979,10.0,Mining,Golborne,in,Golborne,0.0,event term is a Hansard town,53.477,-2.596,England,842,1,1,0,0.0,0,0,1,disaster,Golborne,D:golborne
+penlee,Penlee lifeboat disaster,1981-12-19,1981,16.0,Transport,Penlee,plain,Newlyn,3.1,nearest Hansard town,50.08,-5.54,England,875,1,1,0,0.0,0,0,1,disaster,Newlyn,D:penlee
+newry,Newry mortar attack,1985-02-28,1985,9.0,Bombing or shooting,Newry,in,Newry,0.0,event term is a Hansard town,54.185,-6.332,Northern Ireland,913,1,1,1,0.08333333333333333,0,0,0,disaster,Newry,D:newry
+bradford,Bradford City stadium fire,1985-05-11,1985,56.0,Fire or explosion,Bradford City,plain,Bradford,1.2,nearest Hansard town,53.804,-1.759,England,916,1,1,0,1.4166666666666667,0,0,1,disaster,Bradford,D:bradford
+hungerford,Hungerford shootings,1987-08-19,1987,17.0,Bombing or shooting,Hungerford,in,Hungerford,0.0,event term is a Hansard town,51.41,-1.52,England,943,1,1,0,0.0,0,0,1,disaster,Hungerford,D:hungerford
+enniskillen,Enniskillen bombing,1987-11-08,1987,11.0,Bombing or shooting,Enniskillen,plain,,35.6,no Hansard town within 10 km,54.344,-7.632,Northern Ireland,946,1,0,0,,0,0,0,disaster,,D:enniskillen
+kingscross,King's Cross fire,1987-11-18,1987,31.0,Fire or explosion,King's Cross,plain,Islington,1.6,nearest Hansard town,51.53,-0.124,England,946,1,1,0,2.5,0,0,1,disaster,Islington,D:kingscross
+piperalpha,Piper Alpha,1988-07-06,1988,167.0,Fire or explosion,Piper Alpha,plain,,158.7,no Hansard town within 10 km,58.47,0.26,Scotland,954,1,0,0,,0,0,0,disaster,,D:piperalpha
+clapham,Clapham Junction rail crash,1988-12-12,1988,35.0,Transport,Clapham Junction,plain,Latchmere,0.5,nearest Hansard town,51.464,-0.17,England,959,1,1,0,0.0,0,0,1,disaster,Latchmere,D:clapham
+lockerbie,Lockerbie (Pan Am Flight 103),1988-12-21,1988,270.0,Bombing or shooting,Lockerbie,in,Lockerbie,0.0,event term is a Hansard town,55.116,-3.358,Scotland,959,1,1,0,0.08333333333333333,0,0,1,disaster,Lockerbie,D:lockerbie
+kegworth,Kegworth air disaster,1989-01-08,1989,47.0,Transport,Kegworth,plain,Shepshed,6.8,nearest Hansard town,52.833,-1.29,England,960,1,1,0,0.0,0,0,1,disaster,Shepshed,D:kegworth
+marchioness,Marchioness disaster,1989-08-20,1989,51.0,Transport,Marchioness,plain,City of London,0.6,nearest Hansard town,51.509,-0.094,England,967,1,1,0,0.08333333333333333,0,0,1,disaster,City of London,D:marchioness
+dunblane,Dunblane school shooting,1996-03-13,1996,18.0,Bombing or shooting,Dunblane,in,Dunblane,0.0,event term is a Hansard town,56.189,-3.974,Scotland,1046,1,1,0,0.0,0,0,1,disaster,Dunblane,D:dunblane
+omagh,Omagh bombing,1998-08-15,1998,29.0,Bombing or shooting,Omagh,in,Omagh,0.0,event term is a Hansard town,54.6,-7.299,Northern Ireland,1075,1,1,0,0.08333333333333333,0,0,1,disaster,Omagh,D:omagh
+ladbroke,Ladbroke Grove rail crash,1999-10-05,1999,31.0,Transport,Ladbroke Grove,plain,Willesden,1.6,nearest Hansard town,51.526,-0.213,England,1089,1,1,0,0.0,0,0,1,disaster,Willesden,D:ladbroke
+hatfield,Hatfield rail crash,2000-10-17,2000,4.0,Transport,Hatfield,in,Hatfield,0.0,event term is a Hansard town,51.763,-0.224,England,1101,1,1,0,0.0,0,0,1,disaster,Hatfield,D:hatfield
+greatheck,Great Heck rail crash,2001-02-28,2001,10.0,Transport,Great Heck,plain,,10.1,no Hansard town within 10 km,53.68,-1.1,England,1105,1,0,0,,0,0,0,disaster,,D:greatheck
+pottersbar,Potters Bar rail crash,2002-05-10,2002,7.0,Transport,Potters Bar,in,Potters Bar,0.0,event term is a Hansard town,51.694,-0.178,England,1120,1,1,0,0.0,0,0,1,disaster,Potters Bar,D:pottersbar
+morecambe,Morecambe Bay cockling disaster,2004-02-05,2004,22.0,Other,Morecambe Bay,plain,Morecambe,4.3,nearest Hansard town,54.1,-2.9,England,1141,1,1,0,0.08333333333333333,0,0,1,disaster,Morecambe,D:morecambe
+ufton,Ufton Nervet rail crash,2004-11-06,2004,7.0,Transport,Ufton Nervet,plain,Tadley,7.2,nearest Hansard town,51.415,-1.13,England,1150,1,1,0,0.0,0,0,1,disaster,Tadley,D:ufton
+grayrigg,Grayrigg derailment,2007-02-23,2007,1.0,Transport,Grayrigg,plain,Kendal,7.4,nearest Hansard town,54.37,-2.66,England,1177,1,1,0,0.3333333333333333,0,0,1,disaster,Kendal,D:grayrigg
+cumbria,Cumbria shootings,2010-06-02,2010,13.0,Bombing or shooting,Whitehaven,in,Whitehaven,0.0,event term is a Hansard town,54.484,-3.531,England,1217,1,1,0,0.25,0,0,1,disaster,Whitehaven,D:cumbria
+arena,Manchester Arena bombing,2017-05-22,2017,23.0,Bombing or shooting,Manchester Arena,plain,Manchester,0.9,nearest Hansard town,53.488,-2.243,England,1300,1,1,0,13.333333333333334,0,0,1,disaster,Manchester,D:arena
+grenfell,Grenfell Tower fire,2017-06-14,2017,72.0,Fire or explosion,Grenfell,plain,Notting Hill,0.8,nearest Hansard town,51.514,-0.216,England,1301,1,1,0,0.08333333333333333,0,0,1,disaster,Notting Hill,D:grenfell
+amesbury,Amesbury Novichok poisoning,2018-07-08,2018,1.0,Bombing or shooting,Amesbury,in,Amesbury,0.0,event term is a Hansard town,51.172,-1.78,England,1314,1,1,0,0.0,0,0,1,disaster,Amesbury,D:amesbury
+grays,Essex lorry deaths (Grays),2019-10-23,2019,39.0,Other,Grays,in,Grays,0.0,event term is a Hansard town,51.479,0.273,England,1329,1,1,0,0.0,0,0,1,disaster,Grays,D:grays
+carmont,Carmont derailment,2020-08-12,2020,3.0,Transport,Carmont,plain,Stonehaven,7.8,nearest Hansard town,56.94,-2.33,Scotland,1339,1,1,0,0.0,0,0,1,disaster,Stonehaven,D:carmont
+lowmoor,Low Moor explosion,1916-08-21,1916,40.0,Fire or explosion,Low Moor,plain,Cleckheaton,3.7,nearest Hansard town,53.747,-1.754,England,91,1,1,0,0.0,0,0,1,disaster,Cleckheaton,D:lowmoor
+chilwell,Chilwell shell filling factory explosion,1918-07-01,1918,137.0,Fire or explosion,Chilwell,plain,Stapleford,1.9,nearest Hansard town,52.91,-1.24,England,114,1,1,0,0.0,0,0,1,disaster,Stapleford,D:chilwell
+r38,R38 airship crash (Hull),1921-08-24,1921,44.0,Transport,R.38,plain,Cottingham,7.1,nearest Hansard town,53.74,-0.33,England,151,1,1,0,0.0,0,0,1,disaster,Cottingham,D:r38
+bentley,Bentley Colliery disaster,1931-11-20,1931,45.0,Mining,Bentley Colliery,plain,Bentley,0.7,nearest Hansard town,53.54,-1.15,England,274,1,1,0,0.0,0,0,1,disaster,Bentley,D:bentley
+wharncliffe,Wharncliffe Woodmoor colliery disaster,1936-08-06,1936,58.0,Mining,Wharncliffe Woodmoor,plain,Barnsley,3.1,nearest Hansard town,53.57,-1.45,England,331,1,1,1,0.08333333333333333,0,0,0,disaster,Barnsley,D:wharncliffe
+markham,Markham Colliery disaster,1938-05-10,1938,79.0,Mining,Markham Colliery,plain,Staveley,2.9,nearest Hansard town,53.244,-1.33,England,352,1,1,0,0.0,0,0,1,disaster,Staveley,D:markham
+valleyfield,Valleyfield mining disaster,1939-10-28,1939,35.0,Mining,Valleyfield,plain,Culross,1.9,nearest Hansard town,56.061,-3.6,Scotland,369,1,1,0,0.0,0,0,1,disaster,Culross,D:valleyfield
+sneyd,Sneyd Colliery disaster,1942-01-01,1942,57.0,Mining,Sneyd,plain,Stoke-on-Trent,4.8,nearest Hansard town,53.047,-2.182,England,396,1,1,0,0.08333333333333333,0,0,1,disaster,Stoke-on-Trent,D:sneyd
+fauld,RAF Fauld explosion,1944-11-27,1944,70.0,Fire or explosion,Fauld,plain,Burton upon Trent,7.6,nearest Hansard town,52.85,-1.73,England,430,1,1,0,0.0,0,0,1,disaster,Burton upon Trent,D:fauld
+burngrange,Burngrange mining disaster,1947-01-10,1947,15.0,Mining,Burngrange,plain,Livingston,7.1,nearest Hansard town,55.848,-3.582,Scotland,456,1,1,0,0.0,0,0,1,disaster,Livingston,D:burngrange
+llandow,Llandow air disaster,1950-03-12,1950,80.0,Transport,Llandow,plain,Llantwit Major,2.6,nearest Hansard town,51.43,-3.5,Wales,494,1,1,0,0.0,0,0,1,disaster,Llantwit Major,D:llandow
+aquila,Aquila Airways flying boat crash (Isle of Wight),1957-11-15,1957,45.0,Transport,Chessell,plain,Shanklin,8.9,nearest Hansard town,50.65,-1.3,England,586,1,1,0,0.0,0,0,1,disaster,Shanklin,D:aquila
+littlebaldon,Little Baldon air crash,1965-07-06,1965,41.0,Transport,Little Baldon,plain,Cowley,4.0,nearest Hansard town,51.7,-1.18,England,678,1,1,0,0.0,0,0,1,disaster,Cowley,D:littlebaldon
+penmaenpool,Penmaenpool ferry disaster,1966-07-22,1966,15.0,Transport,Penmaenpool,plain,Dolgellau,3.4,nearest Hansard town,52.747,-3.936,Wales,690,1,1,0,0.0,0,0,1,disaster,Dolgellau,D:penmaenpool
+hithergreen,Hither Green rail crash,1967-11-05,1967,49.0,Transport,Hither Green,plain,Catford,1.5,nearest Hansard town,51.45,0.0,England,706,1,1,0,0.0,0,0,1,disaster,Catford,D:hithergreen
+claudy,Claudy bombing,1972-07-31,1972,9.0,Bombing or shooting,Claudy,plain,,13.8,no Hansard town within 10 km,54.911,-7.155,Northern Ireland,762,1,0,0,,0,0,0,disaster,,D:claudy
+denmarkplace,Denmark Place fire,1980-08-16,1980,37.0,Fire or explosion,Denmark Place,plain,Soho,0.4,nearest Hansard town,51.515,-0.129,England,859,1,1,0,0.9166666666666666,0,0,1,disaster,Soho,D:denmarkplace
+droppinwell,Droppin Well bombing (Ballykelly),1982-12-06,1982,17.0,Bombing or shooting,Ballykelly,plain,,19.7,no Hansard town within 10 km,55.041,-7.01,Northern Ireland,887,1,0,0,,0,0,0,disaster,,D:droppinwell
+ballygawley,Ballygawley bus bombing,1988-08-20,1988,8.0,Bombing or shooting,Ballygawley,plain,,13.7,no Hansard town within 10 km,54.504,-7.167,Northern Ireland,955,1,0,0,,0,0,0,disaster,,D:ballygawley
+gleision,Gleision Colliery accident,2011-09-15,2011,4.0,Mining,Gleision,plain,Pontardawe,4.2,nearest Hansard town,51.742,-3.801,Wales,1232,1,1,0,0.0,0,0,1,disaster,Pontardawe,D:gleision
+markham73,Markham Colliery cage accident,1973-07-30,1973,18.0,Mining,Markham Colliery,plain,Staveley,2.9,nearest Hansard town,53.244,-1.33,England,774,1,1,0,0.0,0,0,1,disaster,Staveley,D:markham73
